@@ -1,0 +1,45 @@
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_LIST_FR.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_SINGLE_CHAT.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form_GRP_CHAT.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form14.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_INTERACT_SINGLE.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form12.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form9.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form8.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_VERI_LOGOUT.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form6.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form5.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_MAIN.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_SIGN_UP.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_LOGIN.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\ĐỒ ÁN NHẬP MÔN MẠNG\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_LIST_FR.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_SINGLE_CHAT.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form_GRP_CHAT.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FROM_INTERACT_GRP.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_INTERACT_SINGLE.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_GRP_INFO.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_ADD_FR.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_ADD_2_GRP.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_VERI_FR.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_VERI_LOGOUT.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_EDIT_LOGIN_PROF.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FORM_EDIT_PROFILE.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLogin.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMain.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmSignup.resources
