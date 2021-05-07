@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FORM_SINGLE_CHAT : Form
+    public partial class frmSinglechat : Form
     {
-        public FORM_SINGLE_CHAT()
+        public frmSinglechat()
         {
             InitializeComponent();
         }

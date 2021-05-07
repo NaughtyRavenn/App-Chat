@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class FORM_ADD_FR
+    partial class frmAddfriend
     {
         /// <summary>
         /// Required designer variable.
@@ -153,6 +153,7 @@
             this.button10.TabIndex = 64;
             this.button10.Text = "+";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.btnAddFriend_Click);
             // 
             // label6
             // 
@@ -174,6 +175,7 @@
             this.button9.TabIndex = 62;
             this.button9.Text = "+";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.btnAddFriend_Click);
             // 
             // label5
             // 
@@ -195,6 +197,7 @@
             this.button11.TabIndex = 60;
             this.button11.Text = "+";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.btnAddFriend_Click);
             // 
             // label4
             // 
@@ -216,6 +219,7 @@
             this.button12.TabIndex = 58;
             this.button12.Text = "+";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.btnAddFriend_Click);
             // 
             // label3
             // 
@@ -237,6 +241,7 @@
             this.button13.TabIndex = 38;
             this.button13.Text = "+";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.btnAddFriend_Click);
             // 
             // label7
             // 
@@ -341,6 +346,7 @@
             this.button2.TabIndex = 70;
             this.button2.Text = ":";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnInvitefriend_Click);
             // 
             // label8
             // 
@@ -396,8 +402,9 @@
             this.button3.TabIndex = 72;
             this.button3.Text = ":";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.btnInvitefriend_Click);
             // 
-            // FORM_ADD_FR
+            // frmAddfriend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -405,8 +412,9 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FORM_ADD_FR";
+            this.Name = "frmAddfriend";
             this.Text = "ADD_FR";
+            this.Load += new System.EventHandler(this.FORM_ADD_FR_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);

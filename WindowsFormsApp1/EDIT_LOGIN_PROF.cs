@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FORM_EDIT_LOGIN_PROF : Form
+    public partial class frmEditloginprofile : Form
     {
-        public FORM_EDIT_LOGIN_PROF()
+        public frmEditloginprofile()
         {
             InitializeComponent();
         }

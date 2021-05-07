@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class FORM_EDIT_PROFILE
+    partial class frmEditprofile
     {
         /// <summary>
         /// Required designer variable.
@@ -263,7 +263,7 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Avatar";
             // 
-            // FORM_EDIT_PROFILE
+            // frmEditprofile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -272,7 +272,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FORM_EDIT_PROFILE";
+            this.Name = "frmEditprofile";
             this.Text = "EDIT_PROFILE";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

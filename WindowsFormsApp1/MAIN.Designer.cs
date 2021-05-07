@@ -32,8 +32,8 @@
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblName = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnEditprofile = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Tìm = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -108,29 +108,31 @@
             this.lblName.TabIndex = 9;
             this.lblName.Text = "ADMIN";
             // 
-            // button7
+            // btnEditprofile
             // 
-            this.button7.AutoSize = true;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(163, 67);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(95, 30);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "Edit Profile";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnEditprofile.AutoSize = true;
+            this.btnEditprofile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditprofile.Location = new System.Drawing.Point(163, 67);
+            this.btnEditprofile.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditprofile.Name = "btnEditprofile";
+            this.btnEditprofile.Size = new System.Drawing.Size(95, 30);
+            this.btnEditprofile.TabIndex = 10;
+            this.btnEditprofile.Text = "Edit Profile";
+            this.btnEditprofile.UseVisualStyleBackColor = true;
+            this.btnEditprofile.Click += new System.EventHandler(this.btnEditprofile_Click);
             // 
-            // button8
+            // btnLogout
             // 
-            this.button8.AutoSize = true;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(163, 101);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(76, 30);
-            this.button8.TabIndex = 11;
-            this.button8.Text = "Log Out";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnLogout.AutoSize = true;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(163, 101);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(76, 30);
+            this.btnLogout.TabIndex = 11;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // textBox1
             // 
@@ -204,6 +206,7 @@
             this.button10.TabIndex = 64;
             this.button10.Text = ":";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.btnInteractgroup);
             // 
             // label6
             // 
@@ -225,6 +228,7 @@
             this.button9.TabIndex = 62;
             this.button9.Text = ":";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.btnInteractsingle_Click);
             // 
             // label5
             // 
@@ -246,6 +250,7 @@
             this.button1.TabIndex = 60;
             this.button1.Text = ":";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnInteractgroup);
             // 
             // label4
             // 
@@ -267,6 +272,7 @@
             this.button2.TabIndex = 58;
             this.button2.Text = ":";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btnInteractsingle_Click);
             // 
             // label3
             // 
@@ -288,6 +294,7 @@
             this.button11.TabIndex = 38;
             this.button11.Text = ":";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.btnInteractsingle_Click);
             // 
             // label7
             // 
@@ -356,8 +363,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 604);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.btnEditprofile);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button6);
@@ -386,8 +393,8 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnEditprofile;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button Tìm;
         private System.Windows.Forms.GroupBox groupBox1;

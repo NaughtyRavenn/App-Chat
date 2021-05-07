@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FORM_VERI_LOGOUT : Form
+    public partial class frmVerilogout : Form
     {
-        public FORM_VERI_LOGOUT()
+        public frmVerilogout()
         {
             InitializeComponent();
         }

@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FORM_GRP_INFO : Form
+    public partial class frmGroupinfo : Form
     {
-        public FORM_GRP_INFO()
+        public frmGroupinfo()
         {
             InitializeComponent();
+        }
+
+        private void btnAddmember_Click(object sender, EventArgs e)
+        {
+            frmAddtogroup frm = new frmAddtogroup();
+            frm.ShowDialog();
         }
     }
 }

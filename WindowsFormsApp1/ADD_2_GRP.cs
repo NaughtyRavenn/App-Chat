@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FORM_ADD_2_GRP : Form
+    public partial class frmAddtogroup : Form
     {
-        public FORM_ADD_2_GRP()
+        public frmAddtogroup()
         {
             InitializeComponent();
         }
 
         private void Tìm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddtogroup_Click(object sender, EventArgs e)
         {
 
         }

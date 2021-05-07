@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class FORM_ADD_2_GRP
+    partial class frmAddtogroup
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button11 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.button12 = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -102,7 +102,7 @@
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.button11);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.button12);
+            this.groupBox4.Controls.Add(this.btn);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.pictureBox6);
             this.groupBox4.Controls.Add(this.pictureBox5);
@@ -129,6 +129,7 @@
             this.button10.TabIndex = 64;
             this.button10.Text = "+";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.btnAddtogroup_Click);
             // 
             // label6
             // 
@@ -150,6 +151,7 @@
             this.button9.TabIndex = 62;
             this.button9.Text = "+";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.btnAddtogroup_Click);
             // 
             // label5
             // 
@@ -171,6 +173,7 @@
             this.button8.TabIndex = 60;
             this.button8.Text = "+";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.btnAddtogroup_Click);
             // 
             // label4
             // 
@@ -192,6 +195,7 @@
             this.button11.TabIndex = 58;
             this.button11.Text = "+";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.btnAddtogroup_Click);
             // 
             // label7
             // 
@@ -203,16 +207,17 @@
             this.label7.Text = "BẠN B";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button12
+            // btn
             // 
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(190, 35);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(20, 20);
-            this.button12.TabIndex = 38;
-            this.button12.Text = "+";
-            this.button12.UseVisualStyleBackColor = true;
+            this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn.Location = new System.Drawing.Point(190, 35);
+            this.btn.Margin = new System.Windows.Forms.Padding(2);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(20, 20);
+            this.btn.TabIndex = 38;
+            this.btn.Text = "+";
+            this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btnAddtogroup_Click);
             // 
             // label8
             // 
@@ -276,14 +281,14 @@
             this.vScrollBar2.Size = new System.Drawing.Size(16, 331);
             this.vScrollBar2.TabIndex = 44;
             // 
-            // FORM_ADD_2_GRP
+            // frmAddtogroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(266, 414);
             this.Controls.Add(this.groupBox3);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FORM_ADD_2_GRP";
+            this.Name = "frmAddtogroup";
             this.Text = "ADD_2_GRP";
             this.TopMost = true;
             this.groupBox3.ResumeLayout(false);
@@ -312,7 +317,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button btn;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;

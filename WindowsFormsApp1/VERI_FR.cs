@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FORM_VERI_FR : Form
+    public partial class frmVerifriend : Form
     {
-        public FORM_VERI_FR()
+        public frmVerifriend()
         {
             InitializeComponent();
         }

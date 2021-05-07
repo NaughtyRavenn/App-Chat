@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FORM_INTERACT_SINGLE : Form
+    public partial class frmInteractsingle : Form
     {
-        public FORM_INTERACT_SINGLE()
+        public frmInteractsingle()
         {
             InitializeComponent();
+        }
+
+        private void btnMessagesingle_Click(object sender, EventArgs e)
+        {
+            frmSinglechat frm = new frmSinglechat();
+            frm.Show();
+            this.Hide();
         }
     }
 }

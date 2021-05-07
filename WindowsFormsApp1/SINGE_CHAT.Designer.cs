@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class FORM_SINGLE_CHAT
+    partial class frmSinglechat
     {
         /// <summary>
         /// Required designer variable.
@@ -136,7 +136,7 @@
             this.textBox2.TabIndex = 20;
             this.textBox2.Text = "Nhập tin nhắn";
             // 
-            // FORM_SINGLE_CHAT
+            // frmSinglechat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -151,7 +151,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FORM_SINGLE_CHAT";
+            this.Name = "frmSinglechat";
             this.Text = "SINGLE_CHAT";
             this.Load += new System.EventHandler(this.Form10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FORM_EDIT_PROFILE : Form
+    public partial class frmEditprofile : Form
     {
-        public FORM_EDIT_PROFILE()
+        public frmEditprofile()
         {
             InitializeComponent();
         }

@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FROM_INTERACT_GRP : Form
+    public partial class frmInteractgroup : Form
     {
-        public FROM_INTERACT_GRP()
+        public frmInteractgroup()
         {
             InitializeComponent();
+        }
+
+        private void btnMessagegroup_Click(object sender, EventArgs e)
+        {
+            frmGroupchat frm = new frmGroupchat();
+            frm.Show();
+            this.Hide();
         }
     }
 }

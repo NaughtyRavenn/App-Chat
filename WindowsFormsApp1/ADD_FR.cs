@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FORM_ADD_FR : Form
+    public partial class frmAddfriend : Form
     {
-        public FORM_ADD_FR()
+        public frmAddfriend()
         {
             InitializeComponent();
+        }
+
+        private void btnAddFriend_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FORM_ADD_FR_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInvitefriend_Click(object sender, EventArgs e)
+        {
+            frmVerifriend frm = new frmVerifriend();
+            frm.ShowDialog();
         }
     }
 }

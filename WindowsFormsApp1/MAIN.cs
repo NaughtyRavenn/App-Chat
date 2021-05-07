@@ -21,5 +21,29 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void btnInteractsingle_Click(object sender, EventArgs e)
+        {
+            frmInteractsingle frm = new frmInteractsingle();
+            frm.ShowDialog();
+        }
+
+        private void btnInteractgroup(object sender, EventArgs e)
+        {
+            frmInteractgroup frm = new frmInteractgroup();
+            frm.ShowDialog();
+        }
+
+        private void btnEditprofile_Click(object sender, EventArgs e)
+        {
+            frmEditprofile frm = new frmEditprofile();
+            frm.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            frmVerilogout frm = new frmVerilogout();
+            frm.ShowDialog();
+        }
     }
 }

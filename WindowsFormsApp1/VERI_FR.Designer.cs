@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class FORM_VERI_FR
+    partial class frmVerifriend
     {
         /// <summary>
         /// Required designer variable.
@@ -65,7 +65,7 @@
             this.button2.Text = "Không";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // FORM_VERI_FR
+            // frmVerifriend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -73,7 +73,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "FORM_VERI_FR";
+            this.Name = "frmVerifriend";
             this.Text = "VERI_FR";
             this.ResumeLayout(false);
             this.PerformLayout();

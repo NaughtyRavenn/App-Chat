@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class FORM_VERI_LOGOUT
+    partial class frmVerilogout
     {
         /// <summary>
         /// Required designer variable.
@@ -50,7 +50,7 @@
             this.button1.AutoSize = true;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(144, 85);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 30);
             this.button1.TabIndex = 1;
@@ -62,14 +62,14 @@
             this.button2.AutoSize = true;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(54, 85);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 30);
             this.button2.TabIndex = 2;
             this.button2.Text = "Yes";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // FORM_VERI_LOGOUT
+            // frmVerilogout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,8 +78,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "FORM_VERI_LOGOUT";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "frmVerilogout";
             this.Text = "VERIFY_LOGOUT";
             this.ResumeLayout(false);
             this.PerformLayout();

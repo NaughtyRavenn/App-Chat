@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button10 = new System.Windows.Forms.Button();
+            this.btnAddfriend = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
@@ -46,16 +46,16 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnCreategroup = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.Tìm = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnEditprofile = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.button18 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -66,16 +66,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
-            // button10
+            // btnAddfriend
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(27, 42);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(113, 25);
-            this.button10.TabIndex = 28;
-            this.button10.Text = "Thêm bạn";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnAddfriend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddfriend.Location = new System.Drawing.Point(27, 42);
+            this.btnAddfriend.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddfriend.Name = "btnAddfriend";
+            this.btnAddfriend.Size = new System.Drawing.Size(113, 25);
+            this.btnAddfriend.TabIndex = 28;
+            this.btnAddfriend.Text = "Thêm bạn";
+            this.btnAddfriend.UseVisualStyleBackColor = true;
+            this.btnAddfriend.Click += new System.EventHandler(this.btnAddfriend_Click);
             // 
             // button11
             // 
@@ -87,6 +88,7 @@
             this.button11.TabIndex = 64;
             this.button11.Text = ":";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.btnInteractgroup_Click);
             // 
             // label6
             // 
@@ -108,6 +110,7 @@
             this.button12.TabIndex = 62;
             this.button12.Text = ":";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.btnInteractgroup_Click);
             // 
             // label5
             // 
@@ -129,6 +132,7 @@
             this.button13.TabIndex = 60;
             this.button13.Text = ":";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.btnInteractsingle_Click);
             // 
             // label4
             // 
@@ -150,6 +154,7 @@
             this.button14.TabIndex = 58;
             this.button14.Text = ":";
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.btnInteractsingle_Click);
             // 
             // label3
             // 
@@ -171,6 +176,7 @@
             this.button15.TabIndex = 38;
             this.button15.Text = ":";
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.btnInteractsingle_Click);
             // 
             // label7
             // 
@@ -236,11 +242,11 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnCreategroup);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.Tìm);
             this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Controls.Add(this.button10);
+            this.groupBox2.Controls.Add(this.btnAddfriend);
             this.groupBox2.Controls.Add(this.vScrollBar2);
             this.groupBox2.Location = new System.Drawing.Point(18, 168);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
@@ -249,6 +255,18 @@
             this.groupBox2.Size = new System.Drawing.Size(316, 425);
             this.groupBox2.TabIndex = 37;
             this.groupBox2.TabStop = false;
+            // 
+            // btnCreategroup
+            // 
+            this.btnCreategroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreategroup.Location = new System.Drawing.Point(169, 42);
+            this.btnCreategroup.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCreategroup.Name = "btnCreategroup";
+            this.btnCreategroup.Size = new System.Drawing.Size(113, 25);
+            this.btnCreategroup.TabIndex = 45;
+            this.btnCreategroup.Text = "Tạo nhóm";
+            this.btnCreategroup.UseVisualStyleBackColor = true;
+            this.btnCreategroup.Click += new System.EventHandler(this.btnCreategroup_Click);
             // 
             // textBox2
             // 
@@ -299,29 +317,31 @@
             this.groupBox3.TabIndex = 44;
             this.groupBox3.TabStop = false;
             // 
-            // button16
+            // btnLogout
             // 
-            this.button16.AutoSize = true;
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.Location = new System.Drawing.Point(163, 101);
-            this.button16.Margin = new System.Windows.Forms.Padding(2);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(76, 30);
-            this.button16.TabIndex = 36;
-            this.button16.Text = "Log Out";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btnLogout.AutoSize = true;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Location = new System.Drawing.Point(163, 101);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(76, 30);
+            this.btnLogout.TabIndex = 36;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // button17
+            // btnEditprofile
             // 
-            this.button17.AutoSize = true;
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(163, 67);
-            this.button17.Margin = new System.Windows.Forms.Padding(2);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(95, 30);
-            this.button17.TabIndex = 35;
-            this.button17.Text = "Edit Profile";
-            this.button17.UseVisualStyleBackColor = true;
+            this.btnEditprofile.AutoSize = true;
+            this.btnEditprofile.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditprofile.Location = new System.Drawing.Point(163, 67);
+            this.btnEditprofile.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEditprofile.Name = "btnEditprofile";
+            this.btnEditprofile.Size = new System.Drawing.Size(95, 30);
+            this.btnEditprofile.TabIndex = 35;
+            this.btnEditprofile.Text = "Edit Profile";
+            this.btnEditprofile.UseVisualStyleBackColor = true;
+            this.btnEditprofile.Click += new System.EventHandler(this.btnEditprofile_Click);
             // 
             // label8
             // 
@@ -367,25 +387,14 @@
             this.pictureBox7.TabIndex = 33;
             this.pictureBox7.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(169, 42);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 25);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "Tạo nhóm";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // FORM_LIST_FR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 604);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button17);
+            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.btnEditprofile);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.label9);
@@ -408,7 +417,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btnAddfriend;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button12;
@@ -429,12 +438,12 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button Tìm;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnEditprofile;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCreategroup;
     }
 }

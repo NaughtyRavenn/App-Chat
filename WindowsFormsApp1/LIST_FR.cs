@@ -21,5 +21,41 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void btnAddfriend_Click(object sender, EventArgs e)
+        {
+            frmAddfriend frm = new frmAddfriend();
+            frm.Show();
+        }
+
+        private void btnCreategroup_Click(object sender, EventArgs e)
+        {
+            frmAddtogroup frm = new frmAddtogroup();
+            frm.Show();
+        }
+
+        private void btnInteractsingle_Click(object sender, EventArgs e)
+        {
+            frmInteractsingle frm = new frmInteractsingle();
+            frm.ShowDialog();
+        }
+
+        private void btnInteractgroup_Click(object sender, EventArgs e)
+        {
+            frmInteractgroup frm = new frmInteractgroup();
+            frm.ShowDialog();
+        }
+
+        private void btnEditprofile_Click(object sender, EventArgs e)
+        {
+            frmEditprofile frm = new frmEditprofile();
+            frm.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            frmVerilogout frm = new frmVerilogout();
+            frm.ShowDialog();
+        }
     }
 }

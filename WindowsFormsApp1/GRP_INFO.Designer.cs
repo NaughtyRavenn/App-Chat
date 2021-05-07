@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class FORM_GRP_INFO
+    partial class frmGroupinfo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Tìm = new System.Windows.Forms.Button();
+            this.btnAddmember = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -39,22 +39,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Tìm
+            // btnAddmember
             // 
-            this.Tìm.AutoSize = true;
-            this.Tìm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tìm.Location = new System.Drawing.Point(90, 220);
-            this.Tìm.Margin = new System.Windows.Forms.Padding(2);
-            this.Tìm.Name = "Tìm";
-            this.Tìm.Size = new System.Drawing.Size(143, 40);
-            this.Tìm.TabIndex = 31;
-            this.Tìm.Text = "Thêm thành viên";
-            this.Tìm.UseVisualStyleBackColor = true;
+            this.btnAddmember.AutoSize = true;
+            this.btnAddmember.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddmember.Location = new System.Drawing.Point(90, 220);
+            this.btnAddmember.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddmember.Name = "btnAddmember";
+            this.btnAddmember.Size = new System.Drawing.Size(143, 40);
+            this.btnAddmember.TabIndex = 31;
+            this.btnAddmember.Text = "Thêm thành viên";
+            this.btnAddmember.UseVisualStyleBackColor = true;
+            this.btnAddmember.Click += new System.EventHandler(this.btnAddmember_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.Tìm);
+            this.groupBox2.Controls.Add(this.btnAddmember);
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.label3);
@@ -72,7 +73,7 @@
             // 
             this.button6.AutoSize = true;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(214, 16);
+            this.button6.Location = new System.Drawing.Point(214, 21);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(72, 30);
@@ -120,14 +121,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Ảnh nhóm";
             // 
-            // FORM_GRP_INFO
+            // frmGroupinfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(317, 296);
             this.Controls.Add(this.groupBox2);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FORM_GRP_INFO";
+            this.Name = "frmGroupinfo";
             this.Text = "GRP_INFO";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -137,7 +138,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button Tìm;
+        private System.Windows.Forms.Button btnAddmember;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox2;

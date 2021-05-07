@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form_GRP_CHAT : Form
+    public partial class frmGroupchat : Form
     {
-        public Form_GRP_CHAT()
+        public frmGroupchat()
         {
             InitializeComponent();
         }
@@ -20,6 +20,12 @@ namespace WindowsFormsApp1
         private void Form11_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnGroupinfo_Click(object sender, EventArgs e)
+        {
+            frmGroupinfo frm = new frmGroupinfo();
+            frm.ShowDialog();
         }
     }
 }
