@@ -20,7 +20,12 @@ namespace WindowsFormsApp1
         
         string cs = @"Data Source=LAPTOP-L3JT52S4\SQLEXPRESS;Initial Catalog=test;Integrated Security=TrueData Source=LAPTOP-L3JT52S4\SQLEXPRESS;Initial Catalog=test;Integrated Security=True";
 
-        private void btnSignup_Click(object sender, EventArgs e)
+        private void frmSignup_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreateaccount_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(cs);
             if (txtConfirmpassword.Text != string.Empty || txtPassword.Text != string.Empty || txtUsername.Text != string.Empty)
@@ -37,7 +42,7 @@ namespace WindowsFormsApp1
                     return;
                 }
                 //check mật khẩu
-                if(txtPassword.Text.Length<8)
+                if (txtPassword.Text.Length < 8)
                 {
                     MessageBox.Show("Mật khẩu cần tối đa 8 kí tự", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -56,13 +61,13 @@ namespace WindowsFormsApp1
                     return;
                 }
                 //check số điện thoại
-                if (!int.TryParse(txtPhonenumber.Text, out int nunmber)||txtPhonenumber.Text.Length<10)
+                if (!int.TryParse(txtPhonenumber.Text, out int nunmber) || txtPhonenumber.Text.Length < 10)
                 {
                     MessageBox.Show("Nhập lại số điện thoại", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 //check giới tính
-                if(rdoMale.Checked==false&&rdoFemale.Checked==false)
+                if (rdoMale.Checked == false && rdoFemale.Checked == false)
                 {
                     MessageBox.Show("Kiểm tra lại giới tính", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -76,22 +81,17 @@ namespace WindowsFormsApp1
                 cmd.Parameters.AddWithValue("email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("birthday", date);
                 cmd.Parameters.AddWithValue("phone", txtPhonenumber.Text);
-                cmd.Parameters.AddWithValue("sex",rdoMale.Checked);
+                cmd.Parameters.AddWithValue("sex", rdoMale.Checked);
                 cmd.Parameters.AddWithValue("is_admin", 0);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Tạo tài khoản thành công", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+
                 con.Close();
             }
             else
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void frmSignup_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

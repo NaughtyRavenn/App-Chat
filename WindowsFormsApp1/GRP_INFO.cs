@@ -17,10 +17,15 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void btnAddmember_Click(object sender, EventArgs e)
+        private void btnAddtogroup_Click(object sender, EventArgs e)
         {
             frmAddtogroup frm = new frmAddtogroup();
             frm.ShowDialog();
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

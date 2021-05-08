@@ -12,6 +12,8 @@ namespace WindowsFormsApp1
 {
     public partial class frmMain : Form
     {
+        private readonly object txtName_TextChanged;
+
         public frmMain()
         {
             InitializeComponent();
@@ -28,7 +30,7 @@ namespace WindowsFormsApp1
             frm.ShowDialog();
         }
 
-        private void btnInteractgroup(object sender, EventArgs e)
+        private void btnInteractgroup_Click(object sender, EventArgs e)
         {
             frmInteractgroup frm = new frmInteractgroup();
             frm.ShowDialog();
@@ -44,6 +46,17 @@ namespace WindowsFormsApp1
         {
             frmVerilogout frm = new frmVerilogout();
             frm.ShowDialog();
+        }
+
+        private void btnAddfriend_Click(object sender, EventArgs e)
+        {
+            frmAddfriend frm = new frmAddfriend();
+            frm.ShowDialog();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

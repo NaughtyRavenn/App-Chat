@@ -17,12 +17,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void Tìm_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnAddtogroup_Click(object sender, EventArgs e)
+        private void frmAddtogroup_Load(object sender, EventArgs e)
         {
 
         }

@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void btnGroupinfo_Click(object sender, EventArgs e)
+        private void btnGroupinfo_Click_1(object sender, EventArgs e)
         {
             frmGroupinfo frm = new frmGroupinfo();
             frm.ShowDialog();

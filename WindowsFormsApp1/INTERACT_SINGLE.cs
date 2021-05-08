@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void btnMessagesingle_Click(object sender, EventArgs e)
+        private void btnMessagegroup_Click(object sender, EventArgs e)
         {
             frmSinglechat frm = new frmSinglechat();
             frm.Show();

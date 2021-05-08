@@ -64,7 +64,12 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void llblSignup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
         {
             frmSignup frm = new frmSignup();
             frm.ShowDialog();

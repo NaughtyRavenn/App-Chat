@@ -17,17 +17,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void btnAddFriend_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FORM_ADD_FR_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnInvitefriend_Click(object sender, EventArgs e)
+        private void btnAddfriend_Click(object sender, EventArgs e)
         {
             frmVerifriend frm = new frmVerifriend();
             frm.ShowDialog();
