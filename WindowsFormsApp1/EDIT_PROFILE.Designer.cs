@@ -28,278 +28,325 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.xuiCustomGroupbox2 = new XanderUI.XUICustomGroupbox();
+            this.btnConfirm2 = new XanderUI.XUIButton();
+            this.txtConfirmpassword = new System.Windows.Forms.TextBox();
+            this.txtNewpassword = new System.Windows.Forms.TextBox();
+            this.txtCurrentpassword = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.xuiCustomGroupbox1 = new XanderUI.XUICustomGroupbox();
+            this.btnConfirm1 = new XanderUI.XUIButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtBirthday = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.xuiCustomGroupbox2.SuspendLayout();
+            this.xuiCustomGroupbox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // xuiCustomGroupbox2
             // 
-            this.button1.AutoSize = true;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(11, 45);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 30);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Thông tin đăng nhập";
-            this.button1.UseVisualStyleBackColor = true;
+            this.xuiCustomGroupbox2.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.xuiCustomGroupbox2.BorderWidth = 1;
+            this.xuiCustomGroupbox2.Controls.Add(this.btnConfirm2);
+            this.xuiCustomGroupbox2.Controls.Add(this.txtConfirmpassword);
+            this.xuiCustomGroupbox2.Controls.Add(this.txtNewpassword);
+            this.xuiCustomGroupbox2.Controls.Add(this.txtCurrentpassword);
+            this.xuiCustomGroupbox2.Controls.Add(this.label7);
+            this.xuiCustomGroupbox2.Controls.Add(this.label8);
+            this.xuiCustomGroupbox2.Controls.Add(this.label9);
+            this.xuiCustomGroupbox2.Location = new System.Drawing.Point(309, 10);
+            this.xuiCustomGroupbox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox2.Name = "xuiCustomGroupbox2";
+            this.xuiCustomGroupbox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox2.ShowText = true;
+            this.xuiCustomGroupbox2.Size = new System.Drawing.Size(284, 169);
+            this.xuiCustomGroupbox2.TabIndex = 7;
+            this.xuiCustomGroupbox2.TabStop = false;
+            this.xuiCustomGroupbox2.Text = "Thông tin đăng nhập";
+            this.xuiCustomGroupbox2.TextColor = System.Drawing.Color.DodgerBlue;
             // 
-            // label1
+            // btnConfirm2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Thông tin cá nhân";
+            this.btnConfirm2.BackgroundColor = System.Drawing.Color.LimeGreen;
+            this.btnConfirm2.ButtonImage = null;
+            this.btnConfirm2.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnConfirm2.ButtonText = "Xác nhận";
+            this.btnConfirm2.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnConfirm2.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnConfirm2.CornerRadius = 5;
+            this.btnConfirm2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm2.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnConfirm2.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnConfirm2.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnConfirm2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnConfirm2.Location = new System.Drawing.Point(94, 121);
+            this.btnConfirm2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirm2.Name = "btnConfirm2";
+            this.btnConfirm2.Size = new System.Drawing.Size(100, 29);
+            this.btnConfirm2.TabIndex = 18;
+            this.btnConfirm2.TextColor = System.Drawing.Color.White;
+            this.btnConfirm2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnConfirm2.Click += new System.EventHandler(this.btnConfirm2_Click);
             // 
-            // groupBox1
+            // txtConfirmpassword
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.comboBox3);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(183, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(472, 409);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
+            this.txtConfirmpassword.Location = new System.Drawing.Point(112, 90);
+            this.txtConfirmpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConfirmpassword.Name = "txtConfirmpassword";
+            this.txtConfirmpassword.Size = new System.Drawing.Size(158, 20);
+            this.txtConfirmpassword.TabIndex = 9;
             // 
-            // label3
+            // txtNewpassword
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(17, 198);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 20);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "Ngày sinh";
+            this.txtNewpassword.Location = new System.Drawing.Point(112, 60);
+            this.txtNewpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNewpassword.Name = "txtNewpassword";
+            this.txtNewpassword.Size = new System.Drawing.Size(158, 20);
+            this.txtNewpassword.TabIndex = 8;
             // 
-            // textBox6
+            // txtCurrentpassword
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(156, 275);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(236, 26);
-            this.textBox6.TabIndex = 29;
+            this.txtCurrentpassword.Location = new System.Drawing.Point(112, 30);
+            this.txtCurrentpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCurrentpassword.Name = "txtCurrentpassword";
+            this.txtCurrentpassword.Size = new System.Drawing.Size(158, 20);
+            this.txtCurrentpassword.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 93);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Xác nhận mật khẩu";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 278);
+            this.label8.Location = new System.Drawing.Point(10, 63);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 20);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "Email";
+            this.label8.Size = new System.Drawing.Size(71, 13);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Mật khẩu mới";
             // 
-            // comboBox3
+            // label9
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.comboBox3.Location = new System.Drawing.Point(314, 195);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(78, 28);
-            this.comboBox3.TabIndex = 27;
-            this.comboBox3.Text = "Năm";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(10, 32);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(89, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Mật khẩu hiện tại";
             // 
-            // comboBox2
+            // xuiCustomGroupbox1
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.comboBox2.Location = new System.Drawing.Point(232, 195);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(78, 28);
-            this.comboBox2.TabIndex = 26;
-            this.comboBox2.Text = "Tháng";
+            this.xuiCustomGroupbox1.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.xuiCustomGroupbox1.BorderWidth = 1;
+            this.xuiCustomGroupbox1.Controls.Add(this.btnConfirm1);
+            this.xuiCustomGroupbox1.Controls.Add(this.button1);
+            this.xuiCustomGroupbox1.Controls.Add(this.txtEmail);
+            this.xuiCustomGroupbox1.Controls.Add(this.txtPhone);
+            this.xuiCustomGroupbox1.Controls.Add(this.txtBirthday);
+            this.xuiCustomGroupbox1.Controls.Add(this.txtName);
+            this.xuiCustomGroupbox1.Controls.Add(this.pictureBox1);
+            this.xuiCustomGroupbox1.Controls.Add(this.label5);
+            this.xuiCustomGroupbox1.Controls.Add(this.label4);
+            this.xuiCustomGroupbox1.Controls.Add(this.label3);
+            this.xuiCustomGroupbox1.Controls.Add(this.label2);
+            this.xuiCustomGroupbox1.Controls.Add(this.label1);
+            this.xuiCustomGroupbox1.Location = new System.Drawing.Point(9, 10);
+            this.xuiCustomGroupbox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox1.Name = "xuiCustomGroupbox1";
+            this.xuiCustomGroupbox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox1.ShowText = true;
+            this.xuiCustomGroupbox1.Size = new System.Drawing.Size(284, 281);
+            this.xuiCustomGroupbox1.TabIndex = 6;
+            this.xuiCustomGroupbox1.TabStop = false;
+            this.xuiCustomGroupbox1.Text = "Thông tin cá nhân";
+            this.xuiCustomGroupbox1.TextColor = System.Drawing.Color.DodgerBlue;
             // 
-            // comboBox1
+            // btnConfirm1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.comboBox1.Location = new System.Drawing.Point(156, 195);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(72, 28);
-            this.comboBox1.TabIndex = 25;
-            this.comboBox1.Text = "Ngày";
+            this.btnConfirm1.BackgroundColor = System.Drawing.Color.LimeGreen;
+            this.btnConfirm1.ButtonImage = null;
+            this.btnConfirm1.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnConfirm1.ButtonText = "Xác nhận";
+            this.btnConfirm1.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnConfirm1.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnConfirm1.CornerRadius = 5;
+            this.btnConfirm1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConfirm1.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnConfirm1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnConfirm1.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnConfirm1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnConfirm1.Location = new System.Drawing.Point(90, 240);
+            this.btnConfirm1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirm1.Name = "btnConfirm1";
+            this.btnConfirm1.Size = new System.Drawing.Size(100, 29);
+            this.btnConfirm1.TabIndex = 18;
+            this.btnConfirm1.TextColor = System.Drawing.Color.White;
+            this.btnConfirm1.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnConfirm1.Click += new System.EventHandler(this.btnConfirm1_Click);
             // 
-            // textBox5
+            // button1
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(156, 235);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(236, 26);
-            this.textBox5.TabIndex = 24;
+            this.button1.Location = new System.Drawing.Point(170, 29);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 21);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Browse";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(156, 155);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(236, 26);
-            this.textBox4.TabIndex = 23;
+            this.txtEmail.Location = new System.Drawing.Point(90, 209);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(158, 20);
+            this.txtEmail.TabIndex = 10;
             // 
-            // label6
+            // txtPhone
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 238);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 20);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Số điện thoại";
+            this.txtPhone.Location = new System.Drawing.Point(90, 181);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(158, 20);
+            this.txtPhone.TabIndex = 9;
             // 
-            // label4
+            // txtBirthday
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 158);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 20);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Tên hiển thị";
+            this.txtBirthday.Location = new System.Drawing.Point(90, 151);
+            this.txtBirthday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBirthday.Name = "txtBirthday";
+            this.txtBirthday.Size = new System.Drawing.Size(158, 20);
+            this.txtBirthday.TabIndex = 8;
             // 
-            // button3
+            // txtName
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(156, 336);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 36);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Xác nhận";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.AutoSize = true;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(200, 21);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(72, 30);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Browse";
-            this.button2.UseVisualStyleBackColor = true;
+            this.txtName.Location = new System.Drawing.Point(90, 121);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(158, 20);
+            this.txtName.TabIndex = 7;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(76, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.BackColor = System.Drawing.Color.GhostWhite;
+            this.pictureBox1.Location = new System.Drawing.Point(90, 29);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 120);
-            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.Size = new System.Drawing.Size(68, 73);
+            this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 26);
+            this.label5.Location = new System.Drawing.Point(12, 211);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 20);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Avatar";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Email";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 181);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 13);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Số điện thoại";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 151);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Ngày sinh";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 121);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Tên hiển thị";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 29);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Ảnh đại diện";
             // 
             // frmEditprofile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(666, 418);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.ClientSize = new System.Drawing.Size(602, 297);
+            this.Controls.Add(this.xuiCustomGroupbox2);
+            this.Controls.Add(this.xuiCustomGroupbox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmEditprofile";
             this.Text = "EDIT_PROFILE";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Load += new System.EventHandler(this.frmEditprofile_Load);
+            this.xuiCustomGroupbox2.ResumeLayout(false);
+            this.xuiCustomGroupbox2.PerformLayout();
+            this.xuiCustomGroupbox1.ResumeLayout(false);
+            this.xuiCustomGroupbox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox6;
+        private XanderUI.XUICustomGroupbox xuiCustomGroupbox2;
+        private XanderUI.XUIButton btnConfirm2;
+        private System.Windows.Forms.TextBox txtConfirmpassword;
+        private System.Windows.Forms.TextBox txtNewpassword;
+        private System.Windows.Forms.TextBox txtCurrentpassword;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label9;
+        private XanderUI.XUICustomGroupbox xuiCustomGroupbox1;
+        private XanderUI.XUIButton btnConfirm1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtPhone;
+        private System.Windows.Forms.TextBox txtBirthday;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

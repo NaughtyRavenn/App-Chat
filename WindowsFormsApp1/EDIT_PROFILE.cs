@@ -16,5 +16,20 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void frmEditprofile_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirm1_Click(object sender, EventArgs e)
+        {
+            txtBirthday.Text = txtEmail.Text = txtName.Text = txtPhone.Text = null;
+        }
+
+        private void btnConfirm2_Click(object sender, EventArgs e)
+        {
+            txtNewpassword.Text = txtCurrentpassword.Text = txtConfirmpassword.Text = null;
+        }
     }
 }

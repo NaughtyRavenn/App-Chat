@@ -42,13 +42,12 @@
             this.cboDay = new System.Windows.Forms.ComboBox();
             this.cboMonth = new System.Windows.Forms.ComboBox();
             this.cboYear = new System.Windows.Forms.ComboBox();
-            this.btnSignup = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rdoMale = new System.Windows.Forms.RadioButton();
             this.rdoFemale = new System.Windows.Forms.RadioButton();
+            this.rdoMale = new System.Windows.Forms.RadioButton();
+            this.btnCreateaccount = new XanderUI.XUIButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +55,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(30, 91);
+            this.label1.Location = new System.Drawing.Point(16, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 20);
@@ -67,7 +66,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 131);
+            this.label2.Location = new System.Drawing.Point(16, 65);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 20);
@@ -78,7 +77,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(30, 171);
+            this.label3.Location = new System.Drawing.Point(16, 105);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(136, 20);
@@ -89,7 +88,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(30, 211);
+            this.label4.Location = new System.Drawing.Point(16, 145);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 20);
@@ -100,7 +99,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(30, 251);
+            this.label5.Location = new System.Drawing.Point(16, 185);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 20);
@@ -111,7 +110,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(30, 291);
+            this.label6.Location = new System.Drawing.Point(16, 225);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 20);
@@ -121,8 +120,8 @@
             // txtUsername
             // 
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(169, 88);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUsername.Location = new System.Drawing.Point(155, 22);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(236, 26);
             this.txtUsername.TabIndex = 8;
@@ -130,8 +129,8 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(169, 128);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPassword.Location = new System.Drawing.Point(155, 63);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(236, 26);
             this.txtPassword.TabIndex = 9;
@@ -139,8 +138,8 @@
             // txtConfirmpassword
             // 
             this.txtConfirmpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmpassword.Location = new System.Drawing.Point(169, 168);
-            this.txtConfirmpassword.Margin = new System.Windows.Forms.Padding(2);
+            this.txtConfirmpassword.Location = new System.Drawing.Point(155, 102);
+            this.txtConfirmpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtConfirmpassword.Name = "txtConfirmpassword";
             this.txtConfirmpassword.Size = new System.Drawing.Size(236, 26);
             this.txtConfirmpassword.TabIndex = 10;
@@ -148,8 +147,8 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(169, 208);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtName.Location = new System.Drawing.Point(155, 142);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(236, 26);
             this.txtName.TabIndex = 11;
@@ -157,8 +156,8 @@
             // txtPhonenumber
             // 
             this.txtPhonenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhonenumber.Location = new System.Drawing.Point(169, 288);
-            this.txtPhonenumber.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPhonenumber.Location = new System.Drawing.Point(155, 222);
+            this.txtPhonenumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPhonenumber.Name = "txtPhonenumber";
             this.txtPhonenumber.Size = new System.Drawing.Size(236, 26);
             this.txtPhonenumber.TabIndex = 12;
@@ -199,8 +198,8 @@
             "29",
             "30",
             "31"});
-            this.cboDay.Location = new System.Drawing.Point(169, 248);
-            this.cboDay.Margin = new System.Windows.Forms.Padding(2);
+            this.cboDay.Location = new System.Drawing.Point(155, 182);
+            this.cboDay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboDay.Name = "cboDay";
             this.cboDay.Size = new System.Drawing.Size(72, 28);
             this.cboDay.TabIndex = 13;
@@ -223,8 +222,8 @@
             "10",
             "11",
             "12"});
-            this.cboMonth.Location = new System.Drawing.Point(245, 248);
-            this.cboMonth.Margin = new System.Windows.Forms.Padding(2);
+            this.cboMonth.Location = new System.Drawing.Point(232, 182);
+            this.cboMonth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboMonth.Name = "cboMonth";
             this.cboMonth.Size = new System.Drawing.Size(78, 28);
             this.cboMonth.TabIndex = 14;
@@ -357,41 +356,18 @@
             "2019",
             "2020",
             "2021"});
-            this.cboYear.Location = new System.Drawing.Point(327, 248);
-            this.cboYear.Margin = new System.Windows.Forms.Padding(2);
+            this.cboYear.Location = new System.Drawing.Point(314, 182);
+            this.cboYear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboYear.Name = "cboYear";
             this.cboYear.Size = new System.Drawing.Size(78, 28);
             this.cboYear.TabIndex = 15;
             this.cboYear.Text = "Năm";
             // 
-            // btnSignup
-            // 
-            this.btnSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignup.Location = new System.Drawing.Point(141, 411);
-            this.btnSignup.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSignup.Name = "btnSignup";
-            this.btnSignup.Size = new System.Drawing.Size(125, 38);
-            this.btnSignup.TabIndex = 16;
-            this.btnSignup.Text = "Tạo tài khoản";
-            this.btnSignup.UseVisualStyleBackColor = true;
-            this.btnSignup.Click += new System.EventHandler(this.btnSignup_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(148, 27);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 31);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "ĐĂNG KÍ";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(30, 331);
+            this.label8.Location = new System.Drawing.Point(16, 265);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 20);
@@ -401,8 +377,8 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(169, 328);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Location = new System.Drawing.Point(155, 262);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(236, 26);
             this.txtEmail.TabIndex = 19;
@@ -411,22 +387,10 @@
             // 
             this.panel1.Controls.Add(this.rdoFemale);
             this.panel1.Controls.Add(this.rdoMale);
-            this.panel1.Location = new System.Drawing.Point(123, 348);
+            this.panel1.Location = new System.Drawing.Point(141, 292);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 47);
             this.panel1.TabIndex = 20;
-            // 
-            // rdoMale
-            // 
-            this.rdoMale.AutoSize = true;
-            this.rdoMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.rdoMale.Location = new System.Drawing.Point(18, 20);
-            this.rdoMale.Name = "rdoMale";
-            this.rdoMale.Size = new System.Drawing.Size(60, 24);
-            this.rdoMale.TabIndex = 0;
-            this.rdoMale.TabStop = true;
-            this.rdoMale.Text = "Nam";
-            this.rdoMale.UseVisualStyleBackColor = true;
             // 
             // rdoFemale
             // 
@@ -440,15 +404,49 @@
             this.rdoFemale.Text = "Nữ";
             this.rdoFemale.UseVisualStyleBackColor = true;
             // 
+            // rdoMale
+            // 
+            this.rdoMale.AutoSize = true;
+            this.rdoMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.rdoMale.Location = new System.Drawing.Point(18, 20);
+            this.rdoMale.Name = "rdoMale";
+            this.rdoMale.Size = new System.Drawing.Size(60, 24);
+            this.rdoMale.TabIndex = 0;
+            this.rdoMale.TabStop = true;
+            this.rdoMale.Text = "Nam";
+            this.rdoMale.UseVisualStyleBackColor = true;
+            // 
+            // btnCreateaccount
+            // 
+            this.btnCreateaccount.BackgroundColor = System.Drawing.Color.LimeGreen;
+            this.btnCreateaccount.ButtonImage = null;
+            this.btnCreateaccount.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnCreateaccount.ButtonText = "Tạo tài khoản mới";
+            this.btnCreateaccount.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnCreateaccount.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnCreateaccount.CornerRadius = 5;
+            this.btnCreateaccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCreateaccount.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnCreateaccount.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnCreateaccount.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnCreateaccount.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnCreateaccount.Location = new System.Drawing.Point(110, 351);
+            this.btnCreateaccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCreateaccount.Name = "btnCreateaccount";
+            this.btnCreateaccount.Size = new System.Drawing.Size(159, 41);
+            this.btnCreateaccount.TabIndex = 51;
+            this.btnCreateaccount.TextColor = System.Drawing.Color.White;
+            this.btnCreateaccount.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnCreateaccount.Click += new System.EventHandler(this.btnCreateaccount_Click);
+            // 
             // frmSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(443, 476);
+            this.ClientSize = new System.Drawing.Size(415, 401);
+            this.Controls.Add(this.btnCreateaccount);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnSignup);
             this.Controls.Add(this.cboYear);
             this.Controls.Add(this.cboMonth);
             this.Controls.Add(this.cboDay);
@@ -464,7 +462,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmSignup";
             this.Text = "SIGN_UP";
             this.Load += new System.EventHandler(this.frmSignup_Load);
@@ -491,12 +489,11 @@
         private System.Windows.Forms.ComboBox cboDay;
         private System.Windows.Forms.ComboBox cboMonth;
         private System.Windows.Forms.ComboBox cboYear;
-        private System.Windows.Forms.Button btnSignup;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton rdoFemale;
         private System.Windows.Forms.RadioButton rdoMale;
+        private XanderUI.XUIButton btnCreateaccount;
     }
 }
