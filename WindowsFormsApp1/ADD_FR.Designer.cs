@@ -91,7 +91,7 @@
             this.xuiButton8.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton8.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton8.Location = new System.Drawing.Point(227, 302);
-            this.xuiButton8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton8.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton8.Name = "xuiButton8";
             this.xuiButton8.Size = new System.Drawing.Size(27, 16);
             this.xuiButton8.TabIndex = 90;
@@ -113,7 +113,7 @@
             this.xuiButton7.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton7.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton7.Location = new System.Drawing.Point(227, 249);
-            this.xuiButton7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton7.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton7.Name = "xuiButton7";
             this.xuiButton7.Size = new System.Drawing.Size(27, 16);
             this.xuiButton7.TabIndex = 89;
@@ -135,7 +135,7 @@
             this.xuiButton6.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton6.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton6.Location = new System.Drawing.Point(227, 196);
-            this.xuiButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton6.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton6.Name = "xuiButton6";
             this.xuiButton6.Size = new System.Drawing.Size(27, 16);
             this.xuiButton6.TabIndex = 88;
@@ -157,7 +157,7 @@
             this.xuiButton5.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton5.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton5.Location = new System.Drawing.Point(227, 145);
-            this.xuiButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton5.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton5.Name = "xuiButton5";
             this.xuiButton5.Size = new System.Drawing.Size(27, 16);
             this.xuiButton5.TabIndex = 87;
@@ -186,7 +186,7 @@
             this.xuiButton4.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton4.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton4.Location = new System.Drawing.Point(227, 91);
-            this.xuiButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton4.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton4.Name = "xuiButton4";
             this.xuiButton4.Size = new System.Drawing.Size(27, 16);
             this.xuiButton4.TabIndex = 85;
@@ -246,7 +246,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Location = new System.Drawing.Point(14, 287);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(45, 49);
             this.pictureBox6.TabIndex = 79;
@@ -255,7 +255,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Location = new System.Drawing.Point(14, 233);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(45, 49);
             this.pictureBox5.TabIndex = 78;
@@ -264,7 +264,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Location = new System.Drawing.Point(14, 180);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(45, 49);
             this.pictureBox4.TabIndex = 77;
@@ -273,7 +273,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Location = new System.Drawing.Point(14, 126);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(45, 49);
             this.pictureBox3.TabIndex = 76;
@@ -282,7 +282,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(14, 72);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(45, 49);
             this.pictureBox2.TabIndex = 74;
@@ -303,7 +303,7 @@
             this.xuiButton3.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton3.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton3.Location = new System.Drawing.Point(235, 33);
-            this.xuiButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton3.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton3.Name = "xuiButton3";
             this.xuiButton3.Size = new System.Drawing.Size(38, 23);
             this.xuiButton3.TabIndex = 75;
@@ -313,7 +313,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(14, 33);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(216, 20);
             this.textBox1.TabIndex = 73;
@@ -324,9 +324,9 @@
             this.xuiCustomGroupbox1.BorderWidth = 1;
             this.xuiCustomGroupbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xuiCustomGroupbox1.Location = new System.Drawing.Point(9, 12);
-            this.xuiCustomGroupbox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox1.Margin = new System.Windows.Forms.Padding(2);
             this.xuiCustomGroupbox1.Name = "xuiCustomGroupbox1";
-            this.xuiCustomGroupbox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox1.Padding = new System.Windows.Forms.Padding(2);
             this.xuiCustomGroupbox1.ShowText = true;
             this.xuiCustomGroupbox1.Size = new System.Drawing.Size(269, 338);
             this.xuiCustomGroupbox1.TabIndex = 91;
@@ -349,7 +349,7 @@
             this.xuiButton1.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton1.Location = new System.Drawing.Point(508, 302);
-            this.xuiButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton1.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton1.Name = "xuiButton1";
             this.xuiButton1.Size = new System.Drawing.Size(27, 16);
             this.xuiButton1.TabIndex = 109;
@@ -372,7 +372,7 @@
             this.xuiButton2.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton2.Location = new System.Drawing.Point(508, 249);
-            this.xuiButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton2.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton2.Name = "xuiButton2";
             this.xuiButton2.Size = new System.Drawing.Size(27, 16);
             this.xuiButton2.TabIndex = 108;
@@ -395,7 +395,7 @@
             this.xuiButton9.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton9.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton9.Location = new System.Drawing.Point(508, 196);
-            this.xuiButton9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton9.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton9.Name = "xuiButton9";
             this.xuiButton9.Size = new System.Drawing.Size(27, 16);
             this.xuiButton9.TabIndex = 107;
@@ -418,7 +418,7 @@
             this.xuiButton10.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton10.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton10.Location = new System.Drawing.Point(508, 145);
-            this.xuiButton10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton10.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton10.Name = "xuiButton10";
             this.xuiButton10.Size = new System.Drawing.Size(27, 16);
             this.xuiButton10.TabIndex = 106;
@@ -448,7 +448,7 @@
             this.xuiButton11.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton11.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton11.Location = new System.Drawing.Point(508, 91);
-            this.xuiButton11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton11.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton11.Name = "xuiButton11";
             this.xuiButton11.Size = new System.Drawing.Size(27, 16);
             this.xuiButton11.TabIndex = 104;
@@ -509,7 +509,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(295, 287);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(45, 49);
             this.pictureBox1.TabIndex = 98;
@@ -518,7 +518,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Location = new System.Drawing.Point(295, 233);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(45, 49);
             this.pictureBox7.TabIndex = 97;
@@ -527,7 +527,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Location = new System.Drawing.Point(295, 180);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(45, 49);
             this.pictureBox8.TabIndex = 96;
@@ -536,7 +536,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Location = new System.Drawing.Point(295, 126);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(45, 49);
             this.pictureBox9.TabIndex = 95;
@@ -545,7 +545,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Location = new System.Drawing.Point(295, 72);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(45, 49);
             this.pictureBox10.TabIndex = 93;
@@ -557,9 +557,9 @@
             this.xuiCustomGroupbox2.BorderWidth = 1;
             this.xuiCustomGroupbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xuiCustomGroupbox2.Location = new System.Drawing.Point(290, 12);
-            this.xuiCustomGroupbox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox2.Margin = new System.Windows.Forms.Padding(2);
             this.xuiCustomGroupbox2.Name = "xuiCustomGroupbox2";
-            this.xuiCustomGroupbox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox2.Padding = new System.Windows.Forms.Padding(2);
             this.xuiCustomGroupbox2.ShowText = true;
             this.xuiCustomGroupbox2.Size = new System.Drawing.Size(269, 338);
             this.xuiCustomGroupbox2.TabIndex = 110;
@@ -571,7 +571,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(567, 360);
+            this.ClientSize = new System.Drawing.Size(731, 482);
             this.Controls.Add(this.xuiButton1);
             this.Controls.Add(this.xuiButton2);
             this.Controls.Add(this.xuiButton9);
@@ -608,7 +608,7 @@
             this.Controls.Add(this.xuiButton3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.xuiCustomGroupbox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAddfriend";
             this.Text = "ADD_FR";
             this.Load += new System.EventHandler(this.FORM_ADD_FR_Load);

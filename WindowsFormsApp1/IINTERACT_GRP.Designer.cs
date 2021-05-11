@@ -28,32 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnMessagesingle = new XanderUI.XUIButton();
+            this.btnMessagegroup = new XanderUI.XUIButton();
             this.xuiButton2 = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
-            // btnMessagesingle
+            // btnMessagegroup
             // 
-            this.btnMessagesingle.BackgroundColor = System.Drawing.Color.LimeGreen;
-            this.btnMessagesingle.ButtonImage = null;
-            this.btnMessagesingle.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btnMessagesingle.ButtonText = "Trò chuyện";
-            this.btnMessagesingle.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.btnMessagesingle.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.btnMessagesingle.CornerRadius = 5;
-            this.btnMessagesingle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMessagesingle.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnMessagesingle.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.btnMessagesingle.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.btnMessagesingle.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnMessagesingle.Location = new System.Drawing.Point(9, 28);
-            this.btnMessagesingle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnMessagesingle.Name = "btnMessagesingle";
-            this.btnMessagesingle.Size = new System.Drawing.Size(100, 29);
-            this.btnMessagesingle.TabIndex = 20;
-            this.btnMessagesingle.TextColor = System.Drawing.Color.White;
-            this.btnMessagesingle.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnMessagesingle.Click += new System.EventHandler(this.btnMessagesingle_Click);
+            this.btnMessagegroup.BackgroundColor = System.Drawing.Color.LimeGreen;
+            this.btnMessagegroup.ButtonImage = null;
+            this.btnMessagegroup.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnMessagegroup.ButtonText = "Trò chuyện";
+            this.btnMessagegroup.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnMessagegroup.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnMessagegroup.CornerRadius = 5;
+            this.btnMessagegroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMessagegroup.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnMessagegroup.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnMessagegroup.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnMessagegroup.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnMessagegroup.Location = new System.Drawing.Point(9, 28);
+            this.btnMessagegroup.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMessagegroup.Name = "btnMessagegroup";
+            this.btnMessagegroup.Size = new System.Drawing.Size(100, 29);
+            this.btnMessagegroup.TabIndex = 20;
+            this.btnMessagegroup.TextColor = System.Drawing.Color.White;
+            this.btnMessagegroup.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnMessagegroup.Click += new System.EventHandler(this.btnMessagesingle_Click);
             // 
             // xuiButton2
             // 
@@ -70,7 +70,7 @@
             this.xuiButton2.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton2.Location = new System.Drawing.Point(132, 28);
-            this.xuiButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton2.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton2.Name = "xuiButton2";
             this.xuiButton2.Size = new System.Drawing.Size(100, 29);
             this.xuiButton2.TabIndex = 21;
@@ -83,8 +83,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(249, 86);
             this.Controls.Add(this.xuiButton2);
-            this.Controls.Add(this.btnMessagesingle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.btnMessagegroup);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmInteractgroup";
             this.Text = "INTERACT_GRP";
             this.ResumeLayout(false);
@@ -93,7 +93,7 @@
 
         #endregion
 
-        private XanderUI.XUIButton btnMessagesingle;
+        private XanderUI.XUIButton btnMessagegroup;
         private XanderUI.XUIButton xuiButton2;
     }
 }
