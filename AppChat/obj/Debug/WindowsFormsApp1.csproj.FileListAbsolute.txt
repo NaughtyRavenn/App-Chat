@@ -137,3 +137,25 @@ C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\WindowsFormsApp
 C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmSinglechat.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmGroupchat.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmInteractgroup.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmInteractsingle.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmGroupinfo.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmAddfriend.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmAddtogroup.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmVerifriend.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmVerilogout.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmEditprofile.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmMain.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmSignup.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frmLogin.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Admin\Desktop\ĐỒ_ÁN_NHẬP_MÔN_MẠNG_NHÓM_3\Test\New folder\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

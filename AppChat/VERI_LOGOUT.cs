@@ -21,5 +21,17 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void btnNo_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void btnYes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmLogin frm = new frmLogin();
+            frm.Show();
+        }
     }
 }

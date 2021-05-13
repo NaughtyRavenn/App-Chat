@@ -12,8 +12,6 @@ namespace WindowsFormsApp1
 {
     public partial class frmMain : Form
     {
-        private readonly object txtName_TextChanged;
-
         public frmMain()
         {
             InitializeComponent();
@@ -57,6 +55,40 @@ namespace WindowsFormsApp1
         private void frmMain_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xuiButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xuiButton11_Click(object sender, EventArgs e)
+        {
+            frmInteractsingle frm = new frmInteractsingle();
+            frm.ShowDialog();
+        }
+
+        private void xuiButton10_Click(object sender, EventArgs e)
+        {
+            frmInteractsingle frm = new frmInteractsingle();
+            frm.ShowDialog();
+        }
+
+        private void xuiButton9_Click(object sender, EventArgs e)
+        {
+            frmInteractsingle frm = new frmInteractsingle();
+            frm.ShowDialog();
+        }
+
+        private void xuiButton4_Click(object sender, EventArgs e)
+        {
+            frmInteractsingle frm = new frmInteractsingle();
+            frm.ShowDialog();
         }
     }
 }

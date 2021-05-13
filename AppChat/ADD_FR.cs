@@ -27,5 +27,15 @@ namespace WindowsFormsApp1
             frmVerifriend frm = new frmVerifriend();
             frm.ShowDialog();
         }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xuiCustomGroupbox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
