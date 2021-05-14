@@ -23,5 +23,10 @@ namespace WindowsFormsApp1
             frm.Show();
             this.Hide();
         }
+
+        private void frmInteractgroup_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

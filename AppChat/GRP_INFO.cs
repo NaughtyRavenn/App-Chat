@@ -27,5 +27,10 @@ namespace WindowsFormsApp1
         {
             this.Hide();
         }
+
+        private void frmGroupinfo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

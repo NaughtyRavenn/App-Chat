@@ -31,20 +31,5 @@ namespace WindowsFormsApp1
         {
             txtNewpassword.Text = txtCurrentpassword.Text = txtConfirmpassword.Text = null;
         }
-
-        private void txtConfirmpassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNewpassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtCurrentpassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

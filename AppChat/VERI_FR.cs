@@ -16,5 +16,15 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void frmVerifriend_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnYes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

@@ -27,6 +27,7 @@ namespace WindowsFormsApp1
 
         IPEndPoint IP;
         Socket client;
+
         //Gửi tin đi
         private void btnSend_Click(object sender, EventArgs e)
         {

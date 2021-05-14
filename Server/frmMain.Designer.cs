@@ -52,6 +52,7 @@
             this.lstvOnline.Size = new System.Drawing.Size(758, 353);
             this.lstvOnline.TabIndex = 1;
             this.lstvOnline.UseCompatibleStateImageBehavior = false;
+            this.lstvOnline.View = System.Windows.Forms.View.List;
             // 
             // frmMain
             // 
@@ -62,6 +63,8 @@
             this.Controls.Add(this.btnOpenserver);
             this.Name = "frmMain";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

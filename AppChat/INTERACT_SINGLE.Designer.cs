@@ -30,6 +30,7 @@
         {
             this.btnDeletefriend = new XanderUI.XUIButton();
             this.btnMessagesingle = new XanderUI.XUIButton();
+            this.btnCreategroup = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // btnDeletefriend
@@ -53,7 +54,6 @@
             this.btnDeletefriend.TabIndex = 23;
             this.btnDeletefriend.TextColor = System.Drawing.Color.White;
             this.btnDeletefriend.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnDeletefriend.Click += new System.EventHandler(this.btnDeletefriend_Click);
             // 
             // btnMessagesingle
             // 
@@ -78,16 +78,41 @@
             this.btnMessagesingle.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btnMessagesingle.Click += new System.EventHandler(this.btnMessagesingle_Click);
             // 
+            // btnCreategroup
+            // 
+            this.btnCreategroup.BackgroundColor = System.Drawing.Color.LimeGreen;
+            this.btnCreategroup.ButtonImage = null;
+            this.btnCreategroup.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.btnCreategroup.ButtonText = "Tạo nhóm";
+            this.btnCreategroup.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.btnCreategroup.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnCreategroup.CornerRadius = 5;
+            this.btnCreategroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.btnCreategroup.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnCreategroup.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.btnCreategroup.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.btnCreategroup.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.btnCreategroup.Location = new System.Drawing.Point(93, 74);
+            this.btnCreategroup.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCreategroup.Name = "btnCreategroup";
+            this.btnCreategroup.Size = new System.Drawing.Size(122, 28);
+            this.btnCreategroup.TabIndex = 24;
+            this.btnCreategroup.TextColor = System.Drawing.Color.White;
+            this.btnCreategroup.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.btnCreategroup.Click += new System.EventHandler(this.btnCreategroup_Click);
+            // 
             // frmInteractsingle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 103);
+            this.ClientSize = new System.Drawing.Size(315, 128);
+            this.Controls.Add(this.btnCreategroup);
             this.Controls.Add(this.btnDeletefriend);
             this.Controls.Add(this.btnMessagesingle);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmInteractsingle";
-            this.Text = "INTERACT_SINGLE";
+            this.Text = "Tùy chọn cá nhân";
+            this.Load += new System.EventHandler(this.frmInteractsingle_Load);
             this.ResumeLayout(false);
 
         }
@@ -96,5 +121,6 @@
 
         private XanderUI.XUIButton btnDeletefriend;
         private XanderUI.XUIButton btnMessagesingle;
+        private XanderUI.XUIButton btnCreategroup;
     }
 }
