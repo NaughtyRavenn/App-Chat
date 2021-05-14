@@ -24,8 +24,9 @@ namespace Server
         }
 
         IPEndPoint IP;
-        Socket server;
+        Socket server, client;
         List<Socket> clientList;
+        string name;
 
         void Connect()
         {
@@ -41,6 +42,7 @@ namespace Server
             {
                 return;
             }
+            server.Listen(100);
 
             Thread listen = new Thread(() =>
             {
@@ -48,13 +50,15 @@ namespace Server
                 {
                     while (true)
                     {
-                        server.Listen(100);
                         Socket client = server.Accept();
+                        name = Dns.GetHostName();
+                        IPHostEntry ipHost = Dns.GetHostByName(name);
+                        foreach (IPAddress ip in ipHost.AddressList)
+                        {
+                            lstvOnline.Items.Add(name + " from " + ip + " joined!");
+                        }
                         clientList.Add(client);
-
-                        Thread receive = new Thread(Receive);
-                        receive.IsBackground = true;
-                        receive.Start(client);
+                        ThreadPool.QueueUserWorkItem(Receive, client);
                     }
                 }
                 catch
@@ -67,6 +71,7 @@ namespace Server
             listen.Start();
         }
 
+        //Nhận dữ liệu từ khách
         void Receive(object obj)
         {
             Socket client = obj as Socket;
@@ -117,3 +122,4 @@ namespace Server
         }
     }
 }
+    

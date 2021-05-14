@@ -107,8 +107,8 @@
             this.xuiCard1.BackColor = System.Drawing.Color.Transparent;
             this.xuiCard1.Color1 = System.Drawing.Color.Azure;
             this.xuiCard1.Color2 = System.Drawing.Color.LightGray;
-            this.xuiCard1.ForeColor = System.Drawing.Color.White;
             resources.ApplyResources(this.xuiCard1, "xuiCard1");
+            this.xuiCard1.ForeColor = System.Drawing.Color.White;
             this.xuiCard1.Name = "xuiCard1";
             this.xuiCard1.Text1 = "";
             this.xuiCard1.Text2 = "";

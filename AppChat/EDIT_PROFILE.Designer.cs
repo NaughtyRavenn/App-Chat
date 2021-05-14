@@ -37,6 +37,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.xuiCustomGroupbox1 = new XanderUI.XUICustomGroupbox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnConfirm1 = new XanderUI.XUIButton();
             this.button1 = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -47,7 +48,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.xuiCustomGroupbox2.SuspendLayout();
             this.xuiCustomGroupbox1.SuspendLayout();
@@ -65,13 +65,13 @@
             this.xuiCustomGroupbox2.Controls.Add(this.label7);
             this.xuiCustomGroupbox2.Controls.Add(this.label8);
             this.xuiCustomGroupbox2.Controls.Add(this.label9);
-            this.xuiCustomGroupbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuiCustomGroupbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.xuiCustomGroupbox2.Location = new System.Drawing.Point(434, 10);
-            this.xuiCustomGroupbox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox2.Margin = new System.Windows.Forms.Padding(2);
             this.xuiCustomGroupbox2.Name = "xuiCustomGroupbox2";
-            this.xuiCustomGroupbox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox2.Padding = new System.Windows.Forms.Padding(2);
             this.xuiCustomGroupbox2.ShowText = true;
-            this.xuiCustomGroupbox2.Size = new System.Drawing.Size(450, 195);
+            this.xuiCustomGroupbox2.Size = new System.Drawing.Size(450, 241);
             this.xuiCustomGroupbox2.TabIndex = 7;
             this.xuiCustomGroupbox2.TabStop = false;
             this.xuiCustomGroupbox2.Text = "Thông tin đăng nhập";
@@ -91,8 +91,8 @@
             this.btnConfirm2.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btnConfirm2.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btnConfirm2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnConfirm2.Location = new System.Drawing.Point(176, 144);
-            this.btnConfirm2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirm2.Location = new System.Drawing.Point(169, 194);
+            this.btnConfirm2.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirm2.Name = "btnConfirm2";
             this.btnConfirm2.Size = new System.Drawing.Size(134, 35);
             this.btnConfirm2.TabIndex = 18;
@@ -102,35 +102,32 @@
             // 
             // txtConfirmpassword
             // 
-            this.txtConfirmpassword.Location = new System.Drawing.Point(189, 101);
-            this.txtConfirmpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConfirmpassword.Location = new System.Drawing.Point(191, 131);
+            this.txtConfirmpassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtConfirmpassword.Name = "txtConfirmpassword";
-            this.txtConfirmpassword.Size = new System.Drawing.Size(248, 28);
+            this.txtConfirmpassword.Size = new System.Drawing.Size(248, 29);
             this.txtConfirmpassword.TabIndex = 9;
-            this.txtConfirmpassword.TextChanged += new System.EventHandler(this.txtConfirmpassword_TextChanged);
             // 
             // txtNewpassword
             // 
-            this.txtNewpassword.Location = new System.Drawing.Point(189, 71);
-            this.txtNewpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNewpassword.Location = new System.Drawing.Point(191, 83);
+            this.txtNewpassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtNewpassword.Name = "txtNewpassword";
-            this.txtNewpassword.Size = new System.Drawing.Size(248, 28);
+            this.txtNewpassword.Size = new System.Drawing.Size(248, 29);
             this.txtNewpassword.TabIndex = 8;
-            this.txtNewpassword.TextChanged += new System.EventHandler(this.txtNewpassword_TextChanged);
             // 
             // txtCurrentpassword
             // 
-            this.txtCurrentpassword.Location = new System.Drawing.Point(189, 41);
-            this.txtCurrentpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCurrentpassword.Location = new System.Drawing.Point(191, 38);
+            this.txtCurrentpassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtCurrentpassword.Name = "txtCurrentpassword";
-            this.txtCurrentpassword.Size = new System.Drawing.Size(248, 28);
+            this.txtCurrentpassword.Size = new System.Drawing.Size(248, 29);
             this.txtCurrentpassword.TabIndex = 7;
-            this.txtCurrentpassword.TextChanged += new System.EventHandler(this.txtCurrentpassword_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(10, 101);
+            this.label7.Location = new System.Drawing.Point(14, 134);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(173, 24);
@@ -140,7 +137,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 71);
+            this.label8.Location = new System.Drawing.Point(14, 86);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(122, 24);
@@ -150,7 +147,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 41);
+            this.label9.Location = new System.Drawing.Point(14, 38);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(151, 24);
@@ -161,6 +158,7 @@
             // 
             this.xuiCustomGroupbox1.BorderColor = System.Drawing.Color.DodgerBlue;
             this.xuiCustomGroupbox1.BorderWidth = 1;
+            this.xuiCustomGroupbox1.Controls.Add(this.label6);
             this.xuiCustomGroupbox1.Controls.Add(this.btnConfirm1);
             this.xuiCustomGroupbox1.Controls.Add(this.button1);
             this.xuiCustomGroupbox1.Controls.Add(this.txtEmail);
@@ -171,19 +169,28 @@
             this.xuiCustomGroupbox1.Controls.Add(this.label5);
             this.xuiCustomGroupbox1.Controls.Add(this.label4);
             this.xuiCustomGroupbox1.Controls.Add(this.label3);
-            this.xuiCustomGroupbox1.Controls.Add(this.label2);
             this.xuiCustomGroupbox1.Controls.Add(this.label1);
-            this.xuiCustomGroupbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xuiCustomGroupbox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.xuiCustomGroupbox1.Location = new System.Drawing.Point(9, 10);
-            this.xuiCustomGroupbox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox1.Margin = new System.Windows.Forms.Padding(2);
             this.xuiCustomGroupbox1.Name = "xuiCustomGroupbox1";
-            this.xuiCustomGroupbox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiCustomGroupbox1.Padding = new System.Windows.Forms.Padding(2);
             this.xuiCustomGroupbox1.ShowText = true;
-            this.xuiCustomGroupbox1.Size = new System.Drawing.Size(407, 353);
+            this.xuiCustomGroupbox1.Size = new System.Drawing.Size(407, 449);
             this.xuiCustomGroupbox1.TabIndex = 6;
             this.xuiCustomGroupbox1.TabStop = false;
             this.xuiCustomGroupbox1.Text = "Thông tin cá nhân";
             this.xuiCustomGroupbox1.TextColor = System.Drawing.Color.DodgerBlue;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 194);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(110, 24);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Tên hiển thị";
             // 
             // btnConfirm1
             // 
@@ -199,8 +206,8 @@
             this.btnConfirm1.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btnConfirm1.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btnConfirm1.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnConfirm1.Location = new System.Drawing.Point(139, 302);
-            this.btnConfirm1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConfirm1.Location = new System.Drawing.Point(130, 403);
+            this.btnConfirm1.Margin = new System.Windows.Forms.Padding(2);
             this.btnConfirm1.Name = "btnConfirm1";
             this.btnConfirm1.Size = new System.Drawing.Size(134, 35);
             this.btnConfirm1.TabIndex = 18;
@@ -211,7 +218,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(295, 37);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 30);
             this.button1.TabIndex = 11;
@@ -220,41 +227,41 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(139, 260);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Location = new System.Drawing.Point(139, 335);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(248, 28);
+            this.txtEmail.Size = new System.Drawing.Size(248, 29);
             this.txtEmail.TabIndex = 10;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(139, 229);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Location = new System.Drawing.Point(139, 287);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(248, 28);
+            this.txtPhone.Size = new System.Drawing.Size(248, 29);
             this.txtPhone.TabIndex = 9;
             // 
             // txtBirthday
             // 
-            this.txtBirthday.Location = new System.Drawing.Point(139, 198);
-            this.txtBirthday.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBirthday.Location = new System.Drawing.Point(139, 239);
+            this.txtBirthday.Margin = new System.Windows.Forms.Padding(2);
             this.txtBirthday.Name = "txtBirthday";
-            this.txtBirthday.Size = new System.Drawing.Size(248, 28);
+            this.txtBirthday.Size = new System.Drawing.Size(248, 29);
             this.txtBirthday.TabIndex = 8;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(139, 167);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Location = new System.Drawing.Point(139, 191);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(248, 28);
+            this.txtName.Size = new System.Drawing.Size(248, 29);
             this.txtName.TabIndex = 7;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.GhostWhite;
             this.pictureBox1.Location = new System.Drawing.Point(139, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(125, 125);
             this.pictureBox1.TabIndex = 6;
@@ -263,7 +270,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 262);
+            this.label5.Location = new System.Drawing.Point(12, 338);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 24);
@@ -273,7 +280,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 232);
+            this.label4.Location = new System.Drawing.Point(12, 290);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(121, 24);
@@ -283,22 +290,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 201);
+            this.label3.Location = new System.Drawing.Point(12, 242);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Ngày sinh";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 170);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 24);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tên hiển thị";
             // 
             // label1
             // 
@@ -314,12 +311,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 368);
+            this.ClientSize = new System.Drawing.Size(886, 466);
             this.Controls.Add(this.xuiCustomGroupbox2);
             this.Controls.Add(this.xuiCustomGroupbox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmEditprofile";
-            this.Text = "EDIT_PROFILE";
+            this.Text = "Chỉnh sửa thông tin";
             this.Load += new System.EventHandler(this.frmEditprofile_Load);
             this.xuiCustomGroupbox2.ResumeLayout(false);
             this.xuiCustomGroupbox2.PerformLayout();
@@ -351,7 +348,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -47,7 +47,7 @@
             this.btnMessagegroup.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btnMessagegroup.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.btnMessagegroup.Location = new System.Drawing.Point(16, 29);
-            this.btnMessagegroup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMessagegroup.Margin = new System.Windows.Forms.Padding(2);
             this.btnMessagegroup.Name = "btnMessagegroup";
             this.btnMessagegroup.Size = new System.Drawing.Size(122, 28);
             this.btnMessagegroup.TabIndex = 20;
@@ -70,7 +70,7 @@
             this.xuiButton2.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.xuiButton2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
             this.xuiButton2.Location = new System.Drawing.Point(176, 29);
-            this.xuiButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xuiButton2.Margin = new System.Windows.Forms.Padding(2);
             this.xuiButton2.Name = "xuiButton2";
             this.xuiButton2.Size = new System.Drawing.Size(122, 28);
             this.xuiButton2.TabIndex = 21;
@@ -84,9 +84,10 @@
             this.ClientSize = new System.Drawing.Size(315, 103);
             this.Controls.Add(this.xuiButton2);
             this.Controls.Add(this.btnMessagegroup);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmInteractgroup";
-            this.Text = "INTERACT_GRP";
+            this.Text = "Tùy chọn nhóm";
+            this.Load += new System.EventHandler(this.frmInteractgroup_Load);
             this.ResumeLayout(false);
 
         }

@@ -28,7 +28,13 @@ namespace WindowsFormsApp1
             frm.Show();
         }
 
-        private void btnDeletefriend_Click(object sender, EventArgs e)
+        private void btnCreategroup_Click(object sender, EventArgs e)
+        {
+            frmGroupinfo frm = new frmGroupinfo();
+            frm.ShowDialog();
+        }
+
+        private void frmInteractsingle_Load(object sender, EventArgs e)
         {
 
         }

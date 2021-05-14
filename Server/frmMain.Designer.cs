@@ -52,6 +52,7 @@
             this.lstvOnline.Size = new System.Drawing.Size(758, 353);
             this.lstvOnline.TabIndex = 1;
             this.lstvOnline.UseCompatibleStateImageBehavior = false;
+            this.lstvOnline.View = System.Windows.Forms.View.List;
             // 
             // frmMain
             // 
