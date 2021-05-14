@@ -24,7 +24,7 @@ namespace Server
         }
 
         IPEndPoint IP;
-        Socket server, client;
+        Socket server;
         List<Socket> clientList;
         string name;
 
@@ -114,6 +114,21 @@ namespace Server
             BinaryFormatter formatter = new BinaryFormatter();
 
             return formatter.Deserialize(stream);
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        void Close()
+        {
+            server.Close();
+        }
+
+        private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
         }
 
         private void btnOpenserver_Click(object sender, EventArgs e)

@@ -87,6 +87,7 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Tạo tài khoản thành công", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 con.Close();
+                this.Hide();
             }
             else
             {
