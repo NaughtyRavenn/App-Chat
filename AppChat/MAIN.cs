@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            frmVerilogout frm = new frmVerilogout();
+            frmVerilogout frm = new frmVerilogout(this);
             frm.ShowDialog();
         }
 

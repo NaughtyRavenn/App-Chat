@@ -12,9 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class frmVerilogout : Form
     {
-        public frmVerilogout()
+        frmMain par;
+        public frmVerilogout(frmMain par)
         {
             InitializeComponent();
+            this.par = par;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -30,8 +32,15 @@ namespace WindowsFormsApp1
         private void btnYes_Click(object sender, EventArgs e)
         {
             this.Hide();
+            par.Hide();
             frmLogin frm = new frmLogin();
             frm.Show();
+
+        }
+
+        private void frmVerilogout_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
