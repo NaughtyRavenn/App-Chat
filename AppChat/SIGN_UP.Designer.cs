@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,36 +47,27 @@
             this.rdoFemale = new System.Windows.Forms.RadioButton();
             this.rdoMale = new System.Windows.Forms.RadioButton();
             this.btnCreateaccount = new XanderUI.XUIButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(16, 25);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label1.Location = new System.Drawing.Point(16, 122);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 67);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Mật khẩu";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(16, 106);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label3.Location = new System.Drawing.Point(16, 218);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(160, 24);
@@ -87,8 +77,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(16, 145);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label4.Location = new System.Drawing.Point(16, 266);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(110, 24);
@@ -98,8 +88,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 182);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label5.Location = new System.Drawing.Point(16, 314);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 24);
@@ -109,8 +99,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(16, 225);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label6.Location = new System.Drawing.Point(16, 362);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(121, 24);
@@ -119,52 +109,52 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(189, 23);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtUsername.Location = new System.Drawing.Point(189, 119);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(295, 28);
+            this.txtUsername.Size = new System.Drawing.Size(295, 29);
             this.txtUsername.TabIndex = 8;
             // 
             // txtPassword
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(189, 64);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtPassword.Location = new System.Drawing.Point(189, 167);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(295, 28);
+            this.txtPassword.Size = new System.Drawing.Size(295, 29);
             this.txtPassword.TabIndex = 9;
             // 
             // txtConfirmpassword
             // 
-            this.txtConfirmpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirmpassword.Location = new System.Drawing.Point(189, 103);
-            this.txtConfirmpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtConfirmpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtConfirmpassword.Location = new System.Drawing.Point(189, 215);
+            this.txtConfirmpassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtConfirmpassword.Name = "txtConfirmpassword";
-            this.txtConfirmpassword.Size = new System.Drawing.Size(295, 28);
+            this.txtConfirmpassword.Size = new System.Drawing.Size(295, 29);
             this.txtConfirmpassword.TabIndex = 10;
             // 
             // txtName
             // 
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(189, 143);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtName.Location = new System.Drawing.Point(189, 263);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(295, 28);
+            this.txtName.Size = new System.Drawing.Size(295, 29);
             this.txtName.TabIndex = 11;
             // 
             // txtPhonenumber
             // 
-            this.txtPhonenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhonenumber.Location = new System.Drawing.Point(189, 223);
-            this.txtPhonenumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhonenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtPhonenumber.Location = new System.Drawing.Point(189, 359);
+            this.txtPhonenumber.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhonenumber.Name = "txtPhonenumber";
-            this.txtPhonenumber.Size = new System.Drawing.Size(295, 28);
+            this.txtPhonenumber.Size = new System.Drawing.Size(295, 29);
             this.txtPhonenumber.TabIndex = 12;
             // 
             // cboDay
             // 
-            this.cboDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.cboDay.FormattingEnabled = true;
             this.cboDay.Items.AddRange(new object[] {
             "1",
@@ -198,16 +188,16 @@
             "29",
             "30",
             "31"});
-            this.cboDay.Location = new System.Drawing.Point(189, 180);
-            this.cboDay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboDay.Location = new System.Drawing.Point(189, 311);
+            this.cboDay.Margin = new System.Windows.Forms.Padding(2);
             this.cboDay.Name = "cboDay";
-            this.cboDay.Size = new System.Drawing.Size(90, 30);
+            this.cboDay.Size = new System.Drawing.Size(90, 32);
             this.cboDay.TabIndex = 13;
             this.cboDay.Text = "Ngày";
             // 
             // cboMonth
             // 
-            this.cboMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.cboMonth.FormattingEnabled = true;
             this.cboMonth.Items.AddRange(new object[] {
             "1",
@@ -222,16 +212,16 @@
             "10",
             "11",
             "12"});
-            this.cboMonth.Location = new System.Drawing.Point(288, 180);
-            this.cboMonth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboMonth.Location = new System.Drawing.Point(288, 311);
+            this.cboMonth.Margin = new System.Windows.Forms.Padding(2);
             this.cboMonth.Name = "cboMonth";
-            this.cboMonth.Size = new System.Drawing.Size(84, 30);
+            this.cboMonth.Size = new System.Drawing.Size(84, 32);
             this.cboMonth.TabIndex = 14;
             this.cboMonth.Text = "Tháng";
             // 
             // cboYear
             // 
-            this.cboYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.cboYear.FormattingEnabled = true;
             this.cboYear.Items.AddRange(new object[] {
             "1900",
@@ -356,18 +346,18 @@
             "2019",
             "2020",
             "2021"});
-            this.cboYear.Location = new System.Drawing.Point(385, 180);
-            this.cboYear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboYear.Location = new System.Drawing.Point(385, 311);
+            this.cboYear.Margin = new System.Windows.Forms.Padding(2);
             this.cboYear.Name = "cboYear";
-            this.cboYear.Size = new System.Drawing.Size(99, 30);
+            this.cboYear.Size = new System.Drawing.Size(99, 32);
             this.cboYear.TabIndex = 15;
             this.cboYear.Text = "Năm";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 265);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label8.Location = new System.Drawing.Point(16, 410);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 24);
@@ -376,19 +366,19 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(189, 262);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtEmail.Location = new System.Drawing.Point(189, 407);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(295, 28);
+            this.txtEmail.Size = new System.Drawing.Size(295, 29);
             this.txtEmail.TabIndex = 19;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.rdoFemale);
             this.panel1.Controls.Add(this.rdoMale);
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(176, 282);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.panel1.Location = new System.Drawing.Point(176, 430);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(227, 73);
             this.panel1.TabIndex = 20;
@@ -396,7 +386,7 @@
             // rdoFemale
             // 
             this.rdoFemale.AutoSize = true;
-            this.rdoFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.rdoFemale.Location = new System.Drawing.Point(112, 20);
             this.rdoFemale.Name = "rdoFemale";
             this.rdoFemale.Size = new System.Drawing.Size(53, 28);
@@ -408,7 +398,7 @@
             // rdoMale
             // 
             this.rdoMale.AutoSize = true;
-            this.rdoMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.rdoMale.Location = new System.Drawing.Point(18, 20);
             this.rdoMale.Name = "rdoMale";
             this.rdoMale.Size = new System.Drawing.Size(68, 28);
@@ -426,13 +416,13 @@
             this.btnCreateaccount.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.btnCreateaccount.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.btnCreateaccount.CornerRadius = 5;
-            this.btnCreateaccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateaccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.btnCreateaccount.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
             this.btnCreateaccount.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
             this.btnCreateaccount.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btnCreateaccount.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnCreateaccount.Location = new System.Drawing.Point(123, 360);
-            this.btnCreateaccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCreateaccount.Location = new System.Drawing.Point(134, 492);
+            this.btnCreateaccount.Margin = new System.Windows.Forms.Padding(2);
             this.btnCreateaccount.Name = "btnCreateaccount";
             this.btnCreateaccount.Size = new System.Drawing.Size(207, 41);
             this.btnCreateaccount.TabIndex = 51;
@@ -440,13 +430,38 @@
             this.btnCreateaccount.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btnCreateaccount.Click += new System.EventHandler(this.btnCreateaccount_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label7.Location = new System.Drawing.Point(16, 170);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 24);
+            this.label7.TabIndex = 52;
+            this.label7.Text = "Mật khẩu";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Green;
+            this.label9.Location = new System.Drawing.Point(106, 33);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(297, 31);
+            this.label9.TabIndex = 53;
+            this.label9.Text = "ĐĂNG KÍ TÀI KHOẢN";
+            // 
             // frmSignup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 413);
-            this.Controls.Add(this.btnCreateaccount);
+            this.ClientSize = new System.Drawing.Size(507, 569);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.btnCreateaccount);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cboYear);
             this.Controls.Add(this.cboMonth);
@@ -460,12 +475,11 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSignup";
-            this.Text = "SIGN_UP";
+            this.Text = "Đăng kí tài khoản";
             this.Load += new System.EventHandler(this.frmSignup_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -477,7 +491,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -496,5 +509,7 @@
         private System.Windows.Forms.RadioButton rdoFemale;
         private System.Windows.Forms.RadioButton rdoMale;
         private XanderUI.XUIButton btnCreateaccount;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
     }
 }

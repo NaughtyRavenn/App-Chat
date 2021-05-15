@@ -22,18 +22,6 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void btnInteractsingle_Click(object sender, EventArgs e)
-        {
-            frmInteractsingle frm = new frmInteractsingle();
-            frm.ShowDialog();
-        }
-
-        private void btnInteractgroup_Click(object sender, EventArgs e)
-        {
-            frmInteractgroup frm = new frmInteractgroup();
-            frm.ShowDialog();
-        }
-
         private void btnEditprofile_Click(object sender, EventArgs e)
         {
             frmEditprofile frm = new frmEditprofile();
@@ -57,37 +45,20 @@ namespace WindowsFormsApp1
 
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
 
         }
 
-        private void xuiButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void xuiButton11_Click(object sender, EventArgs e)
+        private void btnInteractsingle_Click(object sender, EventArgs e)
         {
             frmInteractsingle frm = new frmInteractsingle();
             frm.ShowDialog();
         }
 
-        private void xuiButton10_Click(object sender, EventArgs e)
+        private void btnInteractgroup_Click(object sender, EventArgs e)
         {
-            frmInteractsingle frm = new frmInteractsingle();
-            frm.ShowDialog();
-        }
-
-        private void xuiButton9_Click(object sender, EventArgs e)
-        {
-            frmInteractsingle frm = new frmInteractsingle();
-            frm.ShowDialog();
-        }
-
-        private void xuiButton4_Click(object sender, EventArgs e)
-        {
-            frmInteractsingle frm = new frmInteractsingle();
+            frmInteractgroup frm = new frmInteractgroup();
             frm.ShowDialog();
         }
     }

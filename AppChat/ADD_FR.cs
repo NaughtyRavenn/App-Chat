@@ -22,20 +22,10 @@ namespace WindowsFormsApp1
 
         }
 
-        private void btnAddfriend_Click(object sender, EventArgs e)
+        private void btnVerifyfriend(object sender, EventArgs e)
         {
             frmVerifriend frm = new frmVerifriend();
             frm.ShowDialog();
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void xuiCustomGroupbox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }
