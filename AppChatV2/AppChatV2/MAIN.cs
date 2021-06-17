@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AppChatV2
 {
-    public partial class frmMain : Form
+    public partial class Form_Main : Form
     {
-        public frmMain()
+        public Form_Main()
         {
             InitializeComponent();
         }
@@ -42,7 +42,7 @@ namespace AppChatV2
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            lblName.Text = User.Instance.Name;
         }
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)

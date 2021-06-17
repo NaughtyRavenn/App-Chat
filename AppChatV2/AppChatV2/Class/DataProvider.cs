@@ -29,6 +29,8 @@ namespace AppChatV2
             }
         }
 
+        public object DataTable { get; private set; }
+
         public int x, y;
         public int Getx() { return x; }
         public void Setx(int x) { this.x = x; }
@@ -41,7 +43,7 @@ namespace AppChatV2
         protected static SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(GetConnectionString());
         private static string GetConnectionString()
         {
-            return @"Server = myseversql.database.windows.net; Database = Test; UID = nhatminh; Pwd = Ngaymai123";
+            return @"Server = myseversql.database.windows.net; Database = AppChat; UID = nhatminh; Pwd = Ngaymai123";
         }
 
         [DllImport("wininet.dll")]
@@ -55,7 +57,16 @@ namespace AppChatV2
             {
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
-                    connection.Open();
+                    try
+                    { 
+                        connection.Open(); 
+                    }
+
+                    catch
+                    {
+                        MessageBox.Show("Mất mạng!");
+                        return null;
+                    }
 
                     SqlCommand command = new SqlCommand(query, connection);
 
@@ -86,6 +97,13 @@ namespace AppChatV2
                 }
             }
             return DataProviderTable;
+        }
+
+        public DataTable LoadInfoFromDB()
+        {
+            string sqlQuery = "SELECT * FROM ACCOUNT WHERE ID = @id ";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id });
+            return Data;
         }
     }
 }

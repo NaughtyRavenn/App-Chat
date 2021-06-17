@@ -19,7 +19,7 @@ namespace AppChatV2
 
         private void frmAddtogroup_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

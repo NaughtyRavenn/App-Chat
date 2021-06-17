@@ -1,6 +1,6 @@
 ﻿namespace AppChatV2
 {
-    partial class frmMain
+    partial class Form_Main
     {
         /// <summary>
         /// Required designer variable.
@@ -28,40 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnEditprofile = new XanderUI.XUIButton();
             this.btnLogout = new XanderUI.XUIButton();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.xuiButton4 = new XanderUI.XUIButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.xuiButton9 = new XanderUI.XUIButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.xuiButton10 = new XanderUI.XUIButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.xuiButton11 = new XanderUI.XUIButton();
-            this.label9 = new System.Windows.Forms.Label();
             this.xuiButton1 = new XanderUI.XUIButton();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.btnAddfriend = new XanderUI.XUIButton();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.xuiButton6 = new XanderUI.XUIButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.xuiButton5 = new XanderUI.XUIButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.xuiButton2 = new XanderUI.XUIButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.xuiButton7 = new XanderUI.XUIButton();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.xuiButton8 = new XanderUI.XUIButton();
             this.label1 = new System.Windows.Forms.Label();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
@@ -69,19 +59,27 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.xuiFlatTab1 = new XanderUI.XUIFlatTab();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.tabPage1.SuspendLayout();
+            this.xuiFlatTab1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            this.xuiFlatTab1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEditprofile
@@ -130,53 +128,40 @@
             this.btnLogout.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // label11
+            // lblName
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(170, 11);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(132, 26);
-            this.label11.TabIndex = 35;
-            this.label11.Text = "User Name";
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(170, 11);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(132, 26);
+            this.lblName.TabIndex = 35;
+            this.lblName.Text = "User Name";
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.AliceBlue;
-            this.tabPage2.Controls.Add(this.pictureBox6);
             this.tabPage2.Controls.Add(this.xuiButton4);
             this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.pictureBox7);
             this.tabPage2.Controls.Add(this.xuiButton9);
             this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.pictureBox8);
             this.tabPage2.Controls.Add(this.xuiButton10);
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.pictureBox9);
-            this.tabPage2.Controls.Add(this.xuiButton11);
-            this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.xuiButton1);
             this.tabPage2.Controls.Add(this.vScrollBar2);
             this.tabPage2.Controls.Add(this.btnAddfriend);
             this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.pictureBox6);
+            this.tabPage2.Controls.Add(this.pictureBox7);
+            this.tabPage2.Controls.Add(this.pictureBox8);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(339, 438);
+            this.tabPage2.Size = new System.Drawing.Size(483, 438);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Danh sách bạn";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox6.Location = new System.Drawing.Point(4, 338);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox6.TabIndex = 131;
-            this.pictureBox6.TabStop = false;
             // 
             // xuiButton4
             // 
@@ -210,16 +195,6 @@
             this.label2.Size = new System.Drawing.Size(206, 24);
             this.label2.TabIndex = 129;
             this.label2.Text = "Hội anh chị em họ Nguyễn";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox7.Location = new System.Drawing.Point(4, 256);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox7.TabIndex = 128;
-            this.pictureBox7.TabStop = false;
             // 
             // xuiButton9
             // 
@@ -255,16 +230,6 @@
             this.label7.TabIndex = 126;
             this.label7.Text = "Bá Khá";
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox8.Location = new System.Drawing.Point(4, 174);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox8.TabIndex = 125;
-            this.pictureBox8.TabStop = false;
-            // 
             // xuiButton10
             // 
             this.xuiButton10.BackgroundColor = System.Drawing.Color.Silver;
@@ -298,50 +263,6 @@
             this.label8.Size = new System.Drawing.Size(107, 24);
             this.label8.TabIndex = 123;
             this.label8.Text = "Nathan Lee";
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox9.Location = new System.Drawing.Point(4, 92);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox9.TabIndex = 122;
-            this.pictureBox9.TabStop = false;
-            // 
-            // xuiButton11
-            // 
-            this.xuiButton11.BackgroundColor = System.Drawing.Color.Silver;
-            this.xuiButton11.ButtonImage = null;
-            this.xuiButton11.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton11.ButtonText = "•••";
-            this.xuiButton11.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton11.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton11.CornerRadius = 5;
-            this.xuiButton11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.xuiButton11.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton11.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton11.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton11.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton11.Location = new System.Drawing.Point(283, 113);
-            this.xuiButton11.Margin = new System.Windows.Forms.Padding(2);
-            this.xuiButton11.Name = "xuiButton11";
-            this.xuiButton11.Size = new System.Drawing.Size(26, 23);
-            this.xuiButton11.TabIndex = 121;
-            this.xuiButton11.TextColor = System.Drawing.Color.White;
-            this.xuiButton11.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton11.Click += new System.EventHandler(this.btnInteractsingle_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label9.Location = new System.Drawing.Point(73, 112);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(105, 24);
-            this.label9.TabIndex = 120;
-            this.label9.Text = "Huấn Rose";
             // 
             // xuiButton1
             // 
@@ -433,20 +354,10 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 8);
             this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tabPage1.Size = new System.Drawing.Size(339, 438);
+            this.tabPage1.Size = new System.Drawing.Size(483, 438);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Tag = "";
             this.tabPage1.Text = "Gần đây";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox4.Location = new System.Drawing.Point(4, 364);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox4.TabIndex = 122;
-            this.pictureBox4.TabStop = false;
             // 
             // xuiButton6
             // 
@@ -480,16 +391,6 @@
             this.label5.Size = new System.Drawing.Size(206, 24);
             this.label5.TabIndex = 120;
             this.label5.Text = "Hội anh chị em họ Nguyễn";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox3.Location = new System.Drawing.Point(4, 282);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox3.TabIndex = 119;
-            this.pictureBox3.TabStop = false;
             // 
             // xuiButton5
             // 
@@ -525,16 +426,6 @@
             this.label4.TabIndex = 117;
             this.label4.Text = "Tiến Bịp";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 200);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox2.TabIndex = 116;
-            this.pictureBox2.TabStop = false;
-            // 
             // xuiButton2
             // 
             this.xuiButton2.BackgroundColor = System.Drawing.Color.Silver;
@@ -569,16 +460,6 @@
             this.label3.TabIndex = 114;
             this.label3.Text = "Bá Khá";
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox5.Location = new System.Drawing.Point(4, 118);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox5.TabIndex = 113;
-            this.pictureBox5.TabStop = false;
-            // 
             // xuiButton7
             // 
             this.xuiButton7.BackgroundColor = System.Drawing.Color.Silver;
@@ -612,16 +493,6 @@
             this.label6.Size = new System.Drawing.Size(107, 24);
             this.label6.TabIndex = 111;
             this.label6.Text = "Nathan Lee";
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox12.Location = new System.Drawing.Point(4, 36);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox12.TabIndex = 110;
-            this.pictureBox12.TabStop = false;
             // 
             // xuiButton8
             // 
@@ -689,7 +560,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(4, 3);
+            this.textBox1.Location = new System.Drawing.Point(27, 4);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(252, 29);
@@ -708,56 +579,142 @@
             this.xuiFlatTab1.InActiveHeaderColor = System.Drawing.Color.Blue;
             this.xuiFlatTab1.InActiveTextColor = System.Drawing.Color.White;
             this.xuiFlatTab1.ItemSize = new System.Drawing.Size(20, 20);
-            this.xuiFlatTab1.Location = new System.Drawing.Point(9, 150);
+            this.xuiFlatTab1.Location = new System.Drawing.Point(0, 145);
             this.xuiFlatTab1.Margin = new System.Windows.Forms.Padding(2);
             this.xuiFlatTab1.Name = "xuiFlatTab1";
             this.xuiFlatTab1.Padding = new System.Drawing.Point(40, 60);
             this.xuiFlatTab1.PageColor = System.Drawing.Color.AliceBlue;
             this.xuiFlatTab1.SelectedIndex = 0;
             this.xuiFlatTab1.ShowBorder = true;
-            this.xuiFlatTab1.Size = new System.Drawing.Size(347, 466);
+            this.xuiFlatTab1.Size = new System.Drawing.Size(491, 466);
             this.xuiFlatTab1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 11);
+            this.pictureBox1.Image = global::AppChatV2.Properties.Resources._3162e85a2ff1d1af88e0;
+            this.pictureBox1.Location = new System.Drawing.Point(11, 11);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(130, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
-            // frmMain
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.GhostWhite;
+            this.pictureBox4.Location = new System.Drawing.Point(4, 364);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox4.TabIndex = 122;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.GhostWhite;
+            this.pictureBox3.Location = new System.Drawing.Point(4, 282);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox3.TabIndex = 119;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.GhostWhite;
+            this.pictureBox2.Location = new System.Drawing.Point(4, 200);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox2.TabIndex = 116;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.GhostWhite;
+            this.pictureBox5.Location = new System.Drawing.Point(4, 118);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox5.TabIndex = 113;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.Color.GhostWhite;
+            this.pictureBox12.Location = new System.Drawing.Point(4, 36);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox12.TabIndex = 110;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.GhostWhite;
+            this.pictureBox6.Location = new System.Drawing.Point(4, 338);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox6.TabIndex = 131;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.GhostWhite;
+            this.pictureBox7.Location = new System.Drawing.Point(4, 256);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox7.TabIndex = 128;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.GhostWhite;
+            this.pictureBox8.Location = new System.Drawing.Point(4, 174);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(65, 65);
+            this.pictureBox8.TabIndex = 125;
+            this.pictureBox8.TabStop = false;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 1200000;
+            this.bunifuElipse1.TargetControl = this.pictureBox1;
+            // 
+            // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 623);
+            this.ClientSize = new System.Drawing.Size(404, 691);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.xuiFlatTab1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnEditprofile);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "frmMain";
+            this.Name = "Form_Main";
             this.Text = "TRANG CHỦ";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.xuiFlatTab1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            this.xuiFlatTab1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -766,7 +723,7 @@
         #endregion
         private XanderUI.XUIButton btnEditprofile;
         private XanderUI.XUIButton btnLogout;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.TabPage tabPage2;
         private XanderUI.XUIButton xuiButton1;
         private System.Windows.Forms.VScrollBar vScrollBar2;
@@ -802,8 +759,6 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private XanderUI.XUIButton xuiButton10;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private XanderUI.XUIButton xuiButton11;
-        private System.Windows.Forms.Label label9;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }

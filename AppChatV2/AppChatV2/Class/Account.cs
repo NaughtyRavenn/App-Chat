@@ -38,7 +38,7 @@ namespace AppChatV2
             int count = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { username, password }).Rows.Count;
             if (count > 0)
             {
-                string sqlQuery1 = "select id from dbo.Account where username= @username";
+                string sqlQuery1 = "select id from dbo.Account where Username = @username ";
                 id = DataProvider.Instance.ExcuteQuery(sqlQuery1, new object[] { username }).Rows[0]["id"].ToString();
                 userName = username;
                 passWord = password;

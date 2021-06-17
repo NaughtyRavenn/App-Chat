@@ -11,29 +11,31 @@ using System.Data.SqlClient;
 
 namespace AppChatV2
 {
-    public partial class frmLogin : Form
+    public partial class Form_Login : Form
     {
-        public frmLogin()
+        public Form_Login()
         {
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void Button_Login_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "" || txtPassword.Text == "")
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                return;
-            }
             doLogin();
         }
         
         private void doLogin()
         {
-            if(Account.Instance.Login(txtUsername.Text,txtPassword.Text))
+            if(string.IsNullOrEmpty(Textbox_Username.Text)||string.IsNullOrEmpty(Textbox_Password.Text))
             {
+                MessageBox.Show("Vui lòng nhập đủ thông tin!");
+                return;
+            }
+            
+            if(Account.Instance.Login(Textbox_Username.Text,Textbox_Password.Text))
+            {
+                User.Instance.LoadInfo();
                 this.Hide();
-                frmMain frm = new frmMain();
+                Form_Main frm = new Form_Main();
                 frm.Show();
             }
             else
@@ -42,20 +44,74 @@ namespace AppChatV2
             }
         }
 
-        private void frmLogin_FormClosed(object sender, FormClosedEventArgs e)
+        private void Linklabel_SignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmSignup frm = new frmSignup();
+            frm.ShowDialog();
+        }
+
+        private void Form_Login_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
+        private void Form_Login_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnSignup_Click(object sender, EventArgs e)
+        private void Form_Login_KeyPress(object sender, KeyPressEventArgs e)
         {
-            frmSignup frm = new frmSignup();
-            frm.ShowDialog();
+            /*if (e.KeyChar == Keys.Enter)
+                doLogin();*/
+            MessageBox.Show("a");
+        }
+
+        private void Form_Login_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            MessageBox.Show("a");
+        }
+
+        private void Textbox_Username_Enter(object sender, EventArgs e)
+        {
+            if (Textbox_Username.Text=="Username")
+            {
+                Textbox_Username.Text = "";
+                Textbox_Username.ForeColor = Color.Black;
+            }
+        }
+
+        private void Textbox_Username_Leave(object sender, EventArgs e)
+        {
+            if(Textbox_Username.Text.Trim()=="")
+            {
+                Textbox_Username.Text = "Username";
+                Textbox_Username.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void Textbox_Password_Leave(object sender, EventArgs e)
+        {
+            if (Textbox_Password.Text.Trim() == "")
+            {
+                Textbox_Password.Text = "Password";
+                Textbox_Password.ForeColor = Color.DarkGray;
+            }
+        }
+
+        private void Textbox_Password_Enter(object sender, EventArgs e)
+        {
+            if (Textbox_Password.Text == "Password")
+            {
+                Textbox_Password.Text = "";
+                Textbox_Password.ForeColor = Color.Black;
+            }
+        }
+
+        private void Textbox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                doLogin();
         }
     }
 }

@@ -12,8 +12,8 @@ namespace AppChatV2
 {
     public partial class frmVerilogout : Form
     {
-        frmMain par;
-        public frmVerilogout(frmMain par)
+        Form_Main par;
+        public frmVerilogout(Form_Main par)
         {
             InitializeComponent();
             this.par = par;
@@ -33,7 +33,7 @@ namespace AppChatV2
         {
             this.Hide();
             par.Hide();
-            frmLogin frm = new frmLogin();
+            Form_Login frm = new Form_Login();
             frm.Show();
 
         }
