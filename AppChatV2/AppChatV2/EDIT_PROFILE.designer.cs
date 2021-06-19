@@ -30,18 +30,21 @@
         {
             this.xuiCustomGroupbox2 = new XanderUI.XUICustomGroupbox();
             this.btnConfirm2 = new XanderUI.XUIButton();
-            this.txtConfirmpassword = new System.Windows.Forms.TextBox();
-            this.txtNewpassword = new System.Windows.Forms.TextBox();
-            this.txtCurrentpassword = new System.Windows.Forms.TextBox();
+            this.TextBox_ConfirmPassword = new System.Windows.Forms.TextBox();
+            this.TextBox_NewPassword = new System.Windows.Forms.TextBox();
+            this.TextBox_CurrentPassword = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.xuiCustomGroupbox1 = new XanderUI.XUICustomGroupbox();
+            this.LabelBox_Email = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LabelBox_Phonenumber = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LabelBox_Birthday = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.ComboBox_Year = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.RadioButton_Female = new System.Windows.Forms.RadioButton();
             this.rdoFemale = new System.Windows.Forms.RadioButton();
-            this.rdoMale = new System.Windows.Forms.RadioButton();
+            this.RadioButton_Male = new System.Windows.Forms.RadioButton();
             this.ComboBox_Month = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.ComboBox_Day = new System.Windows.Forms.ComboBox();
@@ -55,9 +58,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.LabelBox_Birthday = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.LabelBox_Phonenumber = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.LabelBox_Email = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LabelBox_CurrentPassword = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LabelBox_NewPassword = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.LabelBox_ConfirmPassword = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.xuiCustomGroupbox2.SuspendLayout();
             this.xuiCustomGroupbox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -68,10 +71,13 @@
             // 
             this.xuiCustomGroupbox2.BorderColor = System.Drawing.Color.DodgerBlue;
             this.xuiCustomGroupbox2.BorderWidth = 1;
+            this.xuiCustomGroupbox2.Controls.Add(this.LabelBox_ConfirmPassword);
+            this.xuiCustomGroupbox2.Controls.Add(this.LabelBox_NewPassword);
+            this.xuiCustomGroupbox2.Controls.Add(this.LabelBox_CurrentPassword);
             this.xuiCustomGroupbox2.Controls.Add(this.btnConfirm2);
-            this.xuiCustomGroupbox2.Controls.Add(this.txtConfirmpassword);
-            this.xuiCustomGroupbox2.Controls.Add(this.txtNewpassword);
-            this.xuiCustomGroupbox2.Controls.Add(this.txtCurrentpassword);
+            this.xuiCustomGroupbox2.Controls.Add(this.TextBox_ConfirmPassword);
+            this.xuiCustomGroupbox2.Controls.Add(this.TextBox_NewPassword);
+            this.xuiCustomGroupbox2.Controls.Add(this.TextBox_CurrentPassword);
             this.xuiCustomGroupbox2.Controls.Add(this.label7);
             this.xuiCustomGroupbox2.Controls.Add(this.label8);
             this.xuiCustomGroupbox2.Controls.Add(this.label9);
@@ -110,29 +116,32 @@
             this.btnConfirm2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.btnConfirm2.Click += new System.EventHandler(this.btnConfirm2_Click);
             // 
-            // txtConfirmpassword
+            // TextBox_ConfirmPassword
             // 
-            this.txtConfirmpassword.Location = new System.Drawing.Point(191, 131);
-            this.txtConfirmpassword.Margin = new System.Windows.Forms.Padding(2);
-            this.txtConfirmpassword.Name = "txtConfirmpassword";
-            this.txtConfirmpassword.Size = new System.Drawing.Size(248, 29);
-            this.txtConfirmpassword.TabIndex = 9;
+            this.TextBox_ConfirmPassword.Location = new System.Drawing.Point(191, 131);
+            this.TextBox_ConfirmPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.TextBox_ConfirmPassword.Name = "TextBox_ConfirmPassword";
+            this.TextBox_ConfirmPassword.Size = new System.Drawing.Size(248, 29);
+            this.TextBox_ConfirmPassword.TabIndex = 9;
+            this.TextBox_ConfirmPassword.UseSystemPasswordChar = true;
             // 
-            // txtNewpassword
+            // TextBox_NewPassword
             // 
-            this.txtNewpassword.Location = new System.Drawing.Point(191, 83);
-            this.txtNewpassword.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNewpassword.Name = "txtNewpassword";
-            this.txtNewpassword.Size = new System.Drawing.Size(248, 29);
-            this.txtNewpassword.TabIndex = 8;
+            this.TextBox_NewPassword.Location = new System.Drawing.Point(191, 83);
+            this.TextBox_NewPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.TextBox_NewPassword.Name = "TextBox_NewPassword";
+            this.TextBox_NewPassword.Size = new System.Drawing.Size(248, 29);
+            this.TextBox_NewPassword.TabIndex = 8;
+            this.TextBox_NewPassword.UseSystemPasswordChar = true;
             // 
-            // txtCurrentpassword
+            // TextBox_CurrentPassword
             // 
-            this.txtCurrentpassword.Location = new System.Drawing.Point(191, 38);
-            this.txtCurrentpassword.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCurrentpassword.Name = "txtCurrentpassword";
-            this.txtCurrentpassword.Size = new System.Drawing.Size(248, 29);
-            this.txtCurrentpassword.TabIndex = 7;
+            this.TextBox_CurrentPassword.Location = new System.Drawing.Point(191, 38);
+            this.TextBox_CurrentPassword.Margin = new System.Windows.Forms.Padding(2);
+            this.TextBox_CurrentPassword.Name = "TextBox_CurrentPassword";
+            this.TextBox_CurrentPassword.Size = new System.Drawing.Size(248, 29);
+            this.TextBox_CurrentPassword.TabIndex = 7;
+            this.TextBox_CurrentPassword.UseSystemPasswordChar = true;
             // 
             // label7
             // 
@@ -197,6 +206,36 @@
             this.xuiCustomGroupbox1.TabStop = false;
             this.xuiCustomGroupbox1.Text = "Thông tin cá nhân";
             this.xuiCustomGroupbox1.TextColor = System.Drawing.Color.DodgerBlue;
+            // 
+            // LabelBox_Email
+            // 
+            this.LabelBox_Email.AutoSize = true;
+            this.LabelBox_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LabelBox_Email.ForeColor = System.Drawing.Color.Red;
+            this.LabelBox_Email.Location = new System.Drawing.Point(136, 365);
+            this.LabelBox_Email.Name = "LabelBox_Email";
+            this.LabelBox_Email.Size = new System.Drawing.Size(0, 13);
+            this.LabelBox_Email.TabIndex = 27;
+            // 
+            // LabelBox_Phonenumber
+            // 
+            this.LabelBox_Phonenumber.AutoSize = true;
+            this.LabelBox_Phonenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LabelBox_Phonenumber.ForeColor = System.Drawing.Color.Red;
+            this.LabelBox_Phonenumber.Location = new System.Drawing.Point(136, 318);
+            this.LabelBox_Phonenumber.Name = "LabelBox_Phonenumber";
+            this.LabelBox_Phonenumber.Size = new System.Drawing.Size(0, 13);
+            this.LabelBox_Phonenumber.TabIndex = 26;
+            // 
+            // LabelBox_Birthday
+            // 
+            this.LabelBox_Birthday.AutoSize = true;
+            this.LabelBox_Birthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LabelBox_Birthday.ForeColor = System.Drawing.Color.Red;
+            this.LabelBox_Birthday.Location = new System.Drawing.Point(136, 268);
+            this.LabelBox_Birthday.Name = "LabelBox_Birthday";
+            this.LabelBox_Birthday.Size = new System.Drawing.Size(0, 13);
+            this.LabelBox_Birthday.TabIndex = 8;
             // 
             // ComboBox_Year
             // 
@@ -334,26 +373,26 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.RadioButton_Female);
             this.panel1.Controls.Add(this.rdoFemale);
-            this.panel1.Controls.Add(this.rdoMale);
+            this.panel1.Controls.Add(this.RadioButton_Male);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.panel1.Location = new System.Drawing.Point(130, 381);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(227, 73);
             this.panel1.TabIndex = 24;
             // 
-            // radioButton1
+            // RadioButton_Female
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.radioButton1.Location = new System.Drawing.Point(124, 20);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(53, 28);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nữ";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RadioButton_Female.AutoSize = true;
+            this.RadioButton_Female.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.RadioButton_Female.Location = new System.Drawing.Point(124, 20);
+            this.RadioButton_Female.Name = "RadioButton_Female";
+            this.RadioButton_Female.Size = new System.Drawing.Size(53, 28);
+            this.RadioButton_Female.TabIndex = 2;
+            this.RadioButton_Female.TabStop = true;
+            this.RadioButton_Female.Text = "Nữ";
+            this.RadioButton_Female.UseVisualStyleBackColor = true;
             // 
             // rdoFemale
             // 
@@ -367,17 +406,17 @@
             this.rdoFemale.Text = "Nữ";
             this.rdoFemale.UseVisualStyleBackColor = true;
             // 
-            // rdoMale
+            // RadioButton_Male
             // 
-            this.rdoMale.AutoSize = true;
-            this.rdoMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.rdoMale.Location = new System.Drawing.Point(18, 20);
-            this.rdoMale.Name = "rdoMale";
-            this.rdoMale.Size = new System.Drawing.Size(68, 28);
-            this.rdoMale.TabIndex = 0;
-            this.rdoMale.TabStop = true;
-            this.rdoMale.Text = "Nam";
-            this.rdoMale.UseVisualStyleBackColor = true;
+            this.RadioButton_Male.AutoSize = true;
+            this.RadioButton_Male.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.RadioButton_Male.Location = new System.Drawing.Point(18, 20);
+            this.RadioButton_Male.Name = "RadioButton_Male";
+            this.RadioButton_Male.Size = new System.Drawing.Size(68, 28);
+            this.RadioButton_Male.TabIndex = 0;
+            this.RadioButton_Male.TabStop = true;
+            this.RadioButton_Male.Text = "Nam";
+            this.RadioButton_Male.UseVisualStyleBackColor = true;
             // 
             // ComboBox_Month
             // 
@@ -564,35 +603,35 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Ảnh đại diện";
             // 
-            // LabelBox_Birthday
+            // LabelBox_CurrentPassword
             // 
-            this.LabelBox_Birthday.AutoSize = true;
-            this.LabelBox_Birthday.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LabelBox_Birthday.ForeColor = System.Drawing.Color.Red;
-            this.LabelBox_Birthday.Location = new System.Drawing.Point(136, 268);
-            this.LabelBox_Birthday.Name = "LabelBox_Birthday";
-            this.LabelBox_Birthday.Size = new System.Drawing.Size(0, 13);
-            this.LabelBox_Birthday.TabIndex = 8;
+            this.LabelBox_CurrentPassword.AutoSize = true;
+            this.LabelBox_CurrentPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LabelBox_CurrentPassword.ForeColor = System.Drawing.Color.Red;
+            this.LabelBox_CurrentPassword.Location = new System.Drawing.Point(191, 65);
+            this.LabelBox_CurrentPassword.Name = "LabelBox_CurrentPassword";
+            this.LabelBox_CurrentPassword.Size = new System.Drawing.Size(0, 13);
+            this.LabelBox_CurrentPassword.TabIndex = 20;
             // 
-            // LabelBox_Phonenumber
+            // LabelBox_NewPassword
             // 
-            this.LabelBox_Phonenumber.AutoSize = true;
-            this.LabelBox_Phonenumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LabelBox_Phonenumber.ForeColor = System.Drawing.Color.Red;
-            this.LabelBox_Phonenumber.Location = new System.Drawing.Point(136, 318);
-            this.LabelBox_Phonenumber.Name = "LabelBox_Phonenumber";
-            this.LabelBox_Phonenumber.Size = new System.Drawing.Size(0, 13);
-            this.LabelBox_Phonenumber.TabIndex = 26;
+            this.LabelBox_NewPassword.AutoSize = true;
+            this.LabelBox_NewPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LabelBox_NewPassword.ForeColor = System.Drawing.Color.Red;
+            this.LabelBox_NewPassword.Location = new System.Drawing.Point(192, 116);
+            this.LabelBox_NewPassword.Name = "LabelBox_NewPassword";
+            this.LabelBox_NewPassword.Size = new System.Drawing.Size(0, 13);
+            this.LabelBox_NewPassword.TabIndex = 21;
             // 
-            // LabelBox_Email
+            // LabelBox_ConfirmPassword
             // 
-            this.LabelBox_Email.AutoSize = true;
-            this.LabelBox_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.LabelBox_Email.ForeColor = System.Drawing.Color.Red;
-            this.LabelBox_Email.Location = new System.Drawing.Point(136, 365);
-            this.LabelBox_Email.Name = "LabelBox_Email";
-            this.LabelBox_Email.Size = new System.Drawing.Size(0, 13);
-            this.LabelBox_Email.TabIndex = 27;
+            this.LabelBox_ConfirmPassword.AutoSize = true;
+            this.LabelBox_ConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.LabelBox_ConfirmPassword.ForeColor = System.Drawing.Color.Red;
+            this.LabelBox_ConfirmPassword.Location = new System.Drawing.Point(192, 162);
+            this.LabelBox_ConfirmPassword.Name = "LabelBox_ConfirmPassword";
+            this.LabelBox_ConfirmPassword.Size = new System.Drawing.Size(0, 13);
+            this.LabelBox_ConfirmPassword.TabIndex = 22;
             // 
             // Form_EditProfile
             // 
@@ -620,9 +659,9 @@
 
         private XanderUI.XUICustomGroupbox xuiCustomGroupbox2;
         private XanderUI.XUIButton btnConfirm2;
-        private System.Windows.Forms.TextBox txtConfirmpassword;
-        private System.Windows.Forms.TextBox txtNewpassword;
-        private System.Windows.Forms.TextBox txtCurrentpassword;
+        private System.Windows.Forms.TextBox TextBox_ConfirmPassword;
+        private System.Windows.Forms.TextBox TextBox_NewPassword;
+        private System.Windows.Forms.TextBox TextBox_CurrentPassword;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -639,14 +678,17 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton rdoFemale;
-        private System.Windows.Forms.RadioButton rdoMale;
+        private System.Windows.Forms.RadioButton RadioButton_Male;
         private System.Windows.Forms.ComboBox ComboBox_Year;
         private System.Windows.Forms.ComboBox ComboBox_Month;
         private System.Windows.Forms.ComboBox ComboBox_Day;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton RadioButton_Female;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelBox_Email;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelBox_Phonenumber;
         private Bunifu.Framework.UI.BunifuCustomLabel LabelBox_Birthday;
+        private Bunifu.Framework.UI.BunifuCustomLabel LabelBox_ConfirmPassword;
+        private Bunifu.Framework.UI.BunifuCustomLabel LabelBox_NewPassword;
+        private Bunifu.Framework.UI.BunifuCustomLabel LabelBox_CurrentPassword;
     }
 }

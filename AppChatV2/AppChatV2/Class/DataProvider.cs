@@ -133,14 +133,14 @@ namespace AppChatV2
             return new Person()
             {
                 Id = id,
-                Name = Data.Rows[0]["Name"].ToString()
+                Username = Data.Rows[0]["Username"].ToString(),
+                Password = Data.Rows[0]["Password"].ToString(),
+                Name = Data.Rows[0]["Name"].ToString(),
+                Email=Data.Rows[0]["Email"].ToString(),
+                Phonenumber= Data.Rows[0]["Phonenumber"].ToString(),
+                Sex= Data.Rows[0]["Sex"].ToString(),
+                Birthday = DateTime.Parse(Data.Rows[0]["Birthday"].ToString())
             };
-        }
-
-        public void EditProfile1(Person p)
-        {
-            string sqlQuery = "UPDATE ACCOUNT SET Name = @Name , Birthday = @Birthday , Phonenumber = @Phonenumber , Sex = @Sex , Email = @Email";
-            DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { p.Name, p.Birthday, p.Phonenumber, p.Sex, p.Email });
         }
     }
 }

@@ -34,7 +34,7 @@ namespace AppChatV2
 
         public bool Login(string username, string password)
         {
-            string sqlQuery = "SELECT * FROM ACCOUNT WHERE Username= @username AND Password= @password";
+            string sqlQuery = "SELECT * FROM ACCOUNT WHERE Username= @username AND Password= @password ";
             int count = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { username, password }).Rows.Count;
             if (count > 0)
             {

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Net.Mail;
 
 namespace AppChatV2
 {
@@ -16,6 +17,7 @@ namespace AppChatV2
         public Form_SignUp()
         {
             InitializeComponent();
+            Flag = 1;
         }
 
         private void Form_SignUp_Load(object sender, EventArgs e)
@@ -26,8 +28,6 @@ namespace AppChatV2
         private void Button_SignUp_Click(object sender, EventArgs e)
         {
             doSignup();
-            MessageBox.Show("Account successfully created");
-            this.Hide();
         }
 
         private void CheckUsername()
@@ -38,6 +38,7 @@ namespace AppChatV2
             if (Data.Rows.Count == 1)
             {
                 LabelBox_Username.Text = "Username has already been used";
+                Flag = 0;
             }
             else
             {
@@ -53,24 +54,28 @@ namespace AppChatV2
             if (password.Length < 6 || password.Length > 12)
             {
                 LabelBox_Password.Text = "Min 6 character, max 12 character";
+                Flag = 0;
             }
            
             //No white space
             else if (password.Contains(" "))
             {
                 LabelBox_Password.Text = "No white space";
+                Flag = 0;
             }
 
             //At least 1 upper case letter
             else if (!password.Any(char.IsUpper))
             {
                 LabelBox_Password.Text = "At least 1 upper case letter";
+                Flag = 0;
             }
 
             //At least 1 lower case letter
             else if (!password.Any(char.IsLower))
             {
                 LabelBox_Password.Text = "At least 1 lower case letter";
+                Flag = 0;
             }
             else
             {
@@ -85,9 +90,12 @@ namespace AppChatV2
             if (confirmpass != TextBox_Password.Text)
             {
                 LabelBox_ConfirmPassword.Text = "Confirm password incorect";
+                Flag = 0;
             }
             else
+            {
                 LabelBox_ConfirmPassword.Text = string.Empty;
+            }
         }
 
         private void CheckName()
@@ -99,17 +107,25 @@ namespace AppChatV2
         {
             string birthday;
             DateTime date;
-            birthday = ComboBox_Month.Text + "/" + ComboBox_Day.Text + "/" + ComboBox_Year.Text;
-            if (!DateTime.TryParse(birthday, out date))
+            if (!(int.Parse(ComboBox_Year.Text) > 1900 && int.Parse(ComboBox_Year.Text) < DateTime.Now.Year))
             {
                 LabelBox_Birthday.Text = "Invalid date of birth";
+                Flag = 0;
             }
             else
             {
-                Birthday = DateTime.Parse(birthday);
-                LabelBox_Birthday.Text = string.Empty;
+                birthday = ComboBox_Month.Text + "/" + ComboBox_Day.Text + "/" + ComboBox_Year.Text;
+                if (!DateTime.TryParse(birthday, out date))
+                {
+                    LabelBox_Birthday.Text = "Invalid date of birth";
+                    Flag = 0;
+                }
+                else
+                {
+                    Birthday = DateTime.Parse(birthday);
+                    LabelBox_Birthday.Text = string.Empty;
+                }
             }
-
         }                    
 
         private void CheckEmail()
@@ -117,20 +133,14 @@ namespace AppChatV2
             string email = TextBox_Email.Text;
             try
             {
-                var addr = new System.Net.Mail.MailAddress(email);
-                if (addr.Address != email)
-                {
-                    LabelBox_Email.Text = ("Invalid email");
-                }
-                else
-                {
-                    Email = email;
-                    LabelBox_Email.Text = string.Empty;
-                }
+                MailAddress mail = new MailAddress(email);
+                LabelBox_Email.Text = string.Empty;
+                Email = email;
             }
             catch
             {
                 LabelBox_Email.Text = ("Invalid email");
+                Flag = 0;
             }
         }
 
@@ -146,6 +156,7 @@ namespace AppChatV2
             else
             {
                 LabelBox_Phonenumber.Text = "Invalid phone number";
+                Flag = 0;
             }
         }
 
@@ -167,33 +178,45 @@ namespace AppChatV2
             return true;
         }
 
-        private void CheckAll()
+        private bool CheckAll()
         {
-            if(string.IsNullOrEmpty(TextBox_Username.Text)|| string.IsNullOrEmpty(TextBox_Password.Text)||
-                string.IsNullOrEmpty(TextBox_ConfirmPassword.Text)|| string.IsNullOrEmpty(TextBox_Name.Text)||
-                string.IsNullOrEmpty(ComboBox_Day.Text) ||string.IsNullOrEmpty(ComboBox_Month.Text) ||string.IsNullOrEmpty(ComboBox_Year.Text)||
-                string.IsNullOrEmpty(TextBox_Phonenumber.Text)|| string.IsNullOrEmpty(TextBox_Email.Text)||
+            if (string.IsNullOrEmpty(TextBox_Username.Text) || string.IsNullOrEmpty(TextBox_Password.Text) ||
+                string.IsNullOrEmpty(TextBox_ConfirmPassword.Text) || string.IsNullOrEmpty(TextBox_Name.Text) ||
+                string.IsNullOrEmpty(ComboBox_Day.Text) || string.IsNullOrEmpty(ComboBox_Month.Text) || string.IsNullOrEmpty(ComboBox_Year.Text) ||
+                string.IsNullOrEmpty(TextBox_Phonenumber.Text) || string.IsNullOrEmpty(TextBox_Email.Text) ||
                 RadioButton_Male.Checked == false && RadioButton_Female.Checked == false)
             {
                 MessageBox.Show("Please enter all required information");
-                return;
+                return false;
             }
             CheckUsername();
             CheckPassword();
             ConfirmPassword();
-            CheckName();
             CheckBirthday();
             CheckPhonenumber();
             CheckEmail();
+            CheckName();
             CheckSex();
+            Invalidate();
+            if (Flag == 1)
+                return true;
+            else
+                return false;
         }
+
         private void doSignup()
         {
-            CheckAll();
-            string sqlQuery = "INSERT INTO ACCOUNT (Username,Password,Name,Is_active,Is_admin,Birthday,Email,Phonenumber,Sex) " +
-                "VALUES ( @username , @password , @name , @is_active , @is_admin , @birthday , @email , @phonenumber , @sex )";
-            DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Username,Password,Name1,"false","false",Birthday,Email
+            if (CheckAll())
+            {
+                string sqlQuery = "INSERT INTO ACCOUNT (Username,Password,Name,Is_active,Is_admin,Birthday,Email,Phonenumber,Sex) " +
+                    "VALUES ( @username , @password , @name , @is_active , @is_admin , @birthday , @email , @phonenumber , @sex )";
+                DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Username,Password,Name1,"false","false",Birthday,Email
             ,Phonenumber,Sex});
+                MessageBox.Show("Account successfully created");
+                this.Hide();
+            }
+            else
+                Flag = 1;
         }
 
         private string _Username;
@@ -204,6 +227,7 @@ namespace AppChatV2
         private string _Phonenumber;
         private string _Email;
         private string _Sex;
+        private int _Flag;
         public string Username { get => _Username; set => _Username = value; }
         public string Password { get => _Password; set => _Password = value; }
         public string ConfirmPassword1 { get => _ConfirmPassword; set => _ConfirmPassword = value; }
@@ -212,5 +236,6 @@ namespace AppChatV2
         public string Phonenumber { get => _Phonenumber; set => _Phonenumber = value; }
         public string Email { get => _Email; set => _Email = value; }
         public string Sex { get => _Sex; set => _Sex = value; }
+        public int Flag { get => _Flag; set => _Flag = value; }
     }
 }

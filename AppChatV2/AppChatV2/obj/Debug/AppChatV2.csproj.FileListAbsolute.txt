@@ -31,7 +31,6 @@ C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\bin\Debug\System.Data.SqlCli
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.csprojAssemblyReference.cache
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmAddtogroup.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmAddfriend.resources
-C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmEditprofile.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmGroupchat.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmGroupinfo.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmInteractgroup.resources
@@ -98,3 +97,4 @@ C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_Log
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_Main.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.UC_Friend.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_SignUp.resources
+C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_EditProfile.resources
