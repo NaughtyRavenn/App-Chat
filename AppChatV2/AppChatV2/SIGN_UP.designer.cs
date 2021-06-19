@@ -121,7 +121,7 @@
             this.TextBox_Username.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox_Username.Name = "TextBox_Username";
             this.TextBox_Username.Size = new System.Drawing.Size(295, 29);
-            this.TextBox_Username.TabIndex = 8;
+            this.TextBox_Username.TabIndex = 1;
             // 
             // TextBox_Password
             // 
@@ -130,7 +130,8 @@
             this.TextBox_Password.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox_Password.Name = "TextBox_Password";
             this.TextBox_Password.Size = new System.Drawing.Size(295, 29);
-            this.TextBox_Password.TabIndex = 9;
+            this.TextBox_Password.TabIndex = 2;
+            this.TextBox_Password.UseSystemPasswordChar = true;
             // 
             // TextBox_ConfirmPassword
             // 
@@ -139,7 +140,8 @@
             this.TextBox_ConfirmPassword.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox_ConfirmPassword.Name = "TextBox_ConfirmPassword";
             this.TextBox_ConfirmPassword.Size = new System.Drawing.Size(295, 29);
-            this.TextBox_ConfirmPassword.TabIndex = 10;
+            this.TextBox_ConfirmPassword.TabIndex = 3;
+            this.TextBox_ConfirmPassword.UseSystemPasswordChar = true;
             // 
             // TextBox_Name
             // 
@@ -148,7 +150,7 @@
             this.TextBox_Name.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox_Name.Name = "TextBox_Name";
             this.TextBox_Name.Size = new System.Drawing.Size(295, 29);
-            this.TextBox_Name.TabIndex = 11;
+            this.TextBox_Name.TabIndex = 4;
             // 
             // TextBox_Phonenumber
             // 
@@ -157,7 +159,7 @@
             this.TextBox_Phonenumber.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox_Phonenumber.Name = "TextBox_Phonenumber";
             this.TextBox_Phonenumber.Size = new System.Drawing.Size(295, 29);
-            this.TextBox_Phonenumber.TabIndex = 12;
+            this.TextBox_Phonenumber.TabIndex = 8;
             // 
             // ComboBox_Day
             // 
@@ -199,7 +201,7 @@
             this.ComboBox_Day.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBox_Day.Name = "ComboBox_Day";
             this.ComboBox_Day.Size = new System.Drawing.Size(90, 32);
-            this.ComboBox_Day.TabIndex = 13;
+            this.ComboBox_Day.TabIndex = 5;
             this.ComboBox_Day.Text = "Ngày";
             // 
             // ComboBox_Month
@@ -223,7 +225,7 @@
             this.ComboBox_Month.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBox_Month.Name = "ComboBox_Month";
             this.ComboBox_Month.Size = new System.Drawing.Size(84, 32);
-            this.ComboBox_Month.TabIndex = 14;
+            this.ComboBox_Month.TabIndex = 6;
             this.ComboBox_Month.Text = "Tháng";
             // 
             // ComboBox_Year
@@ -357,7 +359,7 @@
             this.ComboBox_Year.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBox_Year.Name = "ComboBox_Year";
             this.ComboBox_Year.Size = new System.Drawing.Size(99, 32);
-            this.ComboBox_Year.TabIndex = 15;
+            this.ComboBox_Year.TabIndex = 7;
             this.ComboBox_Year.Text = "Năm";
             // 
             // label8
@@ -378,7 +380,7 @@
             this.TextBox_Email.Margin = new System.Windows.Forms.Padding(2);
             this.TextBox_Email.Name = "TextBox_Email";
             this.TextBox_Email.Size = new System.Drawing.Size(295, 29);
-            this.TextBox_Email.TabIndex = 19;
+            this.TextBox_Email.TabIndex = 9;
             // 
             // panel1
             // 
@@ -397,7 +399,7 @@
             this.RadioButton_Female.Location = new System.Drawing.Point(112, 20);
             this.RadioButton_Female.Name = "RadioButton_Female";
             this.RadioButton_Female.Size = new System.Drawing.Size(53, 28);
-            this.RadioButton_Female.TabIndex = 1;
+            this.RadioButton_Female.TabIndex = 11;
             this.RadioButton_Female.TabStop = true;
             this.RadioButton_Female.Text = "Nữ";
             this.RadioButton_Female.UseVisualStyleBackColor = true;
@@ -409,7 +411,7 @@
             this.RadioButton_Male.Location = new System.Drawing.Point(18, 20);
             this.RadioButton_Male.Name = "RadioButton_Male";
             this.RadioButton_Male.Size = new System.Drawing.Size(68, 28);
-            this.RadioButton_Male.TabIndex = 0;
+            this.RadioButton_Male.TabIndex = 10;
             this.RadioButton_Male.TabStop = true;
             this.RadioButton_Male.Text = "Nam";
             this.RadioButton_Male.UseVisualStyleBackColor = true;
@@ -432,7 +434,7 @@
             this.Button_SignUp.Margin = new System.Windows.Forms.Padding(2);
             this.Button_SignUp.Name = "Button_SignUp";
             this.Button_SignUp.Size = new System.Drawing.Size(207, 41);
-            this.Button_SignUp.TabIndex = 51;
+            this.Button_SignUp.TabIndex = 12;
             this.Button_SignUp.TextColor = System.Drawing.Color.White;
             this.Button_SignUp.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             this.Button_SignUp.Click += new System.EventHandler(this.Button_SignUp_Click);
