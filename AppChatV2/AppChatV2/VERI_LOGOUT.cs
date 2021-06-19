@@ -31,11 +31,12 @@ namespace AppChatV2
 
         private void btnYes_Click(object sender, EventArgs e)
         {
+            Account.Instance.Logout();
             this.Hide();
             par.Hide();
             Form_Login frm = new Form_Login();
             frm.Show();
-
+        
         }
 
         private void frmVerilogout_Load(object sender, EventArgs e)

@@ -37,7 +37,6 @@ C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmGroup
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmInteractgroup.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmInteractsingle.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Properties.Resources.resources
-C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmSignup.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmSinglechat.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmVerifriend.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmVerilogout.resources
@@ -97,3 +96,5 @@ C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\bin\Debug\Bunifu_UI_v1.5.3.x
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.exe.config
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_Login.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_Main.resources
+C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.UC_Friend.resources
+C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_SignUp.resources
