@@ -46,7 +46,7 @@ namespace AppChatV2
 
         private void Linklabel_SignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmSignup frm = new frmSignup();
+            Form_SignUp frm = new Form_SignUp();
             frm.ShowDialog();
         }
 
@@ -58,18 +58,6 @@ namespace AppChatV2
         private void Form_Login_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void Form_Login_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            /*if (e.KeyChar == Keys.Enter)
-                doLogin();*/
-            MessageBox.Show("a");
-        }
-
-        private void Form_Login_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-            MessageBox.Show("a");
         }
 
         private void Textbox_Username_Enter(object sender, EventArgs e)

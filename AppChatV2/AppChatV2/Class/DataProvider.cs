@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
+using AppChatV2.Class;
 
 namespace AppChatV2
 {
@@ -104,6 +105,42 @@ namespace AppChatV2
             string sqlQuery = "SELECT * FROM ACCOUNT WHERE ID = @id ";
             var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id });
             return Data;
+        }
+
+        public List<string> LoadListFriendID()
+        {
+            var v1 = new List<string>();
+            string sqlQuery = "SELECT * FROM CONTACT WHERE ID1 = @id OR ID2 = @id_1 ";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id });
+            foreach (DataRow v2 in Data.Rows)
+            {
+                if (v2["ID1"].ToString()== Account.Instance.id)
+                {
+                    v1.Add(v2["ID2"].ToString());
+                }
+                else
+                {
+                    v1.Add(v2["ID1"].ToString());
+                }
+            }
+            return v1;
+        }
+
+        public Person LoadInfoByID(string id)
+        {
+            string sqlQuery = "SELECT * FROM ACCOUNT WHERE ID = @id ";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { id });
+            return new Person()
+            {
+                Id = id,
+                Name = Data.Rows[0]["Name"].ToString()
+            };
+        }
+
+        public void EditProfile1(Person p)
+        {
+            string sqlQuery = "UPDATE ACCOUNT SET Name = @Name , Birthday = @Birthday , Phonenumber = @Phonenumber , Sex = @Sex , Email = @Email";
+            DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { p.Name, p.Birthday, p.Phonenumber, p.Sex, p.Email });
         }
     }
 }

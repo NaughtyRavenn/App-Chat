@@ -30,7 +30,7 @@ namespace AppChatV2
 
         public string userName = "";
         public string id = "";
-        public string passWord;
+        public string passWord = "";
 
         public bool Login(string username, string password)
         {
@@ -38,14 +38,22 @@ namespace AppChatV2
             int count = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { username, password }).Rows.Count;
             if (count > 0)
             {
-                string sqlQuery1 = "select id from dbo.Account where Username = @username ";
+                string sqlQuery1 = "SELECT ID FROM ACCOUNT WHERE Username = @username ";
                 id = DataProvider.Instance.ExcuteQuery(sqlQuery1, new object[] { username }).Rows[0]["id"].ToString();
                 userName = username;
                 passWord = password;
+                string sqlQuery2 = "UPDATE ACCOUNT SET Is_active = 'true' WHERE ID = @id ";
+                DataProvider.Instance.ExcuteQuery(sqlQuery2, new object[] { id });
                 return true;
             }
             //id = Data.Instance.ExcuteQuery(sqlQuery1).Rows[0]["id"].ToString();
             return false;
+        }
+
+        public void Logout()
+        {
+            string sqlQuery = "UPDATE ACCOUNT SET Is_active = 'false' WHERE ID = @id ";
+            DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { id });
         }
     }
 }

@@ -170,6 +170,7 @@
       <DependentUpon>ADD_FR.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\DataProvider.cs" />
+    <Compile Include="Class\Person.cs" />
     <Compile Include="EDIT_PROFILE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -226,7 +227,13 @@
     <Compile Include="SINGE_CHAT.designer.cs">
       <DependentUpon>SINGE_CHAT.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs" />
+    <Compile Include="Class\User.cs" />
+    <Compile Include="UC_Friend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Friend.Designer.cs">
+      <DependentUpon>UC_Friend.cs</DependentUpon>
+    </Compile>
     <Compile Include="VERI_FR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -282,6 +289,9 @@
     <EmbeddedResource Include="SINGE_CHAT.resx">
       <DependentUpon>SINGE_CHAT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_Friend.resx">
+      <DependentUpon>UC_Friend.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VERI_FR.resx">
       <DependentUpon>VERI_FR.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,6 +344,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\3162e85a2ff1d1af88e0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_more_horiz_black_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

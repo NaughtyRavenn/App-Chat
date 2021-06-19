@@ -24,7 +24,7 @@ namespace AppChatV2
 
         private void btnEditprofile_Click(object sender, EventArgs e)
         {
-            frmEditprofile frm = new frmEditprofile();
+            Form_EditProfile frm = new Form_EditProfile();
             frm.ShowDialog();
         }
 
@@ -43,6 +43,7 @@ namespace AppChatV2
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblName.Text = User.Instance.Name;
+            LoadFriends();
         }
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
@@ -60,6 +61,19 @@ namespace AppChatV2
         {
             frmInteractgroup frm = new frmInteractgroup();
             frm.ShowDialog();
+        }
+
+        private void LoadFriends()
+        {
+            flowLayoutPanel1.Controls.Clear();
+            var listFriends = DataProvider.Instance.LoadListFriendID();
+            foreach(var v in listFriends)
+            {
+                flowLayoutPanel1.Controls.Add(new UC_Friend()
+                {
+                    Name1 = DataProvider.Instance.LoadInfoByID(v).Name
+                });
+            }
         }
     }
 }
