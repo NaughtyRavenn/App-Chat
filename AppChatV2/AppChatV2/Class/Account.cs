@@ -8,7 +8,7 @@ using System.Data;
 using System.Drawing;
 using System.Windows;
 
-namespace AppChatV2
+namespace AppChatV2.Class
 {
     class Account
     {

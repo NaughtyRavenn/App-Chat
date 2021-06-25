@@ -18,12 +18,14 @@ namespace AppChatV2.Class
         public string Sex { get => _Sex; set => _Sex = value; }
         public DateTime Birthday { get => _Birthday; set => _Birthday = value; }
         public string Username { get => _Username; set => _Username = value; }
+        public string Is_active { get => _Is_active; set => _Is_active = value; }
 
         private string _Phonenumber;
         private string _Email;
-        private  DateTime _Birthday;
+        private DateTime _Birthday;
         private string _Password;
         private string _Sex;
         private string _Username;
+        private string _Is_active;
     }
 }

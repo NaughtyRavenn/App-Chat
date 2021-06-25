@@ -28,88 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.LabelName = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.Label_Name = new System.Windows.Forms.Label();
             this.Button_Option = new Bunifu.Framework.UI.BunifuImageButton();
-            this.PictureBox_Avatar = new System.Windows.Forms.PictureBox();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.guna2CirclePictureBox11 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.Button_Status = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.Button_Option)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // Label_Name
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            // 
-            // LabelName
-            // 
-            this.LabelName.AutoSize = true;
-            this.LabelName.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.LabelName.Location = new System.Drawing.Point(80, 33);
-            this.LabelName.Name = "LabelName";
-            this.LabelName.Size = new System.Drawing.Size(155, 21);
-            this.LabelName.TabIndex = 2;
-            this.LabelName.Text = "bunifuCustomLabel1";
+            this.Label_Name.AutoSize = true;
+            this.Label_Name.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
+            this.Label_Name.ForeColor = System.Drawing.Color.Black;
+            this.Label_Name.Location = new System.Drawing.Point(109, 37);
+            this.Label_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_Name.Name = "Label_Name";
+            this.Label_Name.Size = new System.Drawing.Size(149, 32);
+            this.Label_Name.TabIndex = 20;
+            this.Label_Name.Text = "Username";
             // 
             // Button_Option
             // 
-            this.Button_Option.BackColor = System.Drawing.Color.White;
-            this.Button_Option.Image = global::AppChatV2.Properties.Resources.outline_more_horiz_black_2;
+            this.Button_Option.Image = global::AppChatV2.Properties.Resources.outline_pending_black_2;
             this.Button_Option.ImageActive = null;
-            this.Button_Option.Location = new System.Drawing.Point(268, 25);
+            this.Button_Option.Location = new System.Drawing.Point(318, 30);
             this.Button_Option.Name = "Button_Option";
-            this.Button_Option.Size = new System.Drawing.Size(40, 40);
-            this.Button_Option.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Button_Option.TabIndex = 3;
+            this.Button_Option.Size = new System.Drawing.Size(50, 50);
+            this.Button_Option.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Button_Option.TabIndex = 24;
             this.Button_Option.TabStop = false;
             this.Button_Option.Zoom = 10;
+            this.Button_Option.Click += new System.EventHandler(this.Button_Option_Click);
             // 
-            // PictureBox_Avatar
+            // guna2CirclePictureBox11
             // 
-            this.PictureBox_Avatar.InitialImage = null;
-            this.PictureBox_Avatar.Location = new System.Drawing.Point(13, 25);
-            this.PictureBox_Avatar.Name = "PictureBox_Avatar";
-            this.PictureBox_Avatar.Size = new System.Drawing.Size(50, 50);
-            this.PictureBox_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox_Avatar.TabIndex = 0;
-            this.PictureBox_Avatar.TabStop = false;
+            this.guna2CirclePictureBox11.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2CirclePictureBox11.ImageRotate = 0F;
+            this.guna2CirclePictureBox11.Location = new System.Drawing.Point(13, 16);
+            this.guna2CirclePictureBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CirclePictureBox11.Name = "guna2CirclePictureBox11";
+            this.guna2CirclePictureBox11.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox11.ShadowDecoration.Parent = this.guna2CirclePictureBox11;
+            this.guna2CirclePictureBox11.Size = new System.Drawing.Size(80, 80);
+            this.guna2CirclePictureBox11.TabIndex = 21;
+            this.guna2CirclePictureBox11.TabStop = false;
             // 
-            // bunifuElipse1
+            // Button_Status
             // 
-            this.bunifuElipse1.ElipseRadius = 10000;
-            this.bunifuElipse1.TargetControl = this.Button_Option;
+            this.Button_Status.CheckedState.Parent = this.Button_Status;
+            this.Button_Status.CustomImages.Parent = this.Button_Status;
+            this.Button_Status.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Button_Status.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Button_Status.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_Status.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Button_Status.DisabledState.Parent = this.Button_Status;
+            this.Button_Status.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Button_Status.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Button_Status.ForeColor = System.Drawing.Color.White;
+            this.Button_Status.HoverState.Parent = this.Button_Status;
+            this.Button_Status.Location = new System.Drawing.Point(94, 71);
+            this.Button_Status.Name = "Button_Status";
+            this.Button_Status.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Button_Status.ShadowDecoration.Parent = this.Button_Status;
+            this.Button_Status.Size = new System.Drawing.Size(25, 25);
+            this.Button_Status.TabIndex = 26;
             // 
             // UC_Friend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.Button_Status);
             this.Controls.Add(this.Button_Option);
-            this.Controls.Add(this.LabelName);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.PictureBox_Avatar);
+            this.Controls.Add(this.Label_Name);
+            this.Controls.Add(this.guna2CirclePictureBox11);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_Friend";
-            this.Size = new System.Drawing.Size(325, 100);
-            this.Load += new System.EventHandler(this.Form_UserControl_Load);
+            this.Size = new System.Drawing.Size(384, 111);
+            this.Load += new System.EventHandler(this.UC_Friend_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Button_Option)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox PictureBox_Avatar;
-        private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuCustomLabel LabelName;
+        private System.Windows.Forms.Label Label_Name;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox11;
         private Bunifu.Framework.UI.BunifuImageButton Button_Option;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Guna.UI2.WinForms.Guna2CircleButton Button_Status;
     }
 }

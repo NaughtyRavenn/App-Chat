@@ -8,9 +8,8 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
-using AppChatV2.Class;
 
-namespace AppChatV2
+namespace AppChatV2.Class
 {
     class DataProvider
     {
@@ -44,7 +43,7 @@ namespace AppChatV2
         protected static SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(GetConnectionString());
         private static string GetConnectionString()
         {
-            return @"Server = myseversql.database.windows.net; Database = AppChat; UID = nhatminh; Pwd = Ngaymai123";
+            return @"Server=tcp:chatappdatabase.database.windows.net,1433;Initial Catalog=ChatApp;Persist Security Info=False;User ID=minhbeo;Password=ngaymai@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         }
 
         [DllImport("wininet.dll")]
@@ -59,8 +58,8 @@ namespace AppChatV2
                 using (SqlConnection connection = new SqlConnection(builder.ConnectionString))
                 {
                     try
-                    { 
-                        connection.Open(); 
+                    {
+                        connection.Open();
                     }
 
                     catch
@@ -110,11 +109,11 @@ namespace AppChatV2
         public List<string> LoadListFriendID()
         {
             var v1 = new List<string>();
-            string sqlQuery = "SELECT * FROM CONTACT WHERE ID1 = @id OR ID2 = @id_1 ";
+            string sqlQuery = "SELECT * FROM CONTACT WHERE (ID1 = @id OR ID2 = @id_1 ) AND Type = 'Added' ";
             var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id });
             foreach (DataRow v2 in Data.Rows)
             {
-                if (v2["ID1"].ToString()== Account.Instance.id)
+                if (v2["ID1"].ToString() == Account.Instance.id)
                 {
                     v1.Add(v2["ID2"].ToString());
                 }
@@ -122,6 +121,41 @@ namespace AppChatV2
                 {
                     v1.Add(v2["ID1"].ToString());
                 }
+            }
+            return v1;
+        }
+
+        public List<string> LoadListStrangerID()
+        {
+            var v1 = new List<string>();
+            string sqlQuery = "SELECT ID FROM ACCOUNT WHERE ID <> @id " +
+                "EXCEPT " +
+                "( " +
+                "SELECT ID2 FROM CONTACT WHERE ID1= @id1 AND Type = 'Added'" +
+                "UNION " +
+                "SELECT ID1 FROM CONTACT WHERE ID2= @id2 AND Type = 'Added'" +
+                "UNION " +
+                "SELECT ID2 FROM CONTACT WHERE ID1= @id3 AND Type = 'Waiting'" +
+                "UNION " +
+                "SELECT ID1 FROM CONTACT WHERE ID2= @id4 AND Type = 'Waiting'" +
+                ")";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id,
+                Account.Instance.id, Account.Instance.id, Account.Instance.id });
+            foreach (DataRow v2 in Data.Rows)
+            {
+                v1.Add(v2["ID"].ToString());
+            }
+            return v1;
+        }
+
+        public List<string> LoadListFriendRequest()
+        {
+            var v1 = new List<string>();
+            string sqlQuery = "SELECT ID1 FROM CONTACT WHERE ID2 = @id AND Type= 'Waiting'";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id });
+            foreach (DataRow v2 in Data.Rows)
+            {
+                v1.Add(v2["ID1"].ToString());
             }
             return v1;
         }
@@ -136,10 +170,11 @@ namespace AppChatV2
                 Username = Data.Rows[0]["Username"].ToString(),
                 Password = Data.Rows[0]["Password"].ToString(),
                 Name = Data.Rows[0]["Name"].ToString(),
-                Email=Data.Rows[0]["Email"].ToString(),
-                Phonenumber= Data.Rows[0]["Phonenumber"].ToString(),
-                Sex= Data.Rows[0]["Sex"].ToString(),
-                Birthday = DateTime.Parse(Data.Rows[0]["Birthday"].ToString())
+                Email = Data.Rows[0]["Email"].ToString(),
+                Phonenumber = Data.Rows[0]["Phonenumber"].ToString(),
+                Sex = Data.Rows[0]["Sex"].ToString(),
+                Birthday = DateTime.Parse(Data.Rows[0]["Birthday"].ToString()),
+                Is_active = Data.Rows[0]["Is_active"].ToString()
             };
         }
     }
