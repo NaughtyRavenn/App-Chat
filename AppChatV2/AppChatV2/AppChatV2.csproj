@@ -129,9 +129,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Download\Bunifu_UI_WinForms\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.8\lib\net40\Guna.UI2.dll</HintPath>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\Desktop\BunifuTest\packages\Guna.UI2.WinForms.2.0.1.8\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="SqlDataProvider, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SqlDataProvider.2.0.0\lib\netstandard2.0\SqlDataProvider.dll</HintPath>
     </Reference>
@@ -160,82 +161,100 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Account.cs" />
-    <Compile Include="ADD_2_GRP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ADD_2_GRP.designer.cs">
-      <DependentUpon>ADD_2_GRP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ADD_FR.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ADD_FR.designer.cs">
-      <DependentUpon>ADD_FR.cs</DependentUpon>
-    </Compile>
     <Compile Include="Class\DataProvider.cs" />
     <Compile Include="Class\Person.cs" />
-    <Compile Include="EDIT_PROFILE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EDIT_PROFILE.designer.cs">
-      <DependentUpon>EDIT_PROFILE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GROUP_CHAT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GROUP_CHAT.designer.cs">
-      <DependentUpon>GROUP_CHAT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GRP_INFO.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GRP_INFO.designer.cs">
-      <DependentUpon>GRP_INFO.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IINTERACT_GRP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IINTERACT_GRP.designer.cs">
-      <DependentUpon>IINTERACT_GRP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="INTERACT_SINGLE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="INTERACT_SINGLE.designer.cs">
-      <DependentUpon>INTERACT_SINGLE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LOGIN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LOGIN.designer.cs">
-      <DependentUpon>LOGIN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MAIN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MAIN.designer.cs">
-      <DependentUpon>MAIN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SIGN_UP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SIGN_UP.designer.cs">
-      <DependentUpon>SIGN_UP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SINGE_CHAT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SINGE_CHAT.designer.cs">
-      <DependentUpon>SINGE_CHAT.cs</DependentUpon>
-    </Compile>
     <Compile Include="Class\User.cs" />
+    <Compile Include="Form_AddFriend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddFriend.Designer.cs">
+      <DependentUpon>Form_AddFriend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_AddFriendToGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddFriendToGroup.Designer.cs">
+      <DependentUpon>Form_AddFriendToGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHAT_Receive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CHAT_Receive.Designer.cs">
+      <DependentUpon>CHAT_Receive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHAT_Send.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CHAT_Send.Designer.cs">
+      <DependentUpon>CHAT_Send.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_EditProfile.designer.cs">
+      <DependentUpon>Form_EditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_FriendInfomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_FriendInfomation.Designer.cs">
+      <DependentUpon>Form_FriendInfomation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SingleChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SingleChat.designer.cs">
+      <DependentUpon>Form_SingleChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GroupInfomation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GroupInfomation.designer.cs">
+      <DependentUpon>Form_GroupInfomation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_InteractGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_InteractGroup.designer.cs">
+      <DependentUpon>Form_InteractGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_InteractSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_InteractSingle.designer.cs">
+      <DependentUpon>Form_InteractSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Main.designer.cs">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Friend.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_Friend.Designer.cs">
       <DependentUpon>UC_Friend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form_SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SignUp.Designer.cs">
+      <DependentUpon>Form_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GroupChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GroupChat.designer.cs">
+      <DependentUpon>Form_GroupChat.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_FriendRequest.cs">
       <SubType>UserControl</SubType>
@@ -249,44 +268,56 @@
     <Compile Include="UC_Stranger.Designer.cs">
       <DependentUpon>UC_Stranger.cs</DependentUpon>
     </Compile>
-    <Compile Include="VERI_FR.cs">
+    <Compile Include="Form_ResponeOption.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VERI_FR.designer.cs">
-      <DependentUpon>VERI_FR.cs</DependentUpon>
+    <Compile Include="Form_ResponeOption.designer.cs">
+      <DependentUpon>Form_ResponeOption.cs</DependentUpon>
     </Compile>
-    <Compile Include="VERI_LOGOUT.cs">
+    <Compile Include="Form_VerifySignout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VERI_LOGOUT.designer.cs">
-      <DependentUpon>VERI_LOGOUT.cs</DependentUpon>
+    <Compile Include="Form_VerifySignout.designer.cs">
+      <DependentUpon>Form_VerifySignout.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ADD_2_GRP.resx">
-      <DependentUpon>ADD_2_GRP.cs</DependentUpon>
+    <EmbeddedResource Include="Form_AddFriend.resx">
+      <DependentUpon>Form_AddFriend.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ADD_FR.resx">
-      <DependentUpon>ADD_FR.cs</DependentUpon>
+    <EmbeddedResource Include="Form_AddFriendToGroup.resx">
+      <DependentUpon>Form_AddFriendToGroup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EDIT_PROFILE.resx">
-      <DependentUpon>EDIT_PROFILE.cs</DependentUpon>
+    <EmbeddedResource Include="CHAT_Receive.resx">
+      <DependentUpon>CHAT_Receive.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GROUP_CHAT.resx">
-      <DependentUpon>GROUP_CHAT.cs</DependentUpon>
+    <EmbeddedResource Include="CHAT_Send.resx">
+      <DependentUpon>CHAT_Send.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GRP_INFO.resx">
-      <DependentUpon>GRP_INFO.cs</DependentUpon>
+    <EmbeddedResource Include="Form_EditProfile.resx">
+      <DependentUpon>Form_EditProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IINTERACT_GRP.resx">
-      <DependentUpon>IINTERACT_GRP.cs</DependentUpon>
+    <EmbeddedResource Include="Form_FriendInfomation.resx">
+      <DependentUpon>Form_FriendInfomation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="INTERACT_SINGLE.resx">
-      <DependentUpon>INTERACT_SINGLE.cs</DependentUpon>
+    <EmbeddedResource Include="Form_SingleChat.resx">
+      <DependentUpon>Form_SingleChat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN.resx">
-      <DependentUpon>LOGIN.cs</DependentUpon>
+    <EmbeddedResource Include="Form_GroupInfomation.resx">
+      <DependentUpon>Form_GroupInfomation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MAIN.resx">
-      <DependentUpon>MAIN.cs</DependentUpon>
+    <EmbeddedResource Include="Form_InteractGroup.resx">
+      <DependentUpon>Form_InteractGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_InteractSingle.resx">
+      <DependentUpon>Form_InteractSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Main.resx">
+      <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Friend.resx">
+      <DependentUpon>UC_Friend.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -298,14 +329,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SIGN_UP.resx">
-      <DependentUpon>SIGN_UP.cs</DependentUpon>
+    <EmbeddedResource Include="Form_SignUp.resx">
+      <DependentUpon>Form_SignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SINGE_CHAT.resx">
-      <DependentUpon>SINGE_CHAT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_Friend.resx">
-      <DependentUpon>UC_Friend.cs</DependentUpon>
+    <EmbeddedResource Include="Form_GroupChat.resx">
+      <DependentUpon>Form_GroupChat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_FriendRequest.resx">
       <DependentUpon>UC_FriendRequest.cs</DependentUpon>
@@ -313,11 +341,11 @@
     <EmbeddedResource Include="UC_Stranger.resx">
       <DependentUpon>UC_Stranger.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VERI_FR.resx">
-      <DependentUpon>VERI_FR.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ResponeOption.resx">
+      <DependentUpon>Form_ResponeOption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VERI_LOGOUT.resx">
-      <DependentUpon>VERI_LOGOUT.cs</DependentUpon>
+    <EmbeddedResource Include="Form_VerifySignout.resx">
+      <DependentUpon>Form_VerifySignout.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -329,9 +357,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\40cee2e941086f4a5f251317699ddd85.jpg" />
@@ -367,7 +392,28 @@
     <None Include="Resources\3162e85a2ff1d1af88e0.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\outline_more_horiz_black_2.png" />
+    <None Include="Resources\outline_person_search_black_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_pending_actions_black_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_person_outline_black_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_manage_accounts_black_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18ef4fc0d30f69f601411fdf251e82f5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_history_black_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_recent_actors_black_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_pending_black_2.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\outline_add_circle_outline_black_2.png" />

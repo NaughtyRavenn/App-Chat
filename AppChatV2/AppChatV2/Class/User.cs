@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppChatV2.Class;
 
-namespace AppChatV2
+namespace AppChatV2.Class
 {
     public class User
     {
@@ -23,7 +24,7 @@ namespace AppChatV2
                 User.instance = value;
             }
         }
-        
+
         public void LoadInfo()
         {
             var Data = DataProvider.Instance.LoadInfoFromDB();
@@ -37,7 +38,6 @@ namespace AppChatV2
             Sex = Data.Rows[0]["Sex"].ToString();
         }
 
-        
         public string Is_admin { get; set; }
         public string Is_active { get; set; }
         public string Phonenumber { get => _Phonenumber; set => _Phonenumber = value; }

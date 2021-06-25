@@ -63,6 +63,16 @@ namespace AppChatV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _18ef4fc0d30f69f601411fdf251e82f5 {
+            get {
+                object obj = ResourceManager.GetObject("18ef4fc0d30f69f601411fdf251e82f5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3162e85a2ff1d1af88e0 {
             get {
                 object obj = ResourceManager.GetObject("3162e85a2ff1d1af88e0", resourceCulture);
@@ -163,9 +173,69 @@ namespace AppChatV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap outline_more_horiz_black_2 {
+        internal static System.Drawing.Bitmap outline_history_black_2 {
             get {
-                object obj = ResourceManager.GetObject("outline_more_horiz_black_2", resourceCulture);
+                object obj = ResourceManager.GetObject("outline_history_black_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_manage_accounts_black_2 {
+            get {
+                object obj = ResourceManager.GetObject("outline_manage_accounts_black_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_pending_actions_black_2 {
+            get {
+                object obj = ResourceManager.GetObject("outline_pending_actions_black_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_pending_black_2 {
+            get {
+                object obj = ResourceManager.GetObject("outline_pending_black_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_person_outline_black_2 {
+            get {
+                object obj = ResourceManager.GetObject("outline_person_outline_black_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_person_search_black_2 {
+            get {
+                object obj = ResourceManager.GetObject("outline_person_search_black_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_recent_actors_black_2 {
+            get {
+                object obj = ResourceManager.GetObject("outline_recent_actors_black_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
