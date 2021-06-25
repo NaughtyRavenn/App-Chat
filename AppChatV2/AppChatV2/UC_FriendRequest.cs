@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace AppChatV2
 {
-    public partial class UC_Friend : System.Windows.Forms.UserControl
+    public partial class UC_FriendRequest : UserControl
     {
-        public UC_Friend()
+        public UC_FriendRequest()
         {
             InitializeComponent();
         }
 
-        private void Form_UserControl_Load(object sender, EventArgs e)
+        private void UC_FriendRequest_Load(object sender, EventArgs e)
         {
             Label_Name.Text = Name1;
         }
@@ -26,5 +26,11 @@ namespace AppChatV2
         private string _ID;
         public string Name1 { get => _Name; set => _Name = value; }
         public string ID { get => _ID; set => _ID = value; }
+
+        private void Button_Option_Click(object sender, EventArgs e)
+        {
+            Form_VerifyFriend frm = new Form_VerifyFriend(this);
+            frm.ShowDialog();
+        }
     }
 }

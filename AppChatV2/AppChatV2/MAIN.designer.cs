@@ -33,33 +33,21 @@
             this.btnLogout = new XanderUI.XUIButton();
             this.lblName = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.xuiButton4 = new XanderUI.XUIButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.xuiButton9 = new XanderUI.XUIButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.xuiButton10 = new XanderUI.XUIButton();
-            this.label8 = new System.Windows.Forms.Label();
             this.xuiButton1 = new XanderUI.XUIButton();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.btnAddfriend = new XanderUI.XUIButton();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.xuiButton3 = new XanderUI.XUIButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.xuiFlatTab1 = new XanderUI.XUIFlatTab();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.xuiFlatTab1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEditprofile
@@ -122,19 +110,10 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.AliceBlue;
-            this.tabPage2.Controls.Add(this.xuiButton4);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.xuiButton9);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.xuiButton10);
-            this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.xuiButton1);
             this.tabPage2.Controls.Add(this.vScrollBar2);
             this.tabPage2.Controls.Add(this.btnAddfriend);
             this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.pictureBox6);
-            this.tabPage2.Controls.Add(this.pictureBox7);
-            this.tabPage2.Controls.Add(this.pictureBox8);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
@@ -142,107 +121,6 @@
             this.tabPage2.Size = new System.Drawing.Size(483, 507);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Danh sách bạn";
-            // 
-            // xuiButton4
-            // 
-            this.xuiButton4.BackgroundColor = System.Drawing.Color.Silver;
-            this.xuiButton4.ButtonImage = null;
-            this.xuiButton4.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton4.ButtonText = "•••";
-            this.xuiButton4.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton4.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton4.CornerRadius = 5;
-            this.xuiButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.xuiButton4.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton4.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton4.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton4.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton4.Location = new System.Drawing.Point(283, 359);
-            this.xuiButton4.Margin = new System.Windows.Forms.Padding(2);
-            this.xuiButton4.Name = "xuiButton4";
-            this.xuiButton4.Size = new System.Drawing.Size(26, 23);
-            this.xuiButton4.TabIndex = 130;
-            this.xuiButton4.TextColor = System.Drawing.Color.White;
-            this.xuiButton4.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton4.Click += new System.EventHandler(this.btnInteractgroup_Click);
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label2.Location = new System.Drawing.Point(73, 358);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(206, 24);
-            this.label2.TabIndex = 129;
-            this.label2.Text = "Hội anh chị em họ Nguyễn";
-            // 
-            // xuiButton9
-            // 
-            this.xuiButton9.BackgroundColor = System.Drawing.Color.Silver;
-            this.xuiButton9.ButtonImage = null;
-            this.xuiButton9.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton9.ButtonText = "•••";
-            this.xuiButton9.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton9.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton9.CornerRadius = 5;
-            this.xuiButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.xuiButton9.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton9.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton9.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton9.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton9.Location = new System.Drawing.Point(283, 277);
-            this.xuiButton9.Margin = new System.Windows.Forms.Padding(2);
-            this.xuiButton9.Name = "xuiButton9";
-            this.xuiButton9.Size = new System.Drawing.Size(26, 23);
-            this.xuiButton9.TabIndex = 127;
-            this.xuiButton9.TextColor = System.Drawing.Color.White;
-            this.xuiButton9.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton9.Click += new System.EventHandler(this.btnInteractsingle_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label7.Location = new System.Drawing.Point(73, 276);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 24);
-            this.label7.TabIndex = 126;
-            this.label7.Text = "Bá Khá";
-            // 
-            // xuiButton10
-            // 
-            this.xuiButton10.BackgroundColor = System.Drawing.Color.Silver;
-            this.xuiButton10.ButtonImage = null;
-            this.xuiButton10.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton10.ButtonText = "•••";
-            this.xuiButton10.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton10.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton10.CornerRadius = 5;
-            this.xuiButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.xuiButton10.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton10.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton10.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton10.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton10.Location = new System.Drawing.Point(283, 195);
-            this.xuiButton10.Margin = new System.Windows.Forms.Padding(2);
-            this.xuiButton10.Name = "xuiButton10";
-            this.xuiButton10.Size = new System.Drawing.Size(26, 23);
-            this.xuiButton10.TabIndex = 124;
-            this.xuiButton10.TextColor = System.Drawing.Color.White;
-            this.xuiButton10.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton10.Click += new System.EventHandler(this.btnInteractsingle_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label8.Location = new System.Drawing.Point(73, 194);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 24);
-            this.label8.TabIndex = 123;
-            this.label8.Text = "Nathan Lee";
             // 
             // xuiButton1
             // 
@@ -324,6 +202,14 @@
             this.tabPage1.Tag = "";
             this.tabPage1.Text = "Gần đây";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 38);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(437, 448);
+            this.flowLayoutPanel1.TabIndex = 37;
+            // 
             // xuiButton3
             // 
             this.xuiButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -382,14 +268,6 @@
             this.bunifuElipse1.ElipseRadius = 1200000;
             this.bunifuElipse1.TargetControl = this.pictureBox1;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(7, 38);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(437, 448);
-            this.flowLayoutPanel1.TabIndex = 37;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.GhostWhite;
@@ -401,36 +279,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox6.Location = new System.Drawing.Point(4, 338);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox6.TabIndex = 131;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox7.Location = new System.Drawing.Point(4, 256);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox7.TabIndex = 128;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox8.Location = new System.Drawing.Point(4, 174);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(65, 65);
-            this.pictureBox8.TabIndex = 125;
-            this.pictureBox8.TabStop = false;
             // 
             // Form_Main
             // 
@@ -453,9 +301,6 @@
             this.tabPage1.PerformLayout();
             this.xuiFlatTab1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -475,15 +320,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private XanderUI.XUIFlatTab xuiFlatTab1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private XanderUI.XUIButton xuiButton4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private XanderUI.XUIButton xuiButton9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private XanderUI.XUIButton xuiButton10;
-        private System.Windows.Forms.Label label8;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }

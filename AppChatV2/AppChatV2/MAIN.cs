@@ -71,7 +71,8 @@ namespace AppChatV2
             {
                 flowLayoutPanel1.Controls.Add(new UC_Friend()
                 {
-                    Name1 = DataProvider.Instance.LoadInfoByID(v).Name
+                    Name1 = DataProvider.Instance.LoadInfoByID(v).Name,
+                    ID=v
                 });
             }
         }

@@ -37,7 +37,6 @@ C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmInter
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmInteractsingle.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Properties.Resources.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmSinglechat.resources
-C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmVerifriend.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.frmVerilogout.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.csproj.GenerateResource.cache
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.csproj.CopyComplete
@@ -98,3 +97,7 @@ C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_Mai
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.UC_Friend.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_SignUp.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_EditProfile.resources
+C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.UC_Stranger.resources
+C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.UC_FriendRequest.resources
+C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_VerifyFriend.resources
+C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\bin\Debug\Guna.UI2.dll

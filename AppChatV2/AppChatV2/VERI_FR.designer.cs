@@ -1,6 +1,6 @@
 ﻿namespace AppChatV2
 {
-    partial class frmVerifriend
+    partial class Form_VerifyFriend
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.xuiButton2 = new XanderUI.XUIButton();
-            this.btnYes = new XanderUI.XUIButton();
+            this.Button_No = new XanderUI.XUIButton();
+            this.Button_Yes = new XanderUI.XUIButton();
             this.SuspendLayout();
             // 
             // label1
@@ -43,60 +43,60 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Bạn có đồng ý kết bạn không?";
             // 
-            // xuiButton2
+            // Button_No
             // 
-            this.xuiButton2.BackgroundColor = System.Drawing.Color.Crimson;
-            this.xuiButton2.ButtonImage = null;
-            this.xuiButton2.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.xuiButton2.ButtonText = "No";
-            this.xuiButton2.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.xuiButton2.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton2.CornerRadius = 5;
-            this.xuiButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.xuiButton2.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.xuiButton2.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.xuiButton2.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.xuiButton2.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.xuiButton2.Location = new System.Drawing.Point(152, 55);
-            this.xuiButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.xuiButton2.Name = "xuiButton2";
-            this.xuiButton2.Size = new System.Drawing.Size(100, 32);
-            this.xuiButton2.TabIndex = 23;
-            this.xuiButton2.TextColor = System.Drawing.Color.White;
-            this.xuiButton2.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.Button_No.BackgroundColor = System.Drawing.Color.Crimson;
+            this.Button_No.ButtonImage = null;
+            this.Button_No.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.Button_No.ButtonText = "No";
+            this.Button_No.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.Button_No.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.Button_No.CornerRadius = 5;
+            this.Button_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.Button_No.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.Button_No.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.Button_No.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.Button_No.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.Button_No.Location = new System.Drawing.Point(152, 55);
+            this.Button_No.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_No.Name = "Button_No";
+            this.Button_No.Size = new System.Drawing.Size(100, 32);
+            this.Button_No.TabIndex = 23;
+            this.Button_No.TextColor = System.Drawing.Color.White;
+            this.Button_No.Vertical_Alignment = System.Drawing.StringAlignment.Center;
             // 
-            // btnYes
+            // Button_Yes
             // 
-            this.btnYes.BackgroundColor = System.Drawing.Color.LimeGreen;
-            this.btnYes.ButtonImage = null;
-            this.btnYes.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btnYes.ButtonText = "Yes";
-            this.btnYes.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.btnYes.ClickTextColor = System.Drawing.Color.DodgerBlue;
-            this.btnYes.CornerRadius = 5;
-            this.btnYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.btnYes.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnYes.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
-            this.btnYes.HoverTextColor = System.Drawing.Color.DodgerBlue;
-            this.btnYes.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnYes.Location = new System.Drawing.Point(29, 55);
-            this.btnYes.Margin = new System.Windows.Forms.Padding(2);
-            this.btnYes.Name = "btnYes";
-            this.btnYes.Size = new System.Drawing.Size(100, 32);
-            this.btnYes.TabIndex = 22;
-            this.btnYes.TextColor = System.Drawing.Color.White;
-            this.btnYes.Vertical_Alignment = System.Drawing.StringAlignment.Center;
-            this.btnYes.Click += new System.EventHandler(this.btnYes_Click);
+            this.Button_Yes.BackgroundColor = System.Drawing.Color.LimeGreen;
+            this.Button_Yes.ButtonImage = null;
+            this.Button_Yes.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
+            this.Button_Yes.ButtonText = "Yes";
+            this.Button_Yes.ClickBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.Button_Yes.ClickTextColor = System.Drawing.Color.DodgerBlue;
+            this.Button_Yes.CornerRadius = 5;
+            this.Button_Yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.Button_Yes.Horizontal_Alignment = System.Drawing.StringAlignment.Center;
+            this.Button_Yes.HoverBackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.Button_Yes.HoverTextColor = System.Drawing.Color.DodgerBlue;
+            this.Button_Yes.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
+            this.Button_Yes.Location = new System.Drawing.Point(29, 55);
+            this.Button_Yes.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_Yes.Name = "Button_Yes";
+            this.Button_Yes.Size = new System.Drawing.Size(100, 32);
+            this.Button_Yes.TabIndex = 22;
+            this.Button_Yes.TextColor = System.Drawing.Color.White;
+            this.Button_Yes.Vertical_Alignment = System.Drawing.StringAlignment.Center;
+            this.Button_Yes.Click += new System.EventHandler(this.btnYes_Click);
             // 
-            // frmVerifriend
+            // Form_VerifyFriend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(286, 112);
-            this.Controls.Add(this.xuiButton2);
-            this.Controls.Add(this.btnYes);
+            this.Controls.Add(this.Button_No);
+            this.Controls.Add(this.Button_Yes);
             this.Controls.Add(this.label1);
-            this.Name = "frmVerifriend";
+            this.Name = "Form_VerifyFriend";
             this.Text = "VERI_FR";
             this.Load += new System.EventHandler(this.frmVerifriend_Load);
             this.ResumeLayout(false);
@@ -107,7 +107,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private XanderUI.XUIButton xuiButton2;
-        private XanderUI.XUIButton btnYes;
+        private XanderUI.XUIButton Button_No;
+        private XanderUI.XUIButton Button_Yes;
     }
 }

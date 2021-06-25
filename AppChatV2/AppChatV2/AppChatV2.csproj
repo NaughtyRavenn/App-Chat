@@ -129,6 +129,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Download\Bunifu_UI_WinForms\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.1.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.8\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="SqlDataProvider, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SqlDataProvider.2.0.0\lib\netstandard2.0\SqlDataProvider.dll</HintPath>
     </Reference>
@@ -234,6 +237,18 @@
     <Compile Include="UC_Friend.Designer.cs">
       <DependentUpon>UC_Friend.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_FriendRequest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_FriendRequest.Designer.cs">
+      <DependentUpon>UC_FriendRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Stranger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Stranger.Designer.cs">
+      <DependentUpon>UC_Stranger.cs</DependentUpon>
+    </Compile>
     <Compile Include="VERI_FR.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -292,6 +307,12 @@
     <EmbeddedResource Include="UC_Friend.resx">
       <DependentUpon>UC_Friend.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC_FriendRequest.resx">
+      <DependentUpon>UC_FriendRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Stranger.resx">
+      <DependentUpon>UC_Stranger.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VERI_FR.resx">
       <DependentUpon>VERI_FR.cs</DependentUpon>
     </EmbeddedResource>
@@ -347,6 +368,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\outline_more_horiz_black_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_add_circle_outline_black_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

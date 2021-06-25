@@ -19,13 +19,36 @@ namespace AppChatV2
 
         private void FORM_ADD_FR_Load(object sender, EventArgs e)
         {
-
+            LoadStranger();
+            LoadFriendRequest();
         }
 
-        private void btnVerifyfriend(object sender, EventArgs e)
+        private void LoadStranger()
         {
-            frmVerifriend frm = new frmVerifriend();
-            frm.ShowDialog();
+            FlowLayoutPanel_Stranger.Controls.Clear();
+            var ListStranger = DataProvider.Instance.LoadListStrangerID();
+            foreach (var v in ListStranger)
+            {
+                FlowLayoutPanel_Stranger.Controls.Add(new UC_Stranger()
+                {
+                    Name1 = DataProvider.Instance.LoadInfoByID(v).Name,
+                    ID = v
+                });
+            }
+        }
+
+        private void LoadFriendRequest()
+        {
+            FlowLayoutPanel_ListRequest.Controls.Clear();
+            var ListFriendRequest = DataProvider.Instance.LoadListFriendRequest();
+            foreach (var v in ListFriendRequest)
+            {
+                FlowLayoutPanel_ListRequest.Controls.Add(new UC_FriendRequest()
+                {
+                    Name1 = DataProvider.Instance.LoadInfoByID(v).Name,
+                    ID = v
+                });
+            }
         }
     }
 }

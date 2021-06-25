@@ -110,7 +110,7 @@ namespace AppChatV2
         public List<string> LoadListFriendID()
         {
             var v1 = new List<string>();
-            string sqlQuery = "SELECT * FROM CONTACT WHERE ID1 = @id OR ID2 = @id_1 ";
+            string sqlQuery = "SELECT * FROM CONTACT WHERE (ID1 = @id OR ID2 = @id_1 ) AND Type = 'Added' ";
             var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id });
             foreach (DataRow v2 in Data.Rows)
             {
@@ -122,6 +122,36 @@ namespace AppChatV2
                 {
                     v1.Add(v2["ID1"].ToString());
                 }
+            }
+            return v1;
+        }
+
+        public List<string> LoadListStrangerID()
+        {
+            var v1 = new List<string>();
+            string sqlQuery = "SELECT ID FROM ACCOUNT WHERE ID <> @id " +
+                "EXCEPT " +
+                "( " +
+                "SELECT ID2 FROM CONTACT WHERE ID1= @id1 AND Type = 'Added'" +
+                "UNION " +
+                "SELECT ID1 FROM CONTACT WHERE ID2= @id2 AND Type = 'Added'" +
+                ")";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id,Account.Instance.id });
+            foreach (DataRow v2 in Data.Rows)
+            {
+                    v1.Add(v2["ID"].ToString());
+            }
+            return v1;      
+        }
+
+        public List<string> LoadListFriendRequest()
+        {
+            var v1 = new List<string>();
+            string sqlQuery = "SELECT ID1 FROM CONTACT WHERE ID2 = @id AND Type= 'Waiting'";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id });
+            foreach (DataRow v2 in Data.Rows)
+            {
+                v1.Add(v2["ID1"].ToString());
             }
             return v1;
         }
