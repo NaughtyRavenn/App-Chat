@@ -31,6 +31,7 @@
             this.Button_Chat = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Button_Unfriend = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Button_Profile = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.Button_AddGroup = new Guna.UI2.WinForms.Guna2GradientButton();
             this.SuspendLayout();
             // 
             // Button_Chat
@@ -80,7 +81,7 @@
             this.Button_Unfriend.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
             this.Button_Unfriend.ForeColor = System.Drawing.Color.White;
             this.Button_Unfriend.HoverState.Parent = this.Button_Unfriend;
-            this.Button_Unfriend.Location = new System.Drawing.Point(94, 82);
+            this.Button_Unfriend.Location = new System.Drawing.Point(162, 82);
             this.Button_Unfriend.Margin = new System.Windows.Forms.Padding(2);
             this.Button_Unfriend.Name = "Button_Unfriend";
             this.Button_Unfriend.ShadowDecoration.Parent = this.Button_Unfriend;
@@ -117,12 +118,41 @@
             this.Button_Profile.Text = "Profile";
             this.Button_Profile.Click += new System.EventHandler(this.Button_Profile_Click);
             // 
+            // Button_AddGroup
+            // 
+            this.Button_AddGroup.BorderColor = System.Drawing.Color.DimGray;
+            this.Button_AddGroup.BorderRadius = 17;
+            this.Button_AddGroup.BorderThickness = 1;
+            this.Button_AddGroup.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.Button_AddGroup.CheckedState.Parent = this.Button_AddGroup;
+            this.Button_AddGroup.CustomImages.Parent = this.Button_AddGroup;
+            this.Button_AddGroup.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Button_AddGroup.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Button_AddGroup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_AddGroup.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_AddGroup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Button_AddGroup.DisabledState.Parent = this.Button_AddGroup;
+            this.Button_AddGroup.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Button_AddGroup.FillColor2 = System.Drawing.Color.Blue;
+            this.Button_AddGroup.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.Button_AddGroup.ForeColor = System.Drawing.Color.White;
+            this.Button_AddGroup.HoverState.Parent = this.Button_AddGroup;
+            this.Button_AddGroup.Location = new System.Drawing.Point(28, 82);
+            this.Button_AddGroup.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_AddGroup.Name = "Button_AddGroup";
+            this.Button_AddGroup.ShadowDecoration.Parent = this.Button_AddGroup;
+            this.Button_AddGroup.Size = new System.Drawing.Size(108, 37);
+            this.Button_AddGroup.TabIndex = 91;
+            this.Button_AddGroup.Text = "Add Group";
+            this.Button_AddGroup.Click += new System.EventHandler(this.Button_AddGroup_Click);
+            // 
             // Form_InteractSingle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(302, 130);
+            this.Controls.Add(this.Button_AddGroup);
             this.Controls.Add(this.Button_Profile);
             this.Controls.Add(this.Button_Chat);
             this.Controls.Add(this.Button_Unfriend);
@@ -140,5 +170,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton Button_Chat;
         private Guna.UI2.WinForms.Guna2GradientButton Button_Unfriend;
         private Guna.UI2.WinForms.Guna2GradientButton Button_Profile;
+        private Guna.UI2.WinForms.Guna2GradientButton Button_AddGroup;
     }
 }
