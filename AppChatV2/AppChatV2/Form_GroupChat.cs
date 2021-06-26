@@ -14,9 +14,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace AppChatV2
 {
-    public partial class frmSinglechat : Form
+    public partial class Form_GroupChat : Form
     {
-        public frmSinglechat()
+        public Form_GroupChat()
         {
             InitializeComponent();
 
@@ -125,6 +125,17 @@ namespace AppChatV2
         private void frmSinglechat_Load(object sender, EventArgs e)
         {
             Connect();
+        }
+
+        private void Form_GroupChat_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_GroupInfomation_Click(object sender, EventArgs e)
+        {
+            Form_GroupInfomation frm = new Form_GroupInfomation(this, 3);
+            frm.ShowDialog();
         }
     }
 }

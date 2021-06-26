@@ -17,16 +17,15 @@ namespace AppChatV2
             InitializeComponent();
         }
 
-        private void btnMessagesingle_Click(object sender, EventArgs e)
+        private void Form_InteractGroup_Load(object sender, EventArgs e)
         {
-            /*Form_SingleChat frm = new Form_SingleChat();
-            frm.Show();
-            this.Hide();*/
+
         }
 
-        private void frmInteractgroup_Load(object sender, EventArgs e)
+        private void Button_GroupInfomation_Click(object sender, EventArgs e)
         {
-
+            Form_GroupInfomation frm = new Form_GroupInfomation(this, 2);
+            frm.ShowDialog();
         }
     }
 }

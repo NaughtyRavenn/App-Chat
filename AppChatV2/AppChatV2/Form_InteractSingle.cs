@@ -26,7 +26,7 @@ namespace AppChatV2
         private void btnMessagesingle_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmSinglechat frm = new frmSinglechat();
+            Form_GroupChat frm = new Form_GroupChat();
             frm.Show();
         }
 
@@ -69,5 +69,11 @@ namespace AppChatV2
         private UC_Friend _Par;
 
         public UC_Friend Par { get => _Par; set => _Par = value; }
+
+        private void Button_AddGroup_Click(object sender, EventArgs e)
+        {
+            Form_GroupInfomation frm = new Form_GroupInfomation(this, 1);
+            frm.ShowDialog();
+        }
     }
 }

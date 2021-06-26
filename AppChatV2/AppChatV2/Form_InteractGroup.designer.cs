@@ -30,6 +30,7 @@
         {
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.Button_GroupInfomation = new Guna.UI2.WinForms.Guna2GradientButton();
             this.SuspendLayout();
             // 
             // guna2GradientButton2
@@ -86,19 +87,48 @@
             this.guna2GradientButton1.TabIndex = 87;
             this.guna2GradientButton1.Text = "Chat";
             // 
+            // Button_GroupInfomation
+            // 
+            this.Button_GroupInfomation.BorderColor = System.Drawing.Color.DimGray;
+            this.Button_GroupInfomation.BorderRadius = 17;
+            this.Button_GroupInfomation.BorderThickness = 1;
+            this.Button_GroupInfomation.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.Button_GroupInfomation.CheckedState.Parent = this.Button_GroupInfomation;
+            this.Button_GroupInfomation.CustomImages.Parent = this.Button_GroupInfomation;
+            this.Button_GroupInfomation.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Button_GroupInfomation.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Button_GroupInfomation.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_GroupInfomation.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_GroupInfomation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Button_GroupInfomation.DisabledState.Parent = this.Button_GroupInfomation;
+            this.Button_GroupInfomation.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Button_GroupInfomation.FillColor2 = System.Drawing.Color.Blue;
+            this.Button_GroupInfomation.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold);
+            this.Button_GroupInfomation.ForeColor = System.Drawing.Color.White;
+            this.Button_GroupInfomation.HoverState.Parent = this.Button_GroupInfomation;
+            this.Button_GroupInfomation.Location = new System.Drawing.Point(93, 83);
+            this.Button_GroupInfomation.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_GroupInfomation.Name = "Button_GroupInfomation";
+            this.Button_GroupInfomation.ShadowDecoration.Parent = this.Button_GroupInfomation;
+            this.Button_GroupInfomation.Size = new System.Drawing.Size(108, 37);
+            this.Button_GroupInfomation.TabIndex = 88;
+            this.Button_GroupInfomation.Text = "Info";
+            this.Button_GroupInfomation.Click += new System.EventHandler(this.Button_GroupInfomation_Click);
+            // 
             // Form_InteractGroup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(302, 84);
+            this.ClientSize = new System.Drawing.Size(302, 131);
+            this.Controls.Add(this.Button_GroupInfomation);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.guna2GradientButton2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_InteractGroup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Option";
-            this.Load += new System.EventHandler(this.frmInteractgroup_Load);
+            this.Load += new System.EventHandler(this.Form_InteractGroup_Load);
             this.ResumeLayout(false);
 
         }
@@ -106,5 +136,6 @@
         #endregion
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton Button_GroupInfomation;
     }
 }
