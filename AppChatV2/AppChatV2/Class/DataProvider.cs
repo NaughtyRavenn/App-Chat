@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Runtime.InteropServices;
 using System.Data.SqlClient;
+using System.Collections;
 
 namespace AppChatV2.Class
 {
@@ -106,21 +107,16 @@ namespace AppChatV2.Class
             return Data;
         }
 
-        public List<string> LoadListFriendID()
+        public Dictionary<string,int> LoadListFriendIDAndPort()
         {
-            var v1 = new List<string>();
-            string sqlQuery = "SELECT * FROM CONTACT WHERE (ID1 = @id OR ID2 = @id_1 ) AND Type = 'Added' ";
+            var v1 = new Dictionary<string, int>();
+            string sqlQuery = "SELECT ID1 AS ID,Port FROM CONTACT WHERE ID2 = @id1 AND Type = 'Added' " +
+                "UNION " +
+                "SELECT ID2,Port FROM CONTACT WHERE ID1 = @id2 AND Type = 'Added' ";
             var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id });
             foreach (DataRow v2 in Data.Rows)
             {
-                if (v2["ID1"].ToString() == Account.Instance.id)
-                {
-                    v1.Add(v2["ID2"].ToString());
-                }
-                else
-                {
-                    v1.Add(v2["ID1"].ToString());
-                }
+                v1.Add(v2["ID"].ToString(), int.Parse(v2["Port"].ToString()));
             }
             return v1;
         }
@@ -176,6 +172,20 @@ namespace AppChatV2.Class
                 Birthday = DateTime.Parse(Data.Rows[0]["Birthday"].ToString()),
                 Is_active = Data.Rows[0]["Is_active"].ToString()
             };
+        }
+
+        //--------------------------
+
+        public List<int> LoadContactFromDB()
+        {
+            var v1 = new List<int>();
+            string sqlQuery = "SELECT Port FROM CONTACT";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery);
+            foreach (DataRow v in Data.Rows)
+            {
+                v1.Add(int.Parse(v["Port"].ToString()));
+            }
+            return v1;
         }
     }
 }
