@@ -37,10 +37,11 @@
             this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.guna2GradientButton6 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.RichTextBox_Message = new System.Windows.Forms.RichTextBox();
+            this.Button_Send = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.TextBox_Port = new System.Windows.Forms.TextBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
@@ -49,6 +50,7 @@
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.Controls.Add(this.TextBox_Port);
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Controls.Add(this.guna2CirclePictureBox2);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -97,8 +99,8 @@
             this.guna2GradientPanel2.Controls.Add(this.guna2ImageButton3);
             this.guna2GradientPanel2.Controls.Add(this.guna2ImageButton2);
             this.guna2GradientPanel2.Controls.Add(this.guna2ImageButton1);
-            this.guna2GradientPanel2.Controls.Add(this.richTextBox1);
-            this.guna2GradientPanel2.Controls.Add(this.guna2GradientButton6);
+            this.guna2GradientPanel2.Controls.Add(this.RichTextBox_Message);
+            this.guna2GradientPanel2.Controls.Add(this.Button_Send);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 475);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
@@ -169,42 +171,42 @@
             this.guna2ImageButton1.TabIndex = 83;
             this.guna2ImageButton1.UseTransparentBackground = true;
             // 
-            // richTextBox1
+            // RichTextBox_Message
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(154, 11);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(306, 37);
-            this.richTextBox1.TabIndex = 86;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.RichTextBox_Message.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RichTextBox_Message.Location = new System.Drawing.Point(154, 11);
+            this.RichTextBox_Message.Name = "RichTextBox_Message";
+            this.RichTextBox_Message.Size = new System.Drawing.Size(306, 37);
+            this.RichTextBox_Message.TabIndex = 86;
+            this.RichTextBox_Message.Text = "";
             // 
-            // guna2GradientButton6
+            // Button_Send
             // 
-            this.guna2GradientButton6.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2GradientButton6.BorderRadius = 17;
-            this.guna2GradientButton6.BorderThickness = 1;
-            this.guna2GradientButton6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2GradientButton6.CheckedState.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.CustomImages.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton6.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton6.DisabledState.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2GradientButton6.FillColor2 = System.Drawing.Color.Navy;
-            this.guna2GradientButton6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton6.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton6.HoverState.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.Location = new System.Drawing.Point(465, 11);
-            this.guna2GradientButton6.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2GradientButton6.Name = "guna2GradientButton6";
-            this.guna2GradientButton6.ShadowDecoration.Parent = this.guna2GradientButton6;
-            this.guna2GradientButton6.Size = new System.Drawing.Size(85, 37);
-            this.guna2GradientButton6.TabIndex = 82;
-            this.guna2GradientButton6.Text = "Send";
+            this.Button_Send.BorderColor = System.Drawing.Color.DimGray;
+            this.Button_Send.BorderRadius = 17;
+            this.Button_Send.BorderThickness = 1;
+            this.Button_Send.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.Button_Send.CheckedState.Parent = this.Button_Send;
+            this.Button_Send.CustomImages.Parent = this.Button_Send;
+            this.Button_Send.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Button_Send.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Button_Send.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_Send.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_Send.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Button_Send.DisabledState.Parent = this.Button_Send;
+            this.Button_Send.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Button_Send.FillColor2 = System.Drawing.Color.Navy;
+            this.Button_Send.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.Button_Send.ForeColor = System.Drawing.Color.White;
+            this.Button_Send.HoverState.Parent = this.Button_Send;
+            this.Button_Send.Location = new System.Drawing.Point(465, 11);
+            this.Button_Send.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_Send.Name = "Button_Send";
+            this.Button_Send.ShadowDecoration.Parent = this.Button_Send;
+            this.Button_Send.Size = new System.Drawing.Size(85, 37);
+            this.Button_Send.TabIndex = 82;
+            this.Button_Send.Text = "Send";
+            this.Button_Send.Click += new System.EventHandler(this.Button_Send_Click);
             // 
             // panel2
             // 
@@ -214,13 +216,21 @@
             this.panel2.Size = new System.Drawing.Size(560, 1);
             this.panel2.TabIndex = 87;
             // 
-            // flowLayoutPanel1
+            // richTextBox1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, -1);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(557, 477);
-            this.flowLayoutPanel1.TabIndex = 88;
+            this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(0, -1);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(557, 477);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
+            // TextBox_Port
+            // 
+            this.TextBox_Port.Location = new System.Drawing.Point(109, 249);
+            this.TextBox_Port.Name = "TextBox_Port";
+            this.TextBox_Port.Size = new System.Drawing.Size(100, 20);
+            this.TextBox_Port.TabIndex = 42;
             // 
             // Form_SingleChat
             // 
@@ -231,7 +241,7 @@
             this.ClientSize = new System.Drawing.Size(856, 533);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -239,6 +249,7 @@
             this.Text = "Single chat";
             this.Load += new System.EventHandler(this.Form_SingleChat_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -255,9 +266,10 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton6;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private Guna.UI2.WinForms.Guna2GradientButton Button_Send;
+        private System.Windows.Forms.RichTextBox RichTextBox_Message;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox TextBox_Port;
     }
 }

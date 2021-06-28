@@ -44,7 +44,7 @@
             this.Form_.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Form_.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Form_.Location = new System.Drawing.Point(0, 0);
-            this.Form_.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Form_.Margin = new System.Windows.Forms.Padding(2);
             this.Form_.Name = "Form_";
             this.Form_.ShadowDecoration.Parent = this.Form_;
             this.Form_.Size = new System.Drawing.Size(297, 67);
@@ -76,9 +76,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.Form_);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CHAT_Receive";
             this.Size = new System.Drawing.Size(297, 67);
             this.Form_.ResumeLayout(false);

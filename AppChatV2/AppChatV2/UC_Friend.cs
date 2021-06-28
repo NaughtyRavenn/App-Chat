@@ -38,11 +38,13 @@ namespace AppChatV2
         private DateTime _Birthday;
         private string _Email;
         private string _Phonenumber;
+        private int _Port;
         public string Name1 { get => _Name; set => _Name = value; }
         public string ID { get => _ID; set => _ID = value; }
         public string Is_active { get => _Is_active; set => _Is_active = value; }
         public DateTime Birthday { get => _Birthday; set => _Birthday = value; }
         public string Email { get => _Email; set => _Email = value; }
         public string Phonenumber { get => _Phonenumber; set => _Phonenumber = value; }
+        public int Port { get => _Port; set => _Port = value; }
     }
 }
