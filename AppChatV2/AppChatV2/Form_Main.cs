@@ -52,14 +52,15 @@ namespace AppChatV2
             var Data = DataProvider.Instance.LoadListFriendIDAndPort();
             foreach (var v in Data)
             {
+                var data = DataProvider.Instance.LoadInfoByID(v.Key);
                 FlowLayoutPanel_ListFriend.Controls.Add(new UC_Friend()
                 {
-                    Name1 = DataProvider.Instance.LoadInfoByID(v.Key).Name,
+                    Name1 = data.Name,
                     ID = v.Key,
-                    Is_active = DataProvider.Instance.LoadInfoByID(v.Key).Is_active,
-                    Birthday = DataProvider.Instance.LoadInfoByID(v.Key).Birthday,
-                    Phonenumber = DataProvider.Instance.LoadInfoByID(v.Key).Phonenumber,
-                    Email = DataProvider.Instance.LoadInfoByID(v.Key).Email,
+                    Is_active = data.Is_active,
+                    Birthday = data.Birthday,
+                    Phonenumber = data.Phonenumber,
+                    Email = data.Email,
                     Port = v.Value
                 });
             }

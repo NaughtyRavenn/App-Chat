@@ -1,3 +1,5 @@
+CREATE DATABASE ChatApp
+
 USE ChatApp
 SET DATEFORMAT dmy 
 
@@ -27,8 +29,9 @@ INSERT INTO ACCOUNT (Username,Password,Name,Is_active,Is_admin) VALUES ('admin',
 INSERT INTO CONTACT (ID1,ID2) VALUES (1,3),(1,4)
 
 ALTER TABLE ACCOUNT ADD Birthday DATETIME
-ALTER TABLE ACCOUNT ADD PhoneNumber varchar(20)
+ALTER TABLE ACCOUNT ADD Phonenumber varchar(20)
 ALTER TABLE ACCOUNT ADD Email varchar(50)
+ALTER TABLE ACCOUNT ADD Port INT
 
 ALTER TABLE ACCOUNT 
 ADD CONSTRAINT PK_ACCOUNT
@@ -39,24 +42,12 @@ ADD CONSTRAINT PK_CONTACT
 PRIMARY KEY (ID)
 
 UPDATE ACCOUNT SET Birthday='1/1/1'
-UPDATE ACCOUNT SET PhoneNumber='01'
 UPDATE ACCOUNT SET Email='Email'
-
-ALTER TABLE ACCOUNT
-DROP COLUMN PhoneNumber
-
-ALTER TABLE ACCOUNT ADD Phonenumber varchar(20)
-
 UPDATE ACCOUNT SET Phonenumber='01'
 
 ALTER TABLE ACCOUNT ADD Sex varchar(10)
 
 UPDATE ACCOUNT SET Sex='Male'
-
-ALTER TABLE ACCOUNT
-DROP COLUMN Birthday
-
-ALTER TABLE ACCOUNT ADD Birthday DATETIME2
 
 ALTER TABLE CONTACT
 DROP COLUMN ID1
@@ -95,4 +86,13 @@ ALTER TABLE GROUPINFO
 ADD CONSTRAINT FK_GROUPINFO_GROUPCHAT
 FOREIGN KEY (GROUP_ID) REFERENCES GROUPCHAT(ID)
 
-ALTER TABLE CONTACT ADD Port INT
+INSERT INTO ACCOUNT (Username,Password,Name,Is_active,Is_admin,Email,Phonenumber,Sex,Birthday) VALUES ('tram1','1','Tram1','false','true','Email','01','Female','2001-01-01'),
+('thuy1','1','Thuy1','false','true','Email','01','Female','2001-01-01'),('thanh1','1','Thanh1','false','true','Email','01','Male','2001-01-01')
+
+UPDATE ACCOUNT SET Password=1
+
+INSERT INTO CONTACT (ID1,ID2,Type,Port) VALUES ('1','2','Added','8000'),('1','3','Added','8001'),('4','1','Added','8002'),('5','1','Added','8003'),('2','3','Added','8004'),('3','5','Added','8005'),
+('1','6','Added','8006'),('1','7','Added','8007'),('1','10','Waiting','8008'),('1','11','Waiting','8009')
+
+ALTER TABLE CONTACT 
+ADD Port INT

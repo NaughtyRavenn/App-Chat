@@ -44,7 +44,7 @@ namespace AppChatV2.Class
         protected static SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(GetConnectionString());
         private static string GetConnectionString()
         {
-            return @"Server=tcp:chatappdatabase.database.windows.net,1433;Initial Catalog=ChatApp;Persist Security Info=False;User ID=minhbeo;Password=ngaymai@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            return @"Data Source=LAPTOP-L3JT52S4;Initial Catalog=ChatApp;Integrated Security=True";
         }
 
         [DllImport("wininet.dll")]
@@ -110,13 +110,13 @@ namespace AppChatV2.Class
         public Dictionary<string,int> LoadListFriendIDAndPort()
         {
             var v1 = new Dictionary<string, int>();
-            string sqlQuery = "SELECT ID1 AS ID,Port FROM CONTACT WHERE ID2 = @id1 AND Type = 'Added' " +
+            string sqlQuery = "SELECT ID1 AS IDnew,Port FROM CONTACT WHERE ID2 = @id1 AND Type = 'Added' " +
                 "UNION " +
-                "SELECT ID2,Port FROM CONTACT WHERE ID1 = @id2 AND Type = 'Added' ";
+                "SELECT ID2 AS IDnew,Port FROM CONTACT WHERE ID1 = @id2 AND Type = 'Added' ";
             var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id });
             foreach (DataRow v2 in Data.Rows)
             {
-                v1.Add(v2["ID"].ToString(), int.Parse(v2["Port"].ToString()));
+                v1.Add(v2["IDnew"].ToString(), int.Parse(v2["Port"].ToString()));
             }
             return v1;
         }

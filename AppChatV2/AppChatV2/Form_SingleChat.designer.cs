@@ -30,7 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_SingleChat));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.TextBox_Port = new System.Windows.Forms.TextBox();
+            this.Label_Name = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -41,7 +42,6 @@
             this.Button_Send = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.TextBox_Port = new System.Windows.Forms.TextBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel1.Controls.Add(this.TextBox_Port);
-            this.guna2GradientPanel1.Controls.Add(this.label1);
+            this.guna2GradientPanel1.Controls.Add(this.Label_Name);
             this.guna2GradientPanel1.Controls.Add(this.guna2CirclePictureBox2);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(556, 0);
@@ -60,17 +60,24 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(300, 533);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
-            // label1
+            // TextBox_Port
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(-1, 139);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(301, 59);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "Friend name";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.TextBox_Port.Location = new System.Drawing.Point(109, 249);
+            this.TextBox_Port.Name = "TextBox_Port";
+            this.TextBox_Port.Size = new System.Drawing.Size(100, 20);
+            this.TextBox_Port.TabIndex = 42;
+            // 
+            // Label_Name
+            // 
+            this.Label_Name.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Name.ForeColor = System.Drawing.Color.Black;
+            this.Label_Name.Location = new System.Drawing.Point(-1, 139);
+            this.Label_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_Name.Name = "Label_Name";
+            this.Label_Name.Size = new System.Drawing.Size(301, 59);
+            this.Label_Name.TabIndex = 41;
+            this.Label_Name.Text = "Friend name";
+            this.Label_Name.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // guna2CirclePictureBox2
             // 
@@ -225,13 +232,6 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // TextBox_Port
-            // 
-            this.TextBox_Port.Location = new System.Drawing.Point(109, 249);
-            this.TextBox_Port.Name = "TextBox_Port";
-            this.TextBox_Port.Size = new System.Drawing.Size(100, 20);
-            this.TextBox_Port.TabIndex = 42;
-            // 
             // Form_SingleChat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,6 +247,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_SingleChat";
             this.Text = "Single chat";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_SingleChat_FormClosed);
             this.Load += new System.EventHandler(this.Form_SingleChat_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
@@ -259,7 +260,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Label_Name;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
