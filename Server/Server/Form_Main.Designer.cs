@@ -28,54 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Button_Reload = new System.Windows.Forms.Button();
-            this.txt_1 = new System.Windows.Forms.TextBox();
-            this.txt_3 = new System.Windows.Forms.TextBox();
-            this.txt_2 = new System.Windows.Forms.TextBox();
+            this.RichTextBox_Message = new System.Windows.Forms.RichTextBox();
+            this.Button_Listen = new System.Windows.Forms.Button();
+            this.TextBox_Port = new System.Windows.Forms.TextBox();
+            this.TextBox_IP = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // Button_Reload
+            // RichTextBox_Message
             // 
-            this.Button_Reload.Location = new System.Drawing.Point(29, 3);
-            this.Button_Reload.Name = "Button_Reload";
-            this.Button_Reload.Size = new System.Drawing.Size(316, 135);
-            this.Button_Reload.TabIndex = 0;
-            this.Button_Reload.Text = "button1";
-            this.Button_Reload.UseVisualStyleBackColor = true;
-            this.Button_Reload.Click += new System.EventHandler(this.Button_Reload_Click);
+            this.RichTextBox_Message.Location = new System.Drawing.Point(226, 12);
+            this.RichTextBox_Message.Name = "RichTextBox_Message";
+            this.RichTextBox_Message.Size = new System.Drawing.Size(562, 426);
+            this.RichTextBox_Message.TabIndex = 1;
+            this.RichTextBox_Message.Text = "";
             // 
-            // txt_1
+            // Button_Listen
             // 
-            this.txt_1.Location = new System.Drawing.Point(380, 78);
-            this.txt_1.Name = "txt_1";
-            this.txt_1.Size = new System.Drawing.Size(100, 20);
-            this.txt_1.TabIndex = 1;
+            this.Button_Listen.Location = new System.Drawing.Point(12, 12);
+            this.Button_Listen.Name = "Button_Listen";
+            this.Button_Listen.Size = new System.Drawing.Size(106, 55);
+            this.Button_Listen.TabIndex = 2;
+            this.Button_Listen.Text = "Listen";
+            this.Button_Listen.UseVisualStyleBackColor = true;
+            this.Button_Listen.Click += new System.EventHandler(this.Button_Listen_Click);
             // 
-            // txt_3
+            // TextBox_Port
             // 
-            this.txt_3.Location = new System.Drawing.Point(380, 159);
-            this.txt_3.Name = "txt_3";
-            this.txt_3.Size = new System.Drawing.Size(100, 20);
-            this.txt_3.TabIndex = 2;
+            this.TextBox_Port.Location = new System.Drawing.Point(12, 74);
+            this.TextBox_Port.Name = "TextBox_Port";
+            this.TextBox_Port.Size = new System.Drawing.Size(100, 20);
+            this.TextBox_Port.TabIndex = 3;
             // 
-            // txt_2
+            // TextBox_IP
             // 
-            this.txt_2.Location = new System.Drawing.Point(380, 118);
-            this.txt_2.Name = "txt_2";
-            this.txt_2.Size = new System.Drawing.Size(100, 20);
-            this.txt_2.TabIndex = 3;
+            this.TextBox_IP.Location = new System.Drawing.Point(12, 100);
+            this.TextBox_IP.Name = "TextBox_IP";
+            this.TextBox_IP.Size = new System.Drawing.Size(208, 20);
+            this.TextBox_IP.TabIndex = 4;
             // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txt_2);
-            this.Controls.Add(this.txt_3);
-            this.Controls.Add(this.txt_1);
-            this.Controls.Add(this.Button_Reload);
+            this.Controls.Add(this.TextBox_IP);
+            this.Controls.Add(this.TextBox_Port);
+            this.Controls.Add(this.Button_Listen);
+            this.Controls.Add(this.RichTextBox_Message);
             this.Name = "Form_Main";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Main_FormClosed);
             this.Load += new System.EventHandler(this.Form_Main_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -83,11 +85,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Button_Reload;
-        private System.Windows.Forms.TextBox txt_1;
-        private System.Windows.Forms.TextBox txt_3;
-        private System.Windows.Forms.TextBox txt_2;
+        private System.Windows.Forms.RichTextBox RichTextBox_Message;
+        private System.Windows.Forms.Button Button_Listen;
+        private System.Windows.Forms.TextBox TextBox_Port;
+        private System.Windows.Forms.TextBox TextBox_IP;
     }
 }
 

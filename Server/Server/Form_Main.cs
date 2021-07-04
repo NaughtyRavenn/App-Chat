@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+using System.IO;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Server
@@ -18,6 +14,8 @@ namespace Server
         public Form_Main()
         {
             InitializeComponent();
+            CheckForIllegalCrossThreadCalls = false;
+            ListServerPort = new List<ServerPort>();
         }
 
         private void Form_Main_Load(object sender, EventArgs e)
@@ -25,105 +23,182 @@ namespace Server
 
         }
 
-        private void Run_Server()
+        private void Button_Listen_Click(object sender, EventArgs e)
         {
-            foreach (var v in DataProvider.Instance.LoadContactFromDB())
+            foreach(var v in DataProvider.Instance.LoadContactFromDB())
             {
-                var i = v;
-                Thread t = new Thread(() =>
-                {
-                    Connect(i);
-                });
-                t.IsBackground = true;
-                t.Start();
+                ThreadConnect(v);
             }
+            MessageBox.Show("OK");
         }
 
-
-        void Connect(int v)
+        private void Form_Main_FormClosed(object sender, FormClosedEventArgs e)
         {
+            Close();
+        }
 
-            ClientList = new List<Client>();
-            IP = new IPEndPoint(IPAddress.Any, v);
-            Server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+        public void ThreadConnect(int i)
+        {
+            var v = i;
+            var thread = new Thread(() => Connect(v));
+            thread.Name = "Connect";
+            thread.IsBackground = true;
+            thread.Start();
+        }
+
+        public void ThreadWithParameters(Socket client, List<Socket> list)
+        {
+            var t = new Thread(() => Receive(client, list));
+            t.Name = "Receive";
+            t.IsBackground = true;
+            t.Start();
+        }
+
+        private void Connect(int i)
+        {
+            #region v1
+            /*for (int i = 8000; i <= 8001; i++)
+            {*/
+            int v = i;
+            /*Socket Server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+            IPEndPoint IPep = new IPEndPoint(IPAddress.Any, v);
+            List<Socket> ClientList = new List<Socket>();*/
+            ServerPort serverPort = new ServerPort(v);
+            ListServerPort.Add(serverPort);
+            /*IP1 = TextBox_IP.Text;*/
             try
             {
-                Server.Bind(IP);
+                /*Server.Bind(IPep);*/
+                serverPort.Server.Bind(serverPort.IPep);
             }
             catch
             {
                 return;
             }
-            Server.Listen(10);
-
-            Thread listen = new Thread(() =>
+            /*Server.Listen(100);*/
+            serverPort.Server.Listen(100);
+            /*Thread listen = new Thread(() =>
+            {*/
+            try
             {
-                try
+                while (true)
                 {
-                    while (true)
-                    {
-                        Client client = new Client();
-                        client.clientsocket = Server.Accept();
-                        ClientList.Add(client);
-                        ThreadPool.QueueUserWorkItem(Receive, client);
-                    }
+                    Socket client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+                    client = serverPort.Server.Accept();
+                    RichTextBox_Message.Text += "New client connected from: " + client.RemoteEndPoint + "\n";
+                    serverPort.ClientList.Add(client);
+                    /*Thread recv = new Thread(Receive);
+                    recv.IsBackground = true;
+                    recv.Start(client);*/
+                    /*Thread recv=*/ThreadWithParameters(client, serverPort.ClientList);
+                    /*recv.Start();*/
+                    /*ThreadWithParameters(client, ClientList);*/
+                    /*Thread recv = new Thread(() =>
+                      {
+                          try
+                          {
+                              while (true)
+                              {
+                                  byte[] data = new byte[1024 * 5000];
+                                  client.Receive(data);
+
+                                  string message = (string)Deserialize(data);
+                                  AddMessage(client.RemoteEndPoint + ": " + message);
+                                  foreach (Socket item in ClientList)
+                                  {
+                                      if (item != null && item != client)
+                                          item.Send(Serialize(message));
+                                  }
+                              }
+                          }
+                          catch
+                          {
+                              ClientList.Remove(client);
+                              client.Close();
+                          }
+                      });
+                    recv.Name = "Receive";
+                    recv.IsBackground = true;
+                    recv.Start();*/
                 }
-                catch
-                {
-                    IP = new IPEndPoint(IPAddress.Any, v);
-                    Server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
-                }
-            });
-            listen.IsBackground = true;
-            listen.Start();
+            }
+            catch
+            {
+                serverPort.IPep = new IPEndPoint(IPAddress.Any, v);
+                serverPort.Server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+            }
+                /*});
+                listen.Name = "Listen";
+                listen.IsBackground = true;
+                listen.Start();
+
+            }*/
+            #endregion
         }
 
-        void Receive(object obj)
+        //Nhận dữ liệu từ khách
+        void Receive(Socket client,List<Socket> ClientList)
         {
-            Client client = obj as Client;
+            #region
+
+           /* List<Socket> ClientList = obj2 as List<Socket>;*/
             try
             {
                 while (true)
                 {
                     byte[] data = new byte[1024 * 5000];
-                    client.clientsocket.Receive(data);
-                    /*string message = (string)Deserialize(data);*/
-                    foreach (Client item in ClientList)
+                    client.Receive(data);
+
+                    string message = (string)Deserialize(data);
+                    /*AddMessage(client.RemoteEndPoint + ": " + message);*/
+                    foreach (Socket item in ClientList)
                     {
                         if (item != null && item != client)
-                            item.clientsocket.Send(data);
+                            item.Send(Serialize(message));
                     }
                 }
             }
             catch
             {
                 ClientList.Remove(client);
-                client.clientsocket.Close();
+                client.Close();
             }
+            #endregion
         }
 
-
-        public class Client
+        byte[] Serialize(object obj)
         {
-            public Socket clientsocket;
-            public Client()
-            {
-                clientsocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
-            }
+            MemoryStream stream = new MemoryStream();
+            BinaryFormatter formatter = new BinaryFormatter();
+
+            formatter.Serialize(stream, obj);
+
+            return stream.ToArray();
         }
 
-        private IPEndPoint _IP;
+        object Deserialize(byte[] data)
+        {
+            MemoryStream stream = new MemoryStream(data);
+            BinaryFormatter formatter = new BinaryFormatter();
+
+            return formatter.Deserialize(stream);
+        }
+
+        void Close()
+        {
+            foreach(var v in ListServerPort)
+                v.Server.Close();
+        }
+
+        void AddMessage(string s)
+        {
+            RichTextBox_Message.Text+=s+"\n";
+        }
+
         private Socket _Server;
-        private List<Client> _ClientList;
+        private List<ServerPort> _ListServerPort;
 
-        public IPEndPoint IP { get => _IP; set => _IP = value; }
         public Socket Server { get => _Server; set => _Server = value; }
-        public List<Client> ClientList { get => _ClientList; set => _ClientList = value; }
-
-        private void Button_Reload_Click(object sender, EventArgs e)
-        {
-            Run_Server();
-            MessageBox.Show("Server ran");
-        }
+        internal List<ServerPort> ListServerPort { get => _ListServerPort; set => _ListServerPort = value; }
     }
 }
