@@ -12,16 +12,18 @@ namespace AppChatV2
 {
     public partial class CHAT_Send : UserControl
     {
-        public CHAT_Send(string v)
+        public CHAT_Send()
         {
             InitializeComponent();
-            Label_Message.Text = v;
         }
 
- /*       private void CHAT_Send_Load(object sender, EventArgs e)
+        private void CHAT_Send_Load(object sender, EventArgs e)
         {
             Label_Message.Text = Message;
-        }*/
+        }
 
+        private string _Message;
+
+        public string Message { get => _Message; set => _Message = value; }
     }
 }

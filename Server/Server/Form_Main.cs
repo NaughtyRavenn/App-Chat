@@ -200,5 +200,13 @@ namespace Server
 
         public Socket Server { get => _Server; set => _Server = value; }
         internal List<ServerPort> ListServerPort { get => _ListServerPort; set => _ListServerPort = value; }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TabPage tabpg = new TabPage("Tab");
+            tabControl1.TabPages.Add(tabpg);
+            RichTextBox RichTextBox_Chat = new RichTextBox();
+            tabpg.Controls.Add(RichTextBox_Chat);
+        }
     }
 }

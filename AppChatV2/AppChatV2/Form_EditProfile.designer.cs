@@ -35,12 +35,16 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
             this.Notice1 = new System.Windows.Forms.PictureBox();
             this.Notice2 = new System.Windows.Forms.PictureBox();
             this.Button_LoginInfo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Button_PersonalInfo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Button_IP = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.TabPage_LoginInfo = new System.Windows.Forms.TabPage();
             this.Label_ConfirmPassword = new System.Windows.Forms.Label();
@@ -75,6 +79,12 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Page_EditProfile = new Bunifu.UI.WinForms.BunifuPages();
+            this.TabPage_IP = new System.Windows.Forms.TabPage();
+            this.Label_IP = new System.Windows.Forms.Label();
+            this.Button_Confirm3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Notice3 = new System.Windows.Forms.PictureBox();
+            this.TextBox_IP = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Notice1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Notice2)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -83,6 +93,8 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.Page_EditProfile.SuspendLayout();
+            this.TabPage_IP.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Notice3)).BeginInit();
             this.SuspendLayout();
             // 
             // Notice1
@@ -238,6 +250,8 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Controls.Add(this.Notice3);
+            this.guna2Panel1.Controls.Add(this.Button_IP);
             this.guna2Panel1.Controls.Add(this.Notice1);
             this.guna2Panel1.Controls.Add(this.Notice2);
             this.guna2Panel1.Controls.Add(this.Button_LoginInfo);
@@ -248,6 +262,72 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(222, 583);
             this.guna2Panel1.TabIndex = 34;
+            // 
+            // Button_IP
+            // 
+            this.Button_IP.AllowToggling = true;
+            this.Button_IP.AnimationSpeed = 200;
+            this.Button_IP.AutoGenerateColors = false;
+            this.Button_IP.BackColor = System.Drawing.Color.Transparent;
+            this.Button_IP.BackColor1 = System.Drawing.Color.White;
+            this.Button_IP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button_IP.BackgroundImage")));
+            this.Button_IP.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Button_IP.ButtonText = "Change IP";
+            this.Button_IP.ButtonTextMarginLeft = 20;
+            this.Button_IP.ColorContrastOnClick = 45;
+            this.Button_IP.ColorContrastOnHover = 45;
+            this.Button_IP.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.Button_IP.CustomizableEdges = borderEdges3;
+            this.Button_IP.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Button_IP.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Button_IP.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Button_IP.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Button_IP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Button_IP.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Button_IP.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.Button_IP.ForeColor = System.Drawing.Color.DimGray;
+            this.Button_IP.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_IP.IconMarginLeft = 20;
+            this.Button_IP.IconPadding = 15;
+            this.Button_IP.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_IP.IdleBorderColor = System.Drawing.Color.White;
+            this.Button_IP.IdleBorderRadius = 3;
+            this.Button_IP.IdleBorderThickness = 1;
+            this.Button_IP.IdleFillColor = System.Drawing.Color.White;
+            this.Button_IP.IdleIconLeftImage = global::AppChatV2.Properties.Resources.outline_settings_remote_black_2;
+            this.Button_IP.IdleIconRightImage = null;
+            this.Button_IP.IndicateFocus = true;
+            this.Button_IP.Location = new System.Drawing.Point(0, 265);
+            this.Button_IP.Name = "Button_IP";
+            stateProperties5.BorderColor = System.Drawing.Color.White;
+            stateProperties5.BorderRadius = 3;
+            stateProperties5.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties5.BorderThickness = 1;
+            stateProperties5.FillColor = System.Drawing.Color.White;
+            stateProperties5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(50)))), ((int)(((byte)(207)))));
+            stateProperties5.IconLeftImage = null;
+            stateProperties5.IconRightImage = null;
+            this.Button_IP.onHoverState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.White;
+            stateProperties6.BorderRadius = 3;
+            stateProperties6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties6.BorderThickness = 1;
+            stateProperties6.FillColor = System.Drawing.Color.White;
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(50)))), ((int)(((byte)(207)))));
+            stateProperties6.IconLeftImage = null;
+            stateProperties6.IconRightImage = null;
+            this.Button_IP.OnPressedState = stateProperties6;
+            this.Button_IP.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Button_IP.Size = new System.Drawing.Size(222, 63);
+            this.Button_IP.TabIndex = 5;
+            this.Button_IP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Button_IP.TextMarginLeft = 20;
+            this.Button_IP.UseDefaultRadiusAndThickness = true;
+            this.Button_IP.Click += new System.EventHandler(this.Button_IP_Click);
             // 
             // panel1
             // 
@@ -1022,13 +1102,14 @@
             this.Page_EditProfile.AllowTransitions = true;
             this.Page_EditProfile.Controls.Add(this.TabPage_PersonalInfo);
             this.Page_EditProfile.Controls.Add(this.TabPage_LoginInfo);
+            this.Page_EditProfile.Controls.Add(this.TabPage_IP);
             this.Page_EditProfile.Location = new System.Drawing.Point(218, -11);
             this.Page_EditProfile.Multiline = true;
             this.Page_EditProfile.Name = "Page_EditProfile";
-            this.Page_EditProfile.Page = this.TabPage_LoginInfo;
-            this.Page_EditProfile.PageIndex = 1;
-            this.Page_EditProfile.PageName = "TabPage_LoginInfo";
-            this.Page_EditProfile.PageTitle = "tabPage4";
+            this.Page_EditProfile.Page = this.TabPage_IP;
+            this.Page_EditProfile.PageIndex = 2;
+            this.Page_EditProfile.PageName = "TabPage_IP";
+            this.Page_EditProfile.PageTitle = "tabPage1";
             this.Page_EditProfile.SelectedIndex = 0;
             this.Page_EditProfile.Size = new System.Drawing.Size(554, 583);
             this.Page_EditProfile.TabIndex = 33;
@@ -1049,6 +1130,108 @@
             animation1.TransparencyCoeff = 1F;
             this.Page_EditProfile.Transition = animation1;
             this.Page_EditProfile.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Transparent;
+            // 
+            // TabPage_IP
+            // 
+            this.TabPage_IP.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.TabPage_IP.Controls.Add(this.Label_IP);
+            this.TabPage_IP.Controls.Add(this.Button_Confirm3);
+            this.TabPage_IP.Controls.Add(this.TextBox_IP);
+            this.TabPage_IP.Controls.Add(this.label13);
+            this.TabPage_IP.Location = new System.Drawing.Point(4, 4);
+            this.TabPage_IP.Name = "TabPage_IP";
+            this.TabPage_IP.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPage_IP.Size = new System.Drawing.Size(546, 557);
+            this.TabPage_IP.TabIndex = 2;
+            this.TabPage_IP.Text = "tabPage1";
+            // 
+            // Label_IP
+            // 
+            this.Label_IP.AutoSize = true;
+            this.Label_IP.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_IP.ForeColor = System.Drawing.Color.Red;
+            this.Label_IP.Location = new System.Drawing.Point(242, 253);
+            this.Label_IP.Name = "Label_IP";
+            this.Label_IP.Size = new System.Drawing.Size(0, 17);
+            this.Label_IP.TabIndex = 62;
+            // 
+            // Button_Confirm3
+            // 
+            this.Button_Confirm3.BorderColor = System.Drawing.Color.DimGray;
+            this.Button_Confirm3.BorderRadius = 17;
+            this.Button_Confirm3.BorderThickness = 1;
+            this.Button_Confirm3.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.Button_Confirm3.CheckedState.Parent = this.Button_Confirm3;
+            this.Button_Confirm3.CustomImages.Parent = this.Button_Confirm3;
+            this.Button_Confirm3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Button_Confirm3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Button_Confirm3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_Confirm3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_Confirm3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Button_Confirm3.DisabledState.Parent = this.Button_Confirm3;
+            this.Button_Confirm3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Button_Confirm3.FillColor2 = System.Drawing.Color.Blue;
+            this.Button_Confirm3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.Button_Confirm3.ForeColor = System.Drawing.Color.White;
+            this.Button_Confirm3.HoverState.Parent = this.Button_Confirm3;
+            this.Button_Confirm3.Location = new System.Drawing.Point(182, 367);
+            this.Button_Confirm3.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_Confirm3.Name = "Button_Confirm3";
+            this.Button_Confirm3.ShadowDecoration.Parent = this.Button_Confirm3;
+            this.Button_Confirm3.Size = new System.Drawing.Size(188, 37);
+            this.Button_Confirm3.TabIndex = 58;
+            this.Button_Confirm3.Text = "Xác nhận";
+            this.Button_Confirm3.Click += new System.EventHandler(this.Button_Confirm3_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.Color.DimGray;
+            this.label13.Location = new System.Drawing.Point(86, 221);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(124, 30);
+            this.label13.TabIndex = 55;
+            this.label13.Text = "IP Address";
+            // 
+            // Notice3
+            // 
+            this.Notice3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(50)))), ((int)(((byte)(207)))));
+            this.Notice3.Location = new System.Drawing.Point(1, 265);
+            this.Notice3.Name = "Notice3";
+            this.Notice3.Size = new System.Drawing.Size(10, 62);
+            this.Notice3.TabIndex = 6;
+            this.Notice3.TabStop = false;
+            this.Notice3.Visible = false;
+            // 
+            // TextBox_IP
+            // 
+            this.TextBox_IP.BackColor = System.Drawing.Color.Transparent;
+            this.TextBox_IP.BorderColor = System.Drawing.Color.DimGray;
+            this.TextBox_IP.BorderRadius = 17;
+            this.TextBox_IP.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox_IP.DefaultText = "";
+            this.TextBox_IP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TextBox_IP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TextBox_IP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox_IP.DisabledState.Parent = this.TextBox_IP;
+            this.TextBox_IP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TextBox_IP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox_IP.FocusedState.Parent = this.TextBox_IP;
+            this.TextBox_IP.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.TextBox_IP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TextBox_IP.HoverState.Parent = this.TextBox_IP;
+            this.TextBox_IP.Location = new System.Drawing.Point(245, 216);
+            this.TextBox_IP.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.TextBox_IP.Name = "TextBox_IP";
+            this.TextBox_IP.PasswordChar = '\0';
+            this.TextBox_IP.PlaceholderText = "";
+            this.TextBox_IP.SelectedText = "";
+            this.TextBox_IP.ShadowDecoration.Parent = this.TextBox_IP;
+            this.TextBox_IP.Size = new System.Drawing.Size(250, 35);
+            this.TextBox_IP.TabIndex = 56;
             // 
             // Form_EditProfile
             // 
@@ -1074,6 +1257,9 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.Page_EditProfile.ResumeLayout(false);
+            this.TabPage_IP.ResumeLayout(false);
+            this.TabPage_IP.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Notice3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1118,5 +1304,12 @@
         private Guna.UI2.WinForms.Guna2ComboBox ComboBox_Month;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBox_Year;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBox_Day;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Button_IP;
+        private System.Windows.Forms.TabPage TabPage_IP;
+        private System.Windows.Forms.Label Label_IP;
+        private Guna.UI2.WinForms.Guna2GradientButton Button_Confirm3;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox Notice3;
+        private Guna.UI2.WinForms.Guna2TextBox TextBox_IP;
     }
 }

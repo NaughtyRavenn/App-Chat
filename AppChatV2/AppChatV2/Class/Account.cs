@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
-using System.Drawing;
-using System.Windows;
-
+﻿
 namespace AppChatV2.Class
 {
     class Account
@@ -28,6 +19,8 @@ namespace AppChatV2.Class
             }
         }
 
+        public string IP { get => _IP; set => _IP = value; }
+
         public string userName = "";
         public string id = "";
         public string passWord = "";
@@ -42,6 +35,7 @@ namespace AppChatV2.Class
                 id = DataProvider.Instance.ExcuteQuery(sqlQuery1, new object[] { username }).Rows[0]["id"].ToString();
                 userName = username;
                 passWord = password;
+                IP = "192.168.0.104";
                 string sqlQuery2 = "UPDATE ACCOUNT SET Is_active = 'true' WHERE ID = @id ";
                 DataProvider.Instance.ExcuteQuery(sqlQuery2, new object[] { id });
                 return true;
@@ -55,5 +49,7 @@ namespace AppChatV2.Class
             string sqlQuery = "UPDATE ACCOUNT SET Is_active = 'false' WHERE ID = @id ";
             DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { id });
         }
+
+        private string _IP;
     }
 }

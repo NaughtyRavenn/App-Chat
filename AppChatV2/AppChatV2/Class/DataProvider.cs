@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Configuration;
-using System.Runtime.InteropServices;
 using System.Data.SqlClient;
-using System.Collections;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace AppChatV2.Class
 {
@@ -176,11 +172,11 @@ namespace AppChatV2.Class
 
         //--------------------------
 
-        public List<int> LoadContactFromDB()
+        public List<int> LoadMyContactFromDB()
         {
             var v1 = new List<int>();
-            string sqlQuery = "SELECT Port FROM CONTACT";
-            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery);
+            string sqlQuery = "SELECT Port FROM CONTACT WHERE ID1= @id1 OR ID2= @id2 ";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { User.Instance.ID, User.Instance.ID });
             foreach (DataRow v in Data.Rows)
             {
                 v1.Add(int.Parse(v["Port"].ToString()));

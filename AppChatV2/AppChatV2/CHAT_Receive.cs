@@ -16,10 +16,5 @@ namespace AppChatV2
         {
             InitializeComponent();
         }
-
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

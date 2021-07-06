@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppChatV2.Class;
 
@@ -18,22 +12,28 @@ namespace AppChatV2
 {
     public partial class Form_SingleChat : Form
     {
+
         public Form_SingleChat(Form_InteractSingle PAR)
         {
             InitializeComponent();
             this.Par = PAR;
-            Label_Name.Text = Par.Par.Name1;
+            //Label_Name.Text = Par.Par.Name1;
             CheckForIllegalCrossThreadCalls = false;
         }
 
         private void Form_SingleChat_Load(object sender, EventArgs e)
         {
-            Connect();
+            for (int i = 8000; i <= 8002; i++)
+            {
+                Thread thread = new Thread(() => Connect(i));
+                thread.IsBackground = true;
+                thread.Start();
+            }
         }
 
-        void Connect()
+        void Connect(int i)
         {
-            IP = new IPEndPoint(IPAddress.Parse("192.168.0.104"), Par.Par.Port);
+            IP = new IPEndPoint(IPAddress.Parse(Account.Instance.IP),i);
             Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
 
             try
@@ -57,12 +57,13 @@ namespace AppChatV2
             Client.Close();
         }
 
-        void Send()
+        public void Send()
         {
-            string name=Account.Instance.userName;
+            string name=User.Instance.Name;
+            string ID = Account.Instance.id;
             if (RichTextBox_Message.Text != string.Empty)
-                Client.Send(Serialize(name + " sent | " + RichTextBox_Message.Text + " | to " + Par.Par.Name1));
-            AddMessage(RichTextBox_Message.Text);
+                Client.Send(Serialize(ID + "-" + name + ": " + RichTextBox_Message.Text));
+            AddMessage(name + ": " + RichTextBox_Message.Text);
         }
 
         void Receive()
@@ -75,7 +76,6 @@ namespace AppChatV2
                     Client.Receive(data);
 
                     string message = (string)Deserialize(data);
-
                     AddMessage(message);
                 }
             }
@@ -87,15 +87,19 @@ namespace AppChatV2
 
         private void AddMessage(string mess)
         {
+            /*FlowLayoutPanel_Message.Controls.Add(new CHAT_Send()
+            {
+                Message = mess
+            });*/
             /*lstvMessage.Items.Add(new ListViewItem()
             {
                 Text = mess
             });*/
             mess += "\n";
-            richTextBox1.Text += mess;
+            RichTextBox_Display.Text += mess;
             RichTextBox_Message.Clear();
         }
-
+        
         byte[] Serialize(object obj)
         {
             MemoryStream stream = new MemoryStream();

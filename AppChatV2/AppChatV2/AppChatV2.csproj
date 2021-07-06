@@ -262,6 +262,12 @@
     <Compile Include="UC_FriendRequest.Designer.cs">
       <DependentUpon>UC_FriendRequest.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_SingleChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_SingleChat.Designer.cs">
+      <DependentUpon>UC_SingleChat.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Stranger.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -337,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_FriendRequest.resx">
       <DependentUpon>UC_FriendRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_SingleChat.resx">
+      <DependentUpon>UC_SingleChat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Stranger.resx">
       <DependentUpon>UC_Stranger.cs</DependentUpon>
@@ -417,6 +426,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\outline_add_circle_outline_black_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_settings_remote_black_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_groups_black_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

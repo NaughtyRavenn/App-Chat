@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,7 +32,9 @@ namespace AppChatV2
             Notice1.Visible = true;
             Button_PersonalInfo.ForeColor = Color.FromArgb(218, 50, 207);
             Notice2.Visible = false;
+            Notice3.Visible = false;
             Button_LoginInfo.ForeColor = Color.DimGray;
+            Button_IP.ForeColor = Color.DimGray;
             Page_EditProfile.SetPage(TabPage_PersonalInfo);
         }
 
@@ -40,8 +43,21 @@ namespace AppChatV2
             Notice2.Visible = true;
             Button_LoginInfo.ForeColor = Color.FromArgb(218, 50, 207);
             Notice1.Visible = false;
+            Notice3.Visible = false;
             Button_PersonalInfo.ForeColor = Color.DimGray;
+            Button_IP.ForeColor = Color.DimGray;
             Page_EditProfile.SetPage(TabPage_LoginInfo);
+        }
+
+        private void Button_IP_Click(object sender, EventArgs e)
+        {
+            Notice3.Visible = true;
+            Button_IP.ForeColor = Color.FromArgb(218, 50, 207);
+            Notice1.Visible = false;
+            Notice2.Visible = false;
+            Button_PersonalInfo.ForeColor = Color.DimGray;
+            Button_LoginInfo.ForeColor = Color.DimGray;
+            Page_EditProfile.SetPage(TabPage_IP);
         }
 
         Person p = DataProvider.Instance.LoadInfoByID(Account.Instance.id);
@@ -263,11 +279,31 @@ namespace AppChatV2
             RadioButton_Female.Checked = RadioButton_Male.Checked = false;
         }
 
+        private void Button_Confirm3_Click(object sender, EventArgs e)
+        {
+            if(CheckIP())
+                Account.Instance.IP = IPAddress.Parse(TextBox_IP.Text).ToString();
+        }
+
+        private bool CheckIP()
+        {
+            IPAddress ip;
+            if(IPAddress.TryParse(TextBox_IP.Text,out ip))
+            {
+                return true;
+            }
+            else
+            {
+                Label_IP.Text = "Invalid IP";
+                return false;
+            }
+        }
 
         private int _Flag1;
         private int _Flag2;
 
         public int Flag1 { get => _Flag1; set => _Flag1 = value; }
         public int Flag2 { get => _Flag2; set => _Flag2 = value; }
+
     }
 }
