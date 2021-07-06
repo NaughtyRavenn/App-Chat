@@ -49,7 +49,6 @@
             this.Form_.ShadowDecoration.Parent = this.Form_;
             this.Form_.Size = new System.Drawing.Size(297, 67);
             this.Form_.TabIndex = 0;
-            this.Form_.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
             // label1
             // 

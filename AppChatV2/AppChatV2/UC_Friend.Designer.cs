@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.Label_Name = new System.Windows.Forms.Label();
+            this.Button_Status = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Button_Option = new Bunifu.Framework.UI.BunifuImageButton();
             this.guna2CirclePictureBox11 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.Button_Status = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.Button_Option)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox11)).BeginInit();
             this.SuspendLayout();
@@ -41,18 +41,38 @@
             this.Label_Name.AutoSize = true;
             this.Label_Name.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
             this.Label_Name.ForeColor = System.Drawing.Color.Black;
-            this.Label_Name.Location = new System.Drawing.Point(109, 37);
+            this.Label_Name.Location = new System.Drawing.Point(99, 31);
             this.Label_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label_Name.Name = "Label_Name";
             this.Label_Name.Size = new System.Drawing.Size(149, 32);
             this.Label_Name.TabIndex = 20;
             this.Label_Name.Text = "Username";
             // 
+            // Button_Status
+            // 
+            this.Button_Status.CheckedState.Parent = this.Button_Status;
+            this.Button_Status.CustomImages.Parent = this.Button_Status;
+            this.Button_Status.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Button_Status.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Button_Status.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_Status.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Button_Status.DisabledState.Parent = this.Button_Status;
+            this.Button_Status.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Button_Status.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Button_Status.ForeColor = System.Drawing.Color.White;
+            this.Button_Status.HoverState.Parent = this.Button_Status;
+            this.Button_Status.Location = new System.Drawing.Point(84, 66);
+            this.Button_Status.Name = "Button_Status";
+            this.Button_Status.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Button_Status.ShadowDecoration.Parent = this.Button_Status;
+            this.Button_Status.Size = new System.Drawing.Size(20, 20);
+            this.Button_Status.TabIndex = 26;
+            // 
             // Button_Option
             // 
             this.Button_Option.Image = global::AppChatV2.Properties.Resources.outline_pending_black_2;
             this.Button_Option.ImageActive = null;
-            this.Button_Option.Location = new System.Drawing.Point(318, 30);
+            this.Button_Option.Location = new System.Drawing.Point(266, 25);
             this.Button_Option.Name = "Button_Option";
             this.Button_Option.Size = new System.Drawing.Size(50, 50);
             this.Button_Option.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -71,29 +91,9 @@
             this.guna2CirclePictureBox11.Name = "guna2CirclePictureBox11";
             this.guna2CirclePictureBox11.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox11.ShadowDecoration.Parent = this.guna2CirclePictureBox11;
-            this.guna2CirclePictureBox11.Size = new System.Drawing.Size(80, 80);
+            this.guna2CirclePictureBox11.Size = new System.Drawing.Size(70, 70);
             this.guna2CirclePictureBox11.TabIndex = 21;
             this.guna2CirclePictureBox11.TabStop = false;
-            // 
-            // Button_Status
-            // 
-            this.Button_Status.CheckedState.Parent = this.Button_Status;
-            this.Button_Status.CustomImages.Parent = this.Button_Status;
-            this.Button_Status.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Button_Status.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Button_Status.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Button_Status.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Button_Status.DisabledState.Parent = this.Button_Status;
-            this.Button_Status.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Button_Status.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Button_Status.ForeColor = System.Drawing.Color.White;
-            this.Button_Status.HoverState.Parent = this.Button_Status;
-            this.Button_Status.Location = new System.Drawing.Point(94, 71);
-            this.Button_Status.Name = "Button_Status";
-            this.Button_Status.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.Button_Status.ShadowDecoration.Parent = this.Button_Status;
-            this.Button_Status.Size = new System.Drawing.Size(25, 25);
-            this.Button_Status.TabIndex = 26;
             // 
             // UC_Friend
             // 
@@ -107,8 +107,9 @@
             this.Controls.Add(this.guna2CirclePictureBox11);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_Friend";
-            this.Size = new System.Drawing.Size(384, 111);
+            this.Size = new System.Drawing.Size(328, 104);
             this.Load += new System.EventHandler(this.UC_Friend_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.UC_Friend_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.Button_Option)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox11)).EndInit();
             this.ResumeLayout(false);

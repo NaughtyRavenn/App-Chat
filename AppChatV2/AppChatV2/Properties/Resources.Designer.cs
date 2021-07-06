@@ -173,6 +173,16 @@ namespace AppChatV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap outline_groups_black_2 {
+            get {
+                object obj = ResourceManager.GetObject("outline_groups_black_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap outline_history_black_2 {
             get {
                 object obj = ResourceManager.GetObject("outline_history_black_2", resourceCulture);
@@ -236,6 +246,16 @@ namespace AppChatV2.Properties {
         internal static System.Drawing.Bitmap outline_recent_actors_black_2 {
             get {
                 object obj = ResourceManager.GetObject("outline_recent_actors_black_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap outline_settings_remote_black_2 {
+            get {
+                object obj = ResourceManager.GetObject("outline_settings_remote_black_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
