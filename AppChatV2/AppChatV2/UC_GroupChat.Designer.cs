@@ -1,6 +1,6 @@
 ﻿namespace AppChatV2
 {
-    partial class UC_SingleChat
+    partial class UC_GroupChat
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_SingleChat));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_GroupChat));
             this.RichTextBox_Display = new System.Windows.Forms.RichTextBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.RichTextBox_Message = new System.Windows.Forms.RichTextBox();
             this.Button_Send = new Guna.UI2.WinForms.Guna2GradientButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +48,7 @@
             this.RichTextBox_Display.Name = "RichTextBox_Display";
             this.RichTextBox_Display.ReadOnly = true;
             this.RichTextBox_Display.Size = new System.Drawing.Size(563, 421);
-            this.RichTextBox_Display.TabIndex = 88;
+            this.RichTextBox_Display.TabIndex = 91;
             this.RichTextBox_Display.Text = "";
             // 
             // guna2GradientPanel2
@@ -64,7 +64,50 @@
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
             this.guna2GradientPanel2.Size = new System.Drawing.Size(563, 52);
-            this.guna2GradientPanel2.TabIndex = 89;
+            this.guna2GradientPanel2.TabIndex = 92;
+            // 
+            // RichTextBox_Message
+            // 
+            this.RichTextBox_Message.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RichTextBox_Message.Location = new System.Drawing.Point(112, 9);
+            this.RichTextBox_Message.Name = "RichTextBox_Message";
+            this.RichTextBox_Message.Size = new System.Drawing.Size(336, 37);
+            this.RichTextBox_Message.TabIndex = 86;
+            this.RichTextBox_Message.Text = "";
+            // 
+            // Button_Send
+            // 
+            this.Button_Send.BorderColor = System.Drawing.Color.DimGray;
+            this.Button_Send.BorderRadius = 17;
+            this.Button_Send.BorderThickness = 1;
+            this.Button_Send.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.Button_Send.CheckedState.Parent = this.Button_Send;
+            this.Button_Send.CustomImages.Parent = this.Button_Send;
+            this.Button_Send.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Button_Send.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Button_Send.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_Send.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_Send.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Button_Send.DisabledState.Parent = this.Button_Send;
+            this.Button_Send.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Button_Send.FillColor2 = System.Drawing.Color.Navy;
+            this.Button_Send.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.Button_Send.ForeColor = System.Drawing.Color.White;
+            this.Button_Send.HoverState.Parent = this.Button_Send;
+            this.Button_Send.Location = new System.Drawing.Point(453, 9);
+            this.Button_Send.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_Send.Name = "Button_Send";
+            this.Button_Send.ShadowDecoration.Parent = this.Button_Send;
+            this.Button_Send.Size = new System.Drawing.Size(85, 37);
+            this.Button_Send.TabIndex = 82;
+            this.Button_Send.Text = "Send";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(240, 434);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 93;
             // 
             // guna2ImageButton3
             // 
@@ -129,63 +172,16 @@
             this.guna2ImageButton1.TabIndex = 83;
             this.guna2ImageButton1.UseTransparentBackground = true;
             // 
-            // RichTextBox_Message
-            // 
-            this.RichTextBox_Message.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RichTextBox_Message.Location = new System.Drawing.Point(112, 9);
-            this.RichTextBox_Message.Name = "RichTextBox_Message";
-            this.RichTextBox_Message.Size = new System.Drawing.Size(336, 37);
-            this.RichTextBox_Message.TabIndex = 86;
-            this.RichTextBox_Message.Text = "";
-            this.RichTextBox_Message.TextChanged += new System.EventHandler(this.RichTextBox_Message_TextChanged);
-            // 
-            // Button_Send
-            // 
-            this.Button_Send.BorderColor = System.Drawing.Color.DimGray;
-            this.Button_Send.BorderRadius = 17;
-            this.Button_Send.BorderThickness = 1;
-            this.Button_Send.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.Button_Send.CheckedState.Parent = this.Button_Send;
-            this.Button_Send.CustomImages.Parent = this.Button_Send;
-            this.Button_Send.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Button_Send.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Button_Send.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Button_Send.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Button_Send.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Button_Send.DisabledState.Parent = this.Button_Send;
-            this.Button_Send.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Button_Send.FillColor2 = System.Drawing.Color.Navy;
-            this.Button_Send.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.Button_Send.ForeColor = System.Drawing.Color.White;
-            this.Button_Send.HoverState.Parent = this.Button_Send;
-            this.Button_Send.Location = new System.Drawing.Point(453, 9);
-            this.Button_Send.Margin = new System.Windows.Forms.Padding(2);
-            this.Button_Send.Name = "Button_Send";
-            this.Button_Send.ShadowDecoration.Parent = this.Button_Send;
-            this.Button_Send.Size = new System.Drawing.Size(85, 37);
-            this.Button_Send.TabIndex = 82;
-            this.Button_Send.Text = "Send";
-            this.Button_Send.Click += new System.EventHandler(this.Button_Send_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(240, 434);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 90;
-            // 
-            // UC_SingleChat
+            // UC_GroupChat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AppChatV2.Properties.Resources._18ef4fc0d30f69f601411fdf251e82f5;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.textBox1);
+            this.BackgroundImage = global::AppChatV2.Properties.Resources._40cee2e941086f4a5f251317699ddd85;
             this.Controls.Add(this.RichTextBox_Display);
             this.Controls.Add(this.guna2GradientPanel2);
-            this.Name = "UC_SingleChat";
+            this.Controls.Add(this.textBox1);
+            this.Name = "UC_GroupChat";
             this.Size = new System.Drawing.Size(563, 512);
-            this.Load += new System.EventHandler(this.UC_SingleChat_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -193,6 +189,7 @@
         }
 
         #endregion
+
         private System.Windows.Forms.RichTextBox RichTextBox_Display;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton3;

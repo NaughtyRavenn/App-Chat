@@ -81,3 +81,6 @@ C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.exe
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.pdb
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.csprojAssemblyReference.cache
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.UC_SingleChat.resources
+C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_CreateGroup.resources
+C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.UC_Group.resources
+C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.UC_GroupChat.resources

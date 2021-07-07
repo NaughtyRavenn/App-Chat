@@ -24,13 +24,18 @@ namespace AppChatV2
             connect.Start();
         }
 
-        private void UC_SingleChat_Load(object sender, System.EventArgs e)
+        private void RichTextBox_Message_TextChanged(object sender, EventArgs e)
         {
-            textBox1.Text = Name1;
             if (RichTextBox_Message.Text == string.Empty)
                 Button_Send.Enabled = false;
             else
                 Button_Send.Enabled = true;
+        }
+
+        private void UC_SingleChat_Load(object sender, System.EventArgs e)
+        {
+            textBox1.Text = Name1;
+            Button_Send.Enabled = false;
         }
 
         private void Button_Send_Click(object sender, System.EventArgs e)
@@ -111,7 +116,15 @@ namespace AppChatV2
                 {
                     byte[] data = new byte[1024 * 999];
                     Client.Receive(data);
-
+                    Invoke(new Action(() =>
+                    {
+                        if (this.Focused == false)
+                        {
+                            Par.NoticeMessage(true);
+                        }
+                        else
+                            Par.NoticeMessage(false);
+                    }));
                     string message = (string)Deserialize(data);
                     AddMessage(message);
                 }
@@ -129,5 +142,6 @@ namespace AppChatV2
         public string Name1 { get => _Name; set => _Name = value; }
         public Socket Client { get => _Client; set => _Client = value; }
         public IPEndPoint IP { get => _IP; set => _IP = value; }
+
     }
 }

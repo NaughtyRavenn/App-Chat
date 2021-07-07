@@ -6,6 +6,14 @@ namespace AppChatV2.Class
     {
         private string _id;
         private string _Name;
+        private string _Phonenumber;
+        private string _Email;
+        private DateTime _Birthday;
+        private string _Password;
+        private string _Sex;
+        private string _Username;
+        private string _Is_active;
+
         public string Id { get => _id; set => _id = value; }
         public string Name { get => _Name; set => _Name = value; }
         public string Phonenumber { get => _Phonenumber; set => _Phonenumber = value; }
@@ -16,12 +24,5 @@ namespace AppChatV2.Class
         public string Username { get => _Username; set => _Username = value; }
         public string Is_active { get => _Is_active; set => _Is_active = value; }
 
-        private string _Phonenumber;
-        private string _Email;
-        private DateTime _Birthday;
-        private string _Password;
-        private string _Sex;
-        private string _Username;
-        private string _Is_active;
     }
 }

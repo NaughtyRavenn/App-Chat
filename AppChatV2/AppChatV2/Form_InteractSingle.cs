@@ -21,17 +21,6 @@ namespace AppChatV2
         {
             InitializeComponent();
             this.Par = PAR;
-
-            CheckForIllegalCrossThreadCalls = false;
-/*
-            if (Check_BoxChat(Par.ID))
-            {
-                Button_Chat.Enabled = false;
-            }
-            else
-            {
-                Button_Chat.Enabled = true;
-            }*/
         }
 
 
@@ -47,21 +36,6 @@ namespace AppChatV2
 
         }
 
-        private void Button_Chat_Click(object sender, EventArgs e)
-        {
-            Form_SingleChat frm = new Form_SingleChat(this);
-            frm.Show();
-            this.Hide();
-        }
-
-      /*  private bool Check_BoxChat(string i)
-        {
-            *//*foreach (var v in Par.Par.BoxChat)
-                if (i == v.ToString())
-                    return true;
-            return false;*//*
-        }*/
-
         private void Button_Unfriend_Click(object sender, EventArgs e)
         {
             Unfriend();
@@ -76,8 +50,8 @@ namespace AppChatV2
 
         private void Button_AddGroup_Click(object sender, EventArgs e)
         {
-            Form_GroupInfomation frm = new Form_GroupInfomation(this, 1);
-            frm.ShowDialog();
+            /*Form_GroupInfomation frm = new Form_GroupInfomation(this, 1);
+            frm.ShowDialog();*/
         }
 
         //--------------------------------------------

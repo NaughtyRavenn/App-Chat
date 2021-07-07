@@ -26,110 +26,33 @@ namespace AppChatV2
 
         private void UC_Friend_MouseClick(object sender, MouseEventArgs e)
         {
+            (sender as UC_Friend).BackColor = Color.DimGray;
             Par.SwitchTab(Index);
+            NoticeMessage(false);
         }
-       
+
         private void UC_Friend_Load(object sender, EventArgs e)
         {
             Label_Name.Text = Name1;
             if (Is_active == "true")
             {
                 Button_Status.FillColor = Color.Green;
-                Button_Option.Enabled = true;
             }
             else
             {
                 Button_Status.FillColor = Color.Gray;
-                Button_Option.Enabled = false;
             }
+        }
+
+        public void NoticeMessage(bool a)
+        {
+            Notice_Message.Visible = a;
         }
 
         private void Button_Option_Click(object sender, EventArgs e)
         {
             Form_InteractSingle frm = new Form_InteractSingle(this);
             frm.ShowDialog();
-        }
-
-        /*public void Connect(int i)
-        {
-            IP = new IPEndPoint(IPAddress.Parse(Account.Instance.IP), i);
-            Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
-
-            try
-            {
-                Client.Connect(IP);
-            }
-            catch
-            {
-                MessageBox.Show("Không thể kết nối server!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            Thread listen = new Thread(Receive);
-            listen.Name = "Receive";
-            listen.IsBackground = true;
-            listen.Start();
-        }*/
-
-        /*void Receive()
-        {
-            try
-            {
-                while (true)
-                {
-                    byte[] data = new byte[1024 * 999];
-                    Client.Receive(data);
-
-                    string message = (string)Deserialize(data);
-                    ListMessage.Add(message);
-                }
-            }
-            catch(Exception e)
-            {
-                MessageBox.Show(e.Message);
-            }
-        }*/
-
-        /*public void Send()
-        {
-            string name = User.Instance.Name;
-            string ID = Account.Instance.id;
-            if (RichTextBox_Message.Text != string.Empty)
-                Client.Send(Serialize(ID + "-" + name + ": " + RichTextBox_Message.Text));
-            AddMessage(name + ": " + RichTextBox_Message.Text);
-        }*/
-
-        /*private void AddMessage(string mess)
-        {
-            FlowLayoutPanel_Message.Controls.Add(new CHAT_Send()
-            {
-                Message = mess
-            });
-            lstvMessage.Items.Add(new ListViewItem()
-            {
-                Text = mess
-            });
-            mess += "\n";
-            RichTextBox_Display.Text += mess;
-            RichTextBox_Message.Clear();
-        }
-*/
-        byte[] Serialize(object obj)
-        {
-            MemoryStream stream = new MemoryStream();
-            BinaryFormatter formatter = new BinaryFormatter();
-
-            formatter.Serialize(stream, obj);
-
-            return stream.ToArray();
-        }
-
-        object Deserialize(byte[] data)
-        {
-            MemoryStream stream = new MemoryStream(data);
-            BinaryFormatter formatter = new BinaryFormatter();
-
-            return formatter.Deserialize(stream);
         }
 
         private string _Name;
@@ -157,5 +80,10 @@ namespace AppChatV2
         public string ID { get => _ID; set => _ID = value; }
         public int Index { get => _Index; set => _Index = value; }
         public List<string> ListMessage { get => listMessage; set => listMessage = value; }
+
+        private void UC_Friend_Leave(object sender, EventArgs e)
+        {
+            (sender as UC_Friend).BackColor = Color.White;
+        }
     }
 }

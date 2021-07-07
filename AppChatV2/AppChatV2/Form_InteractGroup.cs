@@ -24,8 +24,8 @@ namespace AppChatV2
 
         private void Button_GroupInfomation_Click(object sender, EventArgs e)
         {
-            Form_GroupInfomation frm = new Form_GroupInfomation(this, 2);
-            frm.ShowDialog();
+            /*Form_GroupInfomation frm = new Form_GroupInfomation(this, 2);
+            frm.ShowDialog();*/
         }
     }
 }

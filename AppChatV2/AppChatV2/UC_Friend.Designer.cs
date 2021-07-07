@@ -32,6 +32,7 @@
             this.Button_Status = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Button_Option = new Bunifu.Framework.UI.BunifuImageButton();
             this.guna2CirclePictureBox11 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.Notice_Message = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.Button_Option)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox11)).BeginInit();
             this.SuspendLayout();
@@ -84,8 +85,9 @@
             // guna2CirclePictureBox11
             // 
             this.guna2CirclePictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.guna2CirclePictureBox11.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Vertical;
             this.guna2CirclePictureBox11.ImageRotate = 0F;
+            this.guna2CirclePictureBox11.InitialImage = null;
             this.guna2CirclePictureBox11.Location = new System.Drawing.Point(13, 16);
             this.guna2CirclePictureBox11.Margin = new System.Windows.Forms.Padding(2);
             this.guna2CirclePictureBox11.Name = "guna2CirclePictureBox11";
@@ -95,12 +97,35 @@
             this.guna2CirclePictureBox11.TabIndex = 21;
             this.guna2CirclePictureBox11.TabStop = false;
             // 
+            // Notice_Message
+            // 
+            this.Notice_Message.CheckedState.Parent = this.Notice_Message;
+            this.Notice_Message.CustomImages.Parent = this.Notice_Message;
+            this.Notice_Message.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Notice_Message.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Notice_Message.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Notice_Message.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Notice_Message.DisabledState.Parent = this.Notice_Message;
+            this.Notice_Message.FillColor = System.Drawing.Color.Red;
+            this.Notice_Message.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Notice_Message.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Notice_Message.ForeColor = System.Drawing.Color.White;
+            this.Notice_Message.HoverState.Parent = this.Notice_Message;
+            this.Notice_Message.Location = new System.Drawing.Point(240, 66);
+            this.Notice_Message.Name = "Notice_Message";
+            this.Notice_Message.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Notice_Message.ShadowDecoration.Parent = this.Notice_Message;
+            this.Notice_Message.Size = new System.Drawing.Size(20, 20);
+            this.Notice_Message.TabIndex = 27;
+            this.Notice_Message.Visible = false;
+            // 
             // UC_Friend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.Notice_Message);
             this.Controls.Add(this.Button_Status);
             this.Controls.Add(this.Button_Option);
             this.Controls.Add(this.Label_Name);
@@ -109,6 +134,7 @@
             this.Name = "UC_Friend";
             this.Size = new System.Drawing.Size(328, 104);
             this.Load += new System.EventHandler(this.UC_Friend_Load);
+            this.Leave += new System.EventHandler(this.UC_Friend_Leave);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.UC_Friend_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.Button_Option)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox11)).EndInit();
@@ -122,5 +148,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox11;
         private Bunifu.Framework.UI.BunifuImageButton Button_Option;
         private Guna.UI2.WinForms.Guna2CircleButton Button_Status;
+        private Guna.UI2.WinForms.Guna2CircleButton Notice_Message;
     }
 }

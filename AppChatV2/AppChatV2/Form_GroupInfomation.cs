@@ -12,10 +12,10 @@ namespace AppChatV2
 {
     public partial class Form_GroupInfomation : Form
     {
-        public Form_GroupInfomation(Form Form_Par, int flagintent)
+        public Form_GroupInfomation(/*Form Form_Par, int flagintent*/)
         {
             InitializeComponent();
-            if (flagintent == 1)
+            /*if (flagintent == 1)
             {
                 var tmp_Par = Form_Par as Form_InteractSingle;
             }
@@ -26,7 +26,7 @@ namespace AppChatV2
             else if (flagintent == 3)
             {
                 var tmp_Par = Form_Par as Form_GroupChat;
-            }
+            }*/
         }
 
         private void frmGroupinfo_Load(object sender, EventArgs e)
@@ -34,6 +34,9 @@ namespace AppChatV2
 
         }
 
-        
+        private void Button_Confirm_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

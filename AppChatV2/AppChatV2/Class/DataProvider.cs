@@ -170,18 +170,46 @@ namespace AppChatV2.Class
             };
         }
 
-        //--------------------------
-
-        public List<int> LoadMyContactFromDB()
+        public int ProvideGroupPort()
         {
-            var v1 = new List<int>();
-            string sqlQuery = "SELECT Port FROM CONTACT WHERE ID1= @id1 OR ID2= @id2 ";
-            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { User.Instance.ID, User.Instance.ID });
-            foreach (DataRow v in Data.Rows)
+            string sqlQuery = "SELECT MIN(Port) AS Port FROM GROUPCHAT";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery);
+            if (Data.Rows.Count==0)
+                return 9999;
+            return int.Parse(Data.Rows[0]["Port"].ToString()) - 1;
+        }
+
+        public int ProvideSinglePort()
+        {
+            string sqlQuery = "SELECT MAX(Port) AS Port FROM CONTACT";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery);
+            if (Data.Rows.Count == 0)
+                return 8000;
+            return int.Parse(Data.Rows[0]["Port"].ToString()) + 1;
+        }
+
+        public Dictionary<string,int> LoadListGroupIDAndPort()
+        {
+            var v1 = new Dictionary<string, int>();
+            string sqlQuery = "SELECT ID,PORT FROM GROUPCHAT WHERE ID IN (SELECT GROUP_ID FROM GROUPINFO WHERE ACCOUNT_ID = @id )";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id });
+            foreach (DataRow v2 in Data.Rows)
             {
-                v1.Add(int.Parse(v["Port"].ToString()));
+                v1.Add(v2["ID"].ToString(), int.Parse(v2["Port"].ToString()));
             }
             return v1;
+        }
+
+        public Group LoadGroupInfoByID(string id)
+        {
+            string sqlQuery = "SELECT * FROM GROUPCHAT WHERE ID = @id ";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { id });
+            return new Group()
+            {
+                ID=id,
+                Name = Data.Rows[0]["Name"].ToString(),
+                Port = int.Parse(Data.Rows[0]["Port"].ToString()),
+            };
         }
     }
 }
