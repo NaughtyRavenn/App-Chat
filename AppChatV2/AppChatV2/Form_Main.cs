@@ -22,8 +22,8 @@ namespace AppChatV2
         {
             InitializeComponent();
             Page_Main.SetPage(TabPage_ListFriend);
-            LoadFriends();
-            LoadGroups();
+            LoadFriendsAndGroups();
+            //LoadGroups();
             Button_ListFriend.ForeColor = Color.FromArgb(218, 50, 207);
             /*ListConnect = DataProvider.Instance.LoadMyContactFromDB();
             foreach (UC_Friend v in FlowLayoutPanel_ListFriend)
@@ -31,7 +31,6 @@ namespace AppChatV2
                 int i = v;
                 ThreadConnect(i);
             }*/
-            Index = 0;
         }
 
         private void Form_Main_Load(object sender, EventArgs e)
@@ -50,7 +49,8 @@ namespace AppChatV2
             Notice1.Visible = true;
             Notice2.Visible = false;
             Page_Main.SetPage(TabPage_ListFriend);
-            Invoke(new Action(() => LoadFriends()));
+            LoadFriendsAndGroups();
+            //Invoke(new Action(() => LoadFriends()));
         }
 
         private void Button_ListGroup_Click(object sender, EventArgs e)
@@ -60,7 +60,8 @@ namespace AppChatV2
             Notice2.Visible = true;
             Notice1.Visible = false;
             Page_Main.SetPage(TabPage_ListGroup);
-            Invoke(new Action(() => LoadGroups()));
+            LoadFriendsAndGroups();
+            //Invoke(new Action(() => LoadGroups()));
         }
 
         private void Button_EditProfile_Click(object sender, EventArgs e)
@@ -90,7 +91,7 @@ namespace AppChatV2
         #endregion
 
         //Load danh sách bạn bè
-        private void LoadGroups()
+        /*private void LoadGroups()
         {
             FlowLayoutPanel_ListGroup.Controls.Clear();
             Page_ChatBox.Controls.Clear();
@@ -109,14 +110,15 @@ namespace AppChatV2
                 AddGroupBox(Group);
                 Index++;
             }
-        }
+        }*/
 
-        private void LoadFriends()
+        private void LoadFriendsAndGroups()
         {
+            Index = 0;
             FlowLayoutPanel_ListFriend.Controls.Clear();
             Page_ChatBox.Controls.Clear();
-            var Data = DataProvider.Instance.LoadListFriendIDAndPort();
-            foreach (var v in Data)
+            var Data1 = DataProvider.Instance.LoadListFriendIDAndPort();
+            foreach (var v in Data1)
             {
                 var data = DataProvider.Instance.LoadInfoByID(v.Key);
                 UC_Friend Friend = new UC_Friend(this)
@@ -134,6 +136,24 @@ namespace AppChatV2
                 AddSingleBox(Friend);
                 Index++;
             }
+
+            FlowLayoutPanel_ListGroup.Controls.Clear();
+            //Page_ChatBox.Controls.Clear();
+            var Data2 = DataProvider.Instance.LoadListGroupIDAndPort();
+            foreach (var v in Data2)
+            {
+                var data = DataProvider.Instance.LoadGroupInfoByID(v.Key);
+                UC_Group Group = new UC_Group(this)
+                {
+                    Name1 = data.Name,
+                    ID = v.Key,
+                    Port = v.Value,
+                    Index = Index,
+                };
+                FlowLayoutPanel_ListGroup.Controls.Add(Group);
+                AddGroupBox(Group);
+                Index++;
+            }
         }
 
         private void Form_Main_FormClosed(object sender, FormClosedEventArgs e)
@@ -144,7 +164,7 @@ namespace AppChatV2
 
         public void AddSingleBox(UC_Friend par)
         {
-            TabPage tabpg = new TabPage(par.Name1);
+            TabPage tabpg = new TabPage(par.Name1+"-"+Index);
             Page_ChatBox.Controls.Add(tabpg);
             UC_SingleChat BoxChat = new UC_SingleChat(par,par.Port);
             tabpg.Controls.Add(BoxChat);
@@ -154,7 +174,7 @@ namespace AppChatV2
 
         public void AddGroupBox(UC_Group par)
         {
-            TabPage tabpg = new TabPage(par.Name1);
+            TabPage tabpg = new TabPage(par.Name1+"-"+Index);
             Page_ChatBox.Controls.Add(tabpg);
             UC_GroupChat BoxChat = new UC_GroupChat(par, par.Port);
             tabpg.Controls.Add(BoxChat);

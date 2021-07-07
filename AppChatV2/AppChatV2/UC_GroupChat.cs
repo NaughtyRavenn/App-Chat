@@ -17,6 +17,22 @@ namespace AppChatV2
         {
             InitializeComponent();
             this.Par = PAR;
+            ID = Par.ID;
         }
+
+        private void Button_GroupInfo_Click(object sender, EventArgs e)
+        {
+            Form_GroupInfomation frm = new Form_GroupInfomation(this);
+            frm.ShowDialog();
+        }
+
+        private void UC_GroupChat_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private string _ID;
+
+        public string ID { get => _ID; set => _ID = value; }
     }
 }

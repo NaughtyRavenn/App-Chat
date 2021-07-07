@@ -7,36 +7,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppChatV2.Class;
 
 namespace AppChatV2
 {
     public partial class Form_GroupInfomation : Form
     {
-        public Form_GroupInfomation(/*Form Form_Par, int flagintent*/)
+        UC_GroupChat Par;
+        public Form_GroupInfomation(UC_GroupChat PAR)
         {
             InitializeComponent();
-            /*if (flagintent == 1)
-            {
-                var tmp_Par = Form_Par as Form_InteractSingle;
-            }
-            else if (flagintent == 2)
-            {
-                var tmp_Par = Form_Par as Form_InteractGroup;
-            }
-            else if (flagintent == 3)
-            {
-                var tmp_Par = Form_Par as Form_GroupChat;
-            }*/
+            this.Par = PAR;
+            ID = Par.ID;
         }
-
-        private void frmGroupinfo_Load(object sender, EventArgs e)
+       
+        private void Form_GroupInfomation_Load(object sender, EventArgs e)
         {
 
         }
 
         private void Button_Confirm_Click(object sender, EventArgs e)
         {
-           
+            if (CheckInfo())
+            {
+                string sqlQuery = "UPDATE GROUPCHAT SET Name = @name WHERE ID = @id ";
+                DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { TextBox_Name.Text,ID});
+                MessageBox.Show("Successfully updated");
+                this.Hide();
+            }
+            else
+            {
+                Label_Name.Text = "Invalid name";
+                return;
+            }
         }
+
+        private bool CheckInfo()
+        {
+            if (string.IsNullOrEmpty(TextBox_Name.Text))
+                return false;
+            return true;
+        }
+
+        private void Button_AddMember_Click(object sender, EventArgs e)
+        {
+            Form_AddMember frm = new Form_AddMember(this);
+            frm.ShowDialog();
+        }
+
+        private string _ID;
+
+        public string ID { get => _ID; set => _ID = value; }
+
     }
 }

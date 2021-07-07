@@ -35,6 +35,7 @@
             this.Button_Confirm = new Guna.UI2.WinForms.Guna2GradientButton();
             this.TextBox_Name = new Guna.UI2.WinForms.Guna2TextBox();
             this.Button_AddMember = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.Label_Name = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,7 +127,7 @@
             this.Button_Confirm.ShadowDecoration.Parent = this.Button_Confirm;
             this.Button_Confirm.Size = new System.Drawing.Size(188, 37);
             this.Button_Confirm.TabIndex = 42;
-            this.Button_Confirm.Text = "Xác nhận";
+            this.Button_Confirm.Text = "Confirm";
             this.Button_Confirm.Click += new System.EventHandler(this.Button_Confirm_Click);
             // 
             // TextBox_Name
@@ -183,7 +184,19 @@
             this.Button_AddMember.ShadowDecoration.Parent = this.Button_AddMember;
             this.Button_AddMember.Size = new System.Drawing.Size(188, 37);
             this.Button_AddMember.TabIndex = 43;
-            this.Button_AddMember.Text = "Add member";
+            this.Button_AddMember.Text = "Member";
+            this.Button_AddMember.Click += new System.EventHandler(this.Button_AddMember_Click);
+            // 
+            // Label_Name
+            // 
+            this.Label_Name.AutoSize = true;
+            this.Label_Name.BackColor = System.Drawing.Color.Transparent;
+            this.Label_Name.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Name.ForeColor = System.Drawing.Color.Red;
+            this.Label_Name.Location = new System.Drawing.Point(138, 248);
+            this.Label_Name.Name = "Label_Name";
+            this.Label_Name.Size = new System.Drawing.Size(0, 17);
+            this.Label_Name.TabIndex = 45;
             // 
             // Form_GroupInfomation
             // 
@@ -193,6 +206,7 @@
             this.BackgroundImage = global::AppChatV2.Properties.Resources._40cee2e941086f4a5f251317699ddd85;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(458, 406);
+            this.Controls.Add(this.Label_Name);
             this.Controls.Add(this.TextBox_Name);
             this.Controls.Add(this.Button_AddMember);
             this.Controls.Add(this.Button_Confirm);
@@ -204,7 +218,7 @@
             this.Name = "Form_GroupInfomation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit group profile";
-            this.Load += new System.EventHandler(this.frmGroupinfo_Load);
+            this.Load += new System.EventHandler(this.Form_GroupInfomation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -219,5 +233,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton Button_Confirm;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_Name;
         private Guna.UI2.WinForms.Guna2GradientButton Button_AddMember;
+        private System.Windows.Forms.Label Label_Name;
     }
 }

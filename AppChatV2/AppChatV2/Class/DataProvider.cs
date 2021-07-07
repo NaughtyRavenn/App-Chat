@@ -211,5 +211,22 @@ namespace AppChatV2.Class
                 Port = int.Parse(Data.Rows[0]["Port"].ToString()),
             };
         }
+
+        public List<string> LoadListFriendsToAdd(string groupid)
+        {
+            var v1 = new List<string>();
+            string sqlQuery= "(SELECT ID1 AS ID FROM CONTACT WHERE ID2= @id1 AND Type='Added' " +
+                "UNION " +
+                "SELECT ID2 FROM CONTACT WHERE ID1 = @id2 AND Type = 'Added') " +
+                "EXCEPT " +
+                "SELECT ACCOUNT_ID FROM GROUPINFO WHERE GROUP_ID = @groupid AND ACCOUNT_ID<> @id3 ";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id,
+               groupid, Account.Instance.id });
+            foreach (DataRow v2 in Data.Rows)
+            {
+                v1.Add(v2["ID"].ToString());
+            }
+            return v1;
+        }
     }
 }

@@ -92,7 +92,7 @@
             this.Button_Confirm.ShadowDecoration.Parent = this.Button_Confirm;
             this.Button_Confirm.Size = new System.Drawing.Size(188, 37);
             this.Button_Confirm.TabIndex = 49;
-            this.Button_Confirm.Text = "Xác nhận";
+            this.Button_Confirm.Text = "Confirm";
             this.Button_Confirm.Click += new System.EventHandler(this.Button_Confirm_Click);
             // 
             // Button_Browse
