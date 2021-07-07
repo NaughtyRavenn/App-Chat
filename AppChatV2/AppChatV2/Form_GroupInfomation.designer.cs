@@ -33,8 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Button_Browse = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Button_Confirm = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.TextBox_Name = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Button_AddMember = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.Label_Name = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.GhostWhite;
             this.pictureBox1.Location = new System.Drawing.Point(141, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(142, 154);
             this.pictureBox1.TabIndex = 30;
@@ -126,35 +127,8 @@
             this.Button_Confirm.ShadowDecoration.Parent = this.Button_Confirm;
             this.Button_Confirm.Size = new System.Drawing.Size(188, 37);
             this.Button_Confirm.TabIndex = 42;
-            this.Button_Confirm.Text = "Xác nhận";
-            // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderColor = System.Drawing.Color.DimGray;
-            this.guna2GradientButton1.BorderRadius = 17;
-            this.guna2GradientButton1.BorderThickness = 1;
-            this.guna2GradientButton1.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.DisabledState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.Blue;
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(141, 281);
-            this.guna2GradientButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(188, 37);
-            this.guna2GradientButton1.TabIndex = 43;
-            this.guna2GradientButton1.Text = "Add member";
+            this.Button_Confirm.Text = "Confirm";
+            this.Button_Confirm.Click += new System.EventHandler(this.Button_Confirm_Click);
             // 
             // TextBox_Name
             // 
@@ -162,7 +136,7 @@
             this.TextBox_Name.BorderColor = System.Drawing.Color.DimGray;
             this.TextBox_Name.BorderRadius = 17;
             this.TextBox_Name.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_Name.DefaultText = "abc";
+            this.TextBox_Name.DefaultText = "";
             this.TextBox_Name.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBox_Name.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TextBox_Name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -179,10 +153,50 @@
             this.TextBox_Name.PasswordChar = '\0';
             this.TextBox_Name.PlaceholderText = "";
             this.TextBox_Name.SelectedText = "";
-            this.TextBox_Name.SelectionStart = 3;
             this.TextBox_Name.ShadowDecoration.Parent = this.TextBox_Name;
             this.TextBox_Name.Size = new System.Drawing.Size(304, 46);
             this.TextBox_Name.TabIndex = 44;
+            this.TextBox_Name.TextOffset = new System.Drawing.Point(10, -2);
+            // 
+            // Button_AddMember
+            // 
+            this.Button_AddMember.BackColor = System.Drawing.Color.Transparent;
+            this.Button_AddMember.BorderColor = System.Drawing.Color.DimGray;
+            this.Button_AddMember.BorderRadius = 17;
+            this.Button_AddMember.BorderThickness = 1;
+            this.Button_AddMember.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.Button_AddMember.CheckedState.Parent = this.Button_AddMember;
+            this.Button_AddMember.CustomImages.Parent = this.Button_AddMember;
+            this.Button_AddMember.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Button_AddMember.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Button_AddMember.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_AddMember.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Button_AddMember.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Button_AddMember.DisabledState.Parent = this.Button_AddMember;
+            this.Button_AddMember.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Button_AddMember.FillColor2 = System.Drawing.Color.Blue;
+            this.Button_AddMember.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.Button_AddMember.ForeColor = System.Drawing.Color.White;
+            this.Button_AddMember.HoverState.Parent = this.Button_AddMember;
+            this.Button_AddMember.Location = new System.Drawing.Point(141, 281);
+            this.Button_AddMember.Margin = new System.Windows.Forms.Padding(2);
+            this.Button_AddMember.Name = "Button_AddMember";
+            this.Button_AddMember.ShadowDecoration.Parent = this.Button_AddMember;
+            this.Button_AddMember.Size = new System.Drawing.Size(188, 37);
+            this.Button_AddMember.TabIndex = 43;
+            this.Button_AddMember.Text = "Member";
+            this.Button_AddMember.Click += new System.EventHandler(this.Button_AddMember_Click);
+            // 
+            // Label_Name
+            // 
+            this.Label_Name.AutoSize = true;
+            this.Label_Name.BackColor = System.Drawing.Color.Transparent;
+            this.Label_Name.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Name.ForeColor = System.Drawing.Color.Red;
+            this.Label_Name.Location = new System.Drawing.Point(138, 248);
+            this.Label_Name.Name = "Label_Name";
+            this.Label_Name.Size = new System.Drawing.Size(0, 17);
+            this.Label_Name.TabIndex = 45;
             // 
             // Form_GroupInfomation
             // 
@@ -192,18 +206,19 @@
             this.BackgroundImage = global::AppChatV2.Properties.Resources._40cee2e941086f4a5f251317699ddd85;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(458, 406);
+            this.Controls.Add(this.Label_Name);
             this.Controls.Add(this.TextBox_Name);
-            this.Controls.Add(this.guna2GradientButton1);
+            this.Controls.Add(this.Button_AddMember);
             this.Controls.Add(this.Button_Confirm);
             this.Controls.Add(this.Button_Browse);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_GroupInfomation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Edit group profile";
-            this.Load += new System.EventHandler(this.frmGroupinfo_Load);
+            this.Load += new System.EventHandler(this.Form_GroupInfomation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -216,7 +231,8 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2GradientButton Button_Browse;
         private Guna.UI2.WinForms.Guna2GradientButton Button_Confirm;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_Name;
+        private Guna.UI2.WinForms.Guna2GradientButton Button_AddMember;
+        private System.Windows.Forms.Label Label_Name;
     }
 }

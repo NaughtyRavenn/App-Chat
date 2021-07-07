@@ -22,7 +22,9 @@ namespace AppChatV2
         {
             InitializeComponent();
             Page_Main.SetPage(TabPage_ListFriend);
-            LoadFriends();
+            LoadFriendsAndGroups();
+            //LoadGroups();
+            Button_ListFriend.ForeColor = Color.FromArgb(218, 50, 207);
             /*ListConnect = DataProvider.Instance.LoadMyContactFromDB();
             foreach (UC_Friend v in FlowLayoutPanel_ListFriend)
             {
@@ -34,28 +36,32 @@ namespace AppChatV2
         private void Form_Main_Load(object sender, EventArgs e)
         {
             Label_Name.Text = User.Instance.Name;
-            Button_ListFriend.ForeColor = Color.FromArgb(218, 50, 207);
+            //Button_ListFriend.ForeColor = Color.FromArgb(218, 50, 207);
             /*Connect();*/
         }
 
-        //Xử lí các button
+        #region Xử lí button 
+
         private void Button_ListFriend_Click(object sender, EventArgs e)
         {
-            Notice1.Visible = true;
-            Button_ListFriend.ForeColor = Color.FromArgb(218, 50, 207);
-            Notice2.Visible = false;
             Button_ListGroup.ForeColor = Color.DimGray;
+            Button_ListFriend.ForeColor = Color.FromArgb(218, 50, 207);
+            Notice1.Visible = true;
+            Notice2.Visible = false;
             Page_Main.SetPage(TabPage_ListFriend);
-/*            LoadFriends();*/
+            LoadFriendsAndGroups();
+            //Invoke(new Action(() => LoadFriends()));
         }
 
         private void Button_ListGroup_Click(object sender, EventArgs e)
         {
-            Notice2.Visible = true;
-            Button_ListGroup.ForeColor = Color.FromArgb(218, 50, 207);
-            Notice1.Visible = false;
             Button_ListFriend.ForeColor = Color.DimGray;
+            Button_ListGroup.ForeColor = Color.FromArgb(218, 50, 207);
+            Notice2.Visible = true;
+            Notice1.Visible = false;
             Page_Main.SetPage(TabPage_ListGroup);
+            LoadFriendsAndGroups();
+            //Invoke(new Action(() => LoadGroups()));
         }
 
         private void Button_EditProfile_Click(object sender, EventArgs e)
@@ -75,15 +81,45 @@ namespace AppChatV2
             Form_AddFriend frm = new Form_AddFriend();
             frm.ShowDialog();
         }
-       
-        //Load danh sách bạn bè
-        private void LoadFriends()
+
+        private void Button_CreateGroup_Click(object sender, EventArgs e)
         {
-            FlowLayoutPanel_ListFriend.Controls.Clear();
-            var Data = DataProvider.Instance.LoadListFriendIDAndPort();
-            int i = 1;
+            Form_CreateGroup frm = new Form_CreateGroup();
+            frm.ShowDialog();
+        }
+
+        #endregion
+
+        //Load danh sách bạn bè
+        /*private void LoadGroups()
+        {
+            FlowLayoutPanel_ListGroup.Controls.Clear();
+            Page_ChatBox.Controls.Clear();
+            var Data = DataProvider.Instance.LoadListGroupIDAndPort();
             foreach (var v in Data)
             { 
+                var data = DataProvider.Instance.LoadGroupInfoByID(v.Key);
+                UC_Group Group = new UC_Group(this)
+                {
+                    Name1 = data.Name,
+                    ID = v.Key,
+                    Port = v.Value,
+                    Index = Index,
+                };
+                FlowLayoutPanel_ListGroup.Controls.Add(Group);
+                AddGroupBox(Group);
+                Index++;
+            }
+        }*/
+
+        private void LoadFriendsAndGroups()
+        {
+            Index = 0;
+            FlowLayoutPanel_ListFriend.Controls.Clear();
+            Page_ChatBox.Controls.Clear();
+            var Data1 = DataProvider.Instance.LoadListFriendIDAndPort();
+            foreach (var v in Data1)
+            {
                 var data = DataProvider.Instance.LoadInfoByID(v.Key);
                 UC_Friend Friend = new UC_Friend(this)
                 {
@@ -94,11 +130,29 @@ namespace AppChatV2
                     Phonenumber = data.Phonenumber,
                     Email = data.Email,
                     Port = v.Value,
-                    Index = i,
+                    Index = Index,
                 };
                 FlowLayoutPanel_ListFriend.Controls.Add(Friend);
-                AddTabBox(Friend);
-                i++;
+                AddSingleBox(Friend);
+                Index++;
+            }
+
+            FlowLayoutPanel_ListGroup.Controls.Clear();
+            //Page_ChatBox.Controls.Clear();
+            var Data2 = DataProvider.Instance.LoadListGroupIDAndPort();
+            foreach (var v in Data2)
+            {
+                var data = DataProvider.Instance.LoadGroupInfoByID(v.Key);
+                UC_Group Group = new UC_Group(this)
+                {
+                    Name1 = data.Name,
+                    ID = v.Key,
+                    Port = v.Value,
+                    Index = Index,
+                };
+                FlowLayoutPanel_ListGroup.Controls.Add(Group);
+                AddGroupBox(Group);
+                Index++;
             }
         }
 
@@ -108,11 +162,21 @@ namespace AppChatV2
         }
 
 
-        public void AddTabBox(UC_Friend par)
+        public void AddSingleBox(UC_Friend par)
         {
-            TabPage tabpg = new TabPage(par.ID);
+            TabPage tabpg = new TabPage(par.Name1+"-"+Index);
             Page_ChatBox.Controls.Add(tabpg);
             UC_SingleChat BoxChat = new UC_SingleChat(par,par.Port);
+            tabpg.Controls.Add(BoxChat);
+            tabpg.BackgroundImage = new Bitmap(AppChatV2.Properties.Resources._18ef4fc0d30f69f601411fdf251e82f5);
+            BoxChat.Location = new Point(0, 50);
+        }
+
+        public void AddGroupBox(UC_Group par)
+        {
+            TabPage tabpg = new TabPage(par.Name1+"-"+Index);
+            Page_ChatBox.Controls.Add(tabpg);
+            UC_GroupChat BoxChat = new UC_GroupChat(par, par.Port);
             tabpg.Controls.Add(BoxChat);
             tabpg.BackgroundImage = new Bitmap(AppChatV2.Properties.Resources._18ef4fc0d30f69f601411fdf251e82f5);
             BoxChat.Location = new Point(0, 50);
@@ -128,8 +192,10 @@ namespace AppChatV2
 
         private List<int> _BoxChat;
         private List<int> _ListConnect;
+        private int _Index;
 
         public List<int> BoxChat { get => _BoxChat; set => _BoxChat = value; }
         public List<int> ListConnect { get => _ListConnect; set => _ListConnect = value; }
+        public int Index { get => _Index; set => _Index = value; }
     }
 }

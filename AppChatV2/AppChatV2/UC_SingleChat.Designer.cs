@@ -137,6 +137,7 @@
             this.RichTextBox_Message.Size = new System.Drawing.Size(336, 37);
             this.RichTextBox_Message.TabIndex = 86;
             this.RichTextBox_Message.Text = "";
+            this.RichTextBox_Message.TextChanged += new System.EventHandler(this.RichTextBox_Message_TextChanged);
             // 
             // Button_Send
             // 

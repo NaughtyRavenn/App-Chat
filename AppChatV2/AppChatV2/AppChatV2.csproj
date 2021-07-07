@@ -162,6 +162,7 @@
   <ItemGroup>
     <Compile Include="Class\Account.cs" />
     <Compile Include="Class\DataProvider.cs" />
+    <Compile Include="Class\Group.cs" />
     <Compile Include="Class\Person.cs" />
     <Compile Include="Class\User.cs" />
     <Compile Include="Form_AddFriend.cs">
@@ -170,11 +171,11 @@
     <Compile Include="Form_AddFriend.Designer.cs">
       <DependentUpon>Form_AddFriend.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_AddFriendToGroup.cs">
+    <Compile Include="Form_AddMember.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_AddFriendToGroup.Designer.cs">
-      <DependentUpon>Form_AddFriendToGroup.cs</DependentUpon>
+    <Compile Include="Form_AddMember.Designer.cs">
+      <DependentUpon>Form_AddMember.cs</DependentUpon>
     </Compile>
     <Compile Include="CHAT_Receive.cs">
       <SubType>UserControl</SubType>
@@ -188,6 +189,12 @@
     <Compile Include="CHAT_Send.Designer.cs">
       <DependentUpon>CHAT_Send.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_CreateGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CreateGroup.Designer.cs">
+      <DependentUpon>Form_CreateGroup.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_EditProfile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,23 +207,11 @@
     <Compile Include="Form_FriendInfomation.Designer.cs">
       <DependentUpon>Form_FriendInfomation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_SingleChat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_SingleChat.designer.cs">
-      <DependentUpon>Form_SingleChat.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form_GroupInfomation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_GroupInfomation.designer.cs">
       <DependentUpon>Form_GroupInfomation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_InteractGroup.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_InteractGroup.designer.cs">
-      <DependentUpon>Form_InteractGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_InteractSingle.cs">
       <SubType>Form</SubType>
@@ -236,6 +231,12 @@
     <Compile Include="Form_Main.designer.cs">
       <DependentUpon>Form_Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC_AddMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AddMember.Designer.cs">
+      <DependentUpon>UC_AddMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Friend.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -250,17 +251,23 @@
     <Compile Include="Form_SignUp.Designer.cs">
       <DependentUpon>Form_SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_GroupChat.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_GroupChat.designer.cs">
-      <DependentUpon>Form_GroupChat.cs</DependentUpon>
-    </Compile>
     <Compile Include="UC_FriendRequest.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UC_FriendRequest.Designer.cs">
       <DependentUpon>UC_FriendRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Group.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Group.Designer.cs">
+      <DependentUpon>UC_Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_GroupChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_GroupChat.Designer.cs">
+      <DependentUpon>UC_GroupChat.cs</DependentUpon>
     </Compile>
     <Compile Include="UC_SingleChat.cs">
       <SubType>UserControl</SubType>
@@ -289,8 +296,8 @@
     <EmbeddedResource Include="Form_AddFriend.resx">
       <DependentUpon>Form_AddFriend.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_AddFriendToGroup.resx">
-      <DependentUpon>Form_AddFriendToGroup.cs</DependentUpon>
+    <EmbeddedResource Include="Form_AddMember.resx">
+      <DependentUpon>Form_AddMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CHAT_Receive.resx">
       <DependentUpon>CHAT_Receive.cs</DependentUpon>
@@ -298,20 +305,17 @@
     <EmbeddedResource Include="CHAT_Send.resx">
       <DependentUpon>CHAT_Send.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_CreateGroup.resx">
+      <DependentUpon>Form_CreateGroup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_EditProfile.resx">
       <DependentUpon>Form_EditProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_FriendInfomation.resx">
       <DependentUpon>Form_FriendInfomation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_SingleChat.resx">
-      <DependentUpon>Form_SingleChat.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form_GroupInfomation.resx">
       <DependentUpon>Form_GroupInfomation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_InteractGroup.resx">
-      <DependentUpon>Form_InteractGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_InteractSingle.resx">
       <DependentUpon>Form_InteractSingle.cs</DependentUpon>
@@ -321,6 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Main.resx">
       <DependentUpon>Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AddMember.resx">
+      <DependentUpon>UC_AddMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Friend.resx">
       <DependentUpon>UC_Friend.cs</DependentUpon>
@@ -338,11 +345,14 @@
     <EmbeddedResource Include="Form_SignUp.resx">
       <DependentUpon>Form_SignUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_GroupChat.resx">
-      <DependentUpon>Form_GroupChat.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UC_FriendRequest.resx">
       <DependentUpon>UC_FriendRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Group.resx">
+      <DependentUpon>UC_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_GroupChat.resx">
+      <DependentUpon>UC_GroupChat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_SingleChat.resx">
       <DependentUpon>UC_SingleChat.cs</DependentUpon>

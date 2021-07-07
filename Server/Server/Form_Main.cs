@@ -25,11 +25,18 @@ namespace Server
 
         private void Button_Listen_Click(object sender, EventArgs e)
         {
-            foreach(var v in DataProvider.Instance.LoadContactFromDB())
+            DoConnect();
+            MessageBox.Show("Server is running");
+        }
+
+        private void DoConnect()
+        {
+            var Data = DataProvider.Instance.LoadContactFromDB();
+            Data.Add(9000);
+            foreach (var v in Data)
             {
                 ThreadConnect(v);
             }
-            MessageBox.Show("OK");
         }
 
         private void Form_Main_FormClosed(object sender, FormClosedEventArgs e)
@@ -150,6 +157,10 @@ namespace Server
                     client.Receive(data);
 
                     string message = (string)Deserialize(data);
+                    if(message=="Reload")
+                    {
+                        DoConnect();
+                    }
                     /*AddMessage(client.RemoteEndPoint + ": " + message);*/
                     foreach (Socket item in ClientList)
                     {

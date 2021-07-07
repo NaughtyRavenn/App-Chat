@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -42,7 +43,7 @@ namespace Server
         protected static SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder(GetConnectionString());
         private static string GetConnectionString()
         {
-            return @"Server=tcp:chatappdatabase.database.windows.net,1433;Initial Catalog=ChatApp;Persist Security Info=False;User ID=minhbeo;Password=ngaymai@123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            return @"Data Source=LAPTOP-L3JT52S4;Initial Catalog=ChatApp;Integrated Security=True";
         }
 
         [DllImport("wininet.dll")]
@@ -98,18 +99,18 @@ namespace Server
             return DataProviderTable;
         }
 
+
+
         public List<int> LoadContactFromDB()
         {
             var v1 = new List<int>();
             string sqlQuery = "SELECT Port FROM CONTACT";
             var Data = DataProvider.Instance.ExcuteQuery(sqlQuery);
-            foreach(DataRow v in Data.Rows)
+            foreach (DataRow v in Data.Rows)
             {
                 v1.Add(int.Parse(v["Port"].ToString()));
             }
             return v1;
         }
-
-
     }
 }
