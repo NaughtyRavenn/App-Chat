@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -99,7 +101,7 @@ namespace AppChatV2.Class
         public DataTable LoadInfoFromDB()
         {
             string sqlQuery = "SELECT * FROM ACCOUNT WHERE ID = @id ";
-            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id });
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.ID });
             return Data;
         }
 
@@ -109,7 +111,7 @@ namespace AppChatV2.Class
             string sqlQuery = "SELECT ID1 AS IDnew,Port FROM CONTACT WHERE ID2 = @id1 AND Type = 'Added' " +
                 "UNION " +
                 "SELECT ID2 AS IDnew,Port FROM CONTACT WHERE ID1 = @id2 AND Type = 'Added' ";
-            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id });
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.ID, Account.Instance.ID });
             foreach (DataRow v2 in Data.Rows)
             {
                 v1.Add(v2["IDnew"].ToString(), int.Parse(v2["Port"].ToString()));
@@ -131,8 +133,8 @@ namespace AppChatV2.Class
                 "UNION " +
                 "SELECT ID1 FROM CONTACT WHERE ID2= @id4 AND Type = 'Waiting'" +
                 ")";
-            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id,
-                Account.Instance.id, Account.Instance.id, Account.Instance.id });
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.ID, Account.Instance.ID,
+                Account.Instance.ID, Account.Instance.ID, Account.Instance.ID });
             foreach (DataRow v2 in Data.Rows)
             {
                 v1.Add(v2["ID"].ToString());
@@ -144,7 +146,7 @@ namespace AppChatV2.Class
         {
             var v1 = new List<string>();
             string sqlQuery = "SELECT ID1 FROM CONTACT WHERE ID2 = @id AND Type= 'Waiting'";
-            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id });
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.ID });
             foreach (DataRow v2 in Data.Rows)
             {
                 v1.Add(v2["ID1"].ToString());
@@ -166,7 +168,21 @@ namespace AppChatV2.Class
                 Phonenumber = Data.Rows[0]["Phonenumber"].ToString(),
                 Sex = Data.Rows[0]["Sex"].ToString(),
                 Birthday = DateTime.Parse(Data.Rows[0]["Birthday"].ToString()),
-                Is_active = Data.Rows[0]["Is_active"].ToString()
+                Is_active = Data.Rows[0]["Is_active"].ToString(),
+                Avatar=(byte[])Data.Rows[0]["Avatar"],
+            };
+        }
+
+        public Group LoadGroupInfoByID(string id)
+        {
+            string sqlQuery = "SELECT * FROM GROUPCHAT WHERE ID = @id ";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { id });
+            return new Group()
+            {
+                ID = id,
+                Name = Data.Rows[0]["Name"].ToString(),
+                Port = int.Parse(Data.Rows[0]["Port"].ToString()),
+                Avatar = (byte[])Data.Rows[0]["Avatar"],
             };
         }
 
@@ -192,24 +208,12 @@ namespace AppChatV2.Class
         {
             var v1 = new Dictionary<string, int>();
             string sqlQuery = "SELECT ID,PORT FROM GROUPCHAT WHERE ID IN (SELECT GROUP_ID FROM GROUPINFO WHERE ACCOUNT_ID = @id )";
-            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id });
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.ID });
             foreach (DataRow v2 in Data.Rows)
             {
                 v1.Add(v2["ID"].ToString(), int.Parse(v2["Port"].ToString()));
             }
             return v1;
-        }
-
-        public Group LoadGroupInfoByID(string id)
-        {
-            string sqlQuery = "SELECT * FROM GROUPCHAT WHERE ID = @id ";
-            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { id });
-            return new Group()
-            {
-                ID=id,
-                Name = Data.Rows[0]["Name"].ToString(),
-                Port = int.Parse(Data.Rows[0]["Port"].ToString()),
-            };
         }
 
         public List<string> LoadListFriendsToAdd(string groupid)
@@ -220,13 +224,33 @@ namespace AppChatV2.Class
                 "SELECT ID2 FROM CONTACT WHERE ID1 = @id2 AND Type = 'Added') " +
                 "EXCEPT " +
                 "SELECT ACCOUNT_ID FROM GROUPINFO WHERE GROUP_ID = @groupid AND ACCOUNT_ID<> @id3 ";
-            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Account.Instance.id,
-               groupid, Account.Instance.id });
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.ID, Account.Instance.ID,
+               groupid, Account.Instance.ID });
             foreach (DataRow v2 in Data.Rows)
             {
                 v1.Add(v2["ID"].ToString());
             }
             return v1;
+        }
+
+        public Image GetSingleImage(string id)
+        {
+            string sqlQuery = "SELECT AVATAR FROM ACCOUNT WHERE ID = @id ";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { id });
+            byte[] bytes = (byte[])Data.Rows[0]["Avatar"];
+            var ms = new MemoryStream(bytes);
+            var img = Image.FromStream(ms);
+            return img;
+        }
+
+        public Image GetGroupImage(string id)
+        {
+            string sqlQuery = "SELECT AVATAR FROM GROUPCHAT WHERE ID = @id ";
+            var Data = DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { id });
+            byte[] bytes = (byte[])Data.Rows[0]["Avatar"];
+            var ms = new MemoryStream(bytes);
+            var img = Image.FromStream(ms);
+            return img;
         }
     }
 }

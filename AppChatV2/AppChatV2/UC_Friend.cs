@@ -2,11 +2,8 @@
 using System.Drawing;
 using System.Windows.Forms;
 using AppChatV2.Class;
-using System.Threading;
 using System.Net;
 using System.Net.Sockets;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Collections.Generic;
 
 namespace AppChatV2
@@ -18,17 +15,11 @@ namespace AppChatV2
         {
             InitializeComponent();
             this.Par = PAR;
-            /*Thread connect=new Thread(()=>Connect(i));
-            connect.Name = "Connect";
-            connect.IsBackground = true;
-            connect.Start();*/
         }
 
         private void UC_Friend_MouseClick(object sender, MouseEventArgs e)
         {
-            (sender as UC_Friend).BackColor = Color.DimGray;
-            Par.SwitchTab(Index);
-            NoticeMessage(false);
+
         }
 
         private void UC_Friend_Load(object sender, EventArgs e)
@@ -42,6 +33,7 @@ namespace AppChatV2
             {
                 Button_Status.FillColor = Color.Gray;
             }
+            PictureBox_Avatar.Image = DataProvider.Instance.GetSingleImage(ID);
         }
 
         public void NoticeMessage(bool a)
@@ -49,10 +41,23 @@ namespace AppChatV2
             Notice_Message.Visible = a;
         }
 
+        public string ReturnBackColor()
+        {
+            return this.BackColor.ToString();
+        }
+
         private void Button_Option_Click(object sender, EventArgs e)
         {
             Form_InteractSingle frm = new Form_InteractSingle(this);
             frm.ShowDialog();
+        }
+
+        private void UC_Friend_Click(object sender, EventArgs e)
+        {
+            Par.ChangeColorFriend();
+            (sender as UC_Friend).BackColor = Color.DimGray;
+            Par.SwitchTab(Index);
+            NoticeMessage(false);
         }
 
         private string _Name;
@@ -67,6 +72,7 @@ namespace AppChatV2
         private IPEndPoint _IP;
         private int _Index;
         private List<string> listMessage;
+        private byte[] _Avatar;
 
         public string Name1 { get => _Name; set => _Name = value; }
         public string Is_active { get => _Is_active; set => _Is_active = value; }
@@ -80,10 +86,6 @@ namespace AppChatV2
         public string ID { get => _ID; set => _ID = value; }
         public int Index { get => _Index; set => _Index = value; }
         public List<string> ListMessage { get => listMessage; set => listMessage = value; }
-
-        private void UC_Friend_Leave(object sender, EventArgs e)
-        {
-            (sender as UC_Friend).BackColor = Color.White;
-        }
+        public byte[] Avatar { get => _Avatar; set => _Avatar = value; }
     }
 }

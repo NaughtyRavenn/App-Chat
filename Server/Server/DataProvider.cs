@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Server
@@ -99,16 +95,16 @@ namespace Server
             return DataProviderTable;
         }
 
-
-
-        public List<int> LoadContactFromDB()
+        public List<int> LoadPortFromDB()
         {
             var v1 = new List<int>();
-            string sqlQuery = "SELECT Port FROM CONTACT";
+            string sqlQuery = "SELECT Port AS PORT FROM CONTACT " +
+                "UNION " +
+                "SELECT Port AS PORT FROM GROUPCHAT";
             var Data = DataProvider.Instance.ExcuteQuery(sqlQuery);
             foreach (DataRow v in Data.Rows)
             {
-                v1.Add(int.Parse(v["Port"].ToString()));
+                v1.Add(int.Parse(v["PORT"].ToString()));
             }
             return v1;
         }

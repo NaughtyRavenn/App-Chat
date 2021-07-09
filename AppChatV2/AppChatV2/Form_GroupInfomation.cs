@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 using AppChatV2.Class;
 
@@ -13,7 +7,7 @@ namespace AppChatV2
 {
     public partial class Form_GroupInfomation : Form
     {
-        UC_GroupChat Par;
+        public UC_GroupChat Par;
         public Form_GroupInfomation(UC_GroupChat PAR)
         {
             InitializeComponent();
@@ -28,25 +22,38 @@ namespace AppChatV2
 
         private void Button_Confirm_Click(object sender, EventArgs e)
         {
-            if (CheckInfo())
+            string sqlQuery;
+            if (CheckName() && CheckAvatar())
             {
-                string sqlQuery = "UPDATE GROUPCHAT SET Name = @name WHERE ID = @id ";
-                DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { TextBox_Name.Text,ID});
-                MessageBox.Show("Successfully updated");
-                this.Hide();
+                sqlQuery = "UPDATE GROUPCHAT SET Name = @name , Avatar = @avatar WHERE ID = @id ";
+                DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { TextBox_Name.Text, Avatar, ID });
             }
-            else
+            else if (CheckName() && !CheckAvatar())
             {
-                Label_Name.Text = "Invalid name";
-                return;
+                sqlQuery = "UPDATE GROUPCHAT SET Name = @name WHERE ID = @id ";
+                DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { TextBox_Name.Text, ID });
             }
+            else if (!CheckName() && CheckAvatar())
+            {
+                sqlQuery = "UPDATE GROUPCHAT SET Avatar = @avatar WHERE ID = @id ";
+                DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Avatar, ID });
+            }
+            MessageBox.Show("Successfully updated");
+            this.Hide();
         }
 
-        private bool CheckInfo()
+        private bool CheckName()
         {
-            if (string.IsNullOrEmpty(TextBox_Name.Text))
-                return false;
-            return true;
+            if (!string.IsNullOrEmpty(TextBox_Name.Text))
+                return true;
+            return false;
+        }
+
+        private bool CheckAvatar()
+        {
+            if (PictureBox_Avatar.Image != null)
+                return true;
+            return false;
         }
 
         private void Button_AddMember_Click(object sender, EventArgs e)
@@ -55,9 +62,30 @@ namespace AppChatV2
             frm.ShowDialog();
         }
 
+
+        private void Button_Browse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Title = "Select avatar";
+            open.Filter = "All supported graphics|*.jpg;*.jpeg;*.png|" +
+                "JPEG (.jpg;.jpeg)|*.jpg;*.jpeg|" +
+                "Portable Network Graphic (.png)|.png";
+            try
+            {
+                string file = InteractImage.getLinkFromDialog();
+                PictureBox_Avatar.Image = InteractImage.BytesToImage(InteractImage.FromFile(file));
+                Avatar = File.ReadAllBytes(file);
+            }
+            catch
+            {
+                return;
+            }
+        }
+
+        private byte[] _Avatar;
         private string _ID;
-
+        
         public string ID { get => _ID; set => _ID = value; }
-
+        public byte[] Avatar { get => _Avatar; set => _Avatar = value; }
     }
 }

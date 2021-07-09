@@ -56,8 +56,6 @@ C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\bin\Debug\Bunifu_UI_v1.5.3.x
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\bin\Debug\System.Data.SqlClient.xml
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.exe.config
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_AddFriend.resources
-C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.CHAT_Receive.resources
-C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.CHAT_Send.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_EditProfile.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_FriendInfomation.resources
 C:\Users\Admin\Desktop\App-Chat\AppChatV2\AppChatV2\obj\Debug\AppChatV2.Form_GroupInfomation.resources

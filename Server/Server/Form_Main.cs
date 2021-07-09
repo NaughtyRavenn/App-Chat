@@ -31,7 +31,7 @@ namespace Server
 
         private void DoConnect()
         {
-            var Data = DataProvider.Instance.LoadContactFromDB();
+            var Data = DataProvider.Instance.LoadPortFromDB();
             Data.Add(9000);
             foreach (var v in Data)
             {
@@ -63,29 +63,20 @@ namespace Server
 
         private void Connect(int i)
         {
-            #region v1
-            /*for (int i = 8000; i <= 8001; i++)
-            {*/
             int v = i;
-            /*Socket Server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
-            IPEndPoint IPep = new IPEndPoint(IPAddress.Any, v);
-            List<Socket> ClientList = new List<Socket>();*/
             ServerPort serverPort = new ServerPort(v);
             ListServerPort.Add(serverPort);
-            /*IP1 = TextBox_IP.Text;*/
             try
             {
-                /*Server.Bind(IPep);*/
                 serverPort.Server.Bind(serverPort.IPep);
             }
             catch
             {
                 return;
             }
-            /*Server.Listen(100);*/
+
             serverPort.Server.Listen(100);
-            /*Thread listen = new Thread(() =>
-            {*/
+
             try
             {
                 while (true)
@@ -94,39 +85,7 @@ namespace Server
                     client = serverPort.Server.Accept();
                     RichTextBox_Message.Text += "New client connected from: " + client.RemoteEndPoint + "\n";
                     serverPort.ClientList.Add(client);
-                    /*Thread recv = new Thread(Receive);
-                    recv.IsBackground = true;
-                    recv.Start(client);*/
-                    /*Thread recv=*/ThreadWithParameters(client, serverPort.ClientList);
-                    /*recv.Start();*/
-                    /*ThreadWithParameters(client, ClientList);*/
-                    /*Thread recv = new Thread(() =>
-                      {
-                          try
-                          {
-                              while (true)
-                              {
-                                  byte[] data = new byte[1024 * 5000];
-                                  client.Receive(data);
-
-                                  string message = (string)Deserialize(data);
-                                  AddMessage(client.RemoteEndPoint + ": " + message);
-                                  foreach (Socket item in ClientList)
-                                  {
-                                      if (item != null && item != client)
-                                          item.Send(Serialize(message));
-                                  }
-                              }
-                          }
-                          catch
-                          {
-                              ClientList.Remove(client);
-                              client.Close();
-                          }
-                      });
-                    recv.Name = "Receive";
-                    recv.IsBackground = true;
-                    recv.Start();*/
+                    ThreadWithParameters(client, serverPort.ClientList);
                 }
             }
             catch
@@ -134,21 +93,10 @@ namespace Server
                 serverPort.IPep = new IPEndPoint(IPAddress.Any, v);
                 serverPort.Server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
             }
-                /*});
-                listen.Name = "Listen";
-                listen.IsBackground = true;
-                listen.Start();
-
-            }*/
-            #endregion
         }
 
-        //Nhận dữ liệu từ khách
         void Receive(Socket client,List<Socket> ClientList)
         {
-            #region
-
-           /* List<Socket> ClientList = obj2 as List<Socket>;*/
             try
             {
                 while (true)
@@ -161,7 +109,6 @@ namespace Server
                     {
                         DoConnect();
                     }
-                    /*AddMessage(client.RemoteEndPoint + ": " + message);*/
                     foreach (Socket item in ClientList)
                     {
                         if (item != null && item != client)
@@ -171,10 +118,16 @@ namespace Server
             }
             catch
             {
-                ClientList.Remove(client);
-                client.Close();
+                try
+                {
+                    ClientList.Remove(client);
+                    client.Close();
+                }
+                catch
+                {
+                    MessageBox.Show("Lỗi client");
+                }
             }
-            #endregion
         }
 
         byte[] Serialize(object obj)
@@ -200,10 +153,11 @@ namespace Server
             foreach(var v in ListServerPort)
                 v.Server.Close();
         }
-
-        void AddMessage(string s)
+        
+        private void RichTextBox_Message_TextChanged(object sender, EventArgs e)
         {
-            RichTextBox_Message.Text+=s+"\n";
+            if (RichTextBox_Message.TextLength > 1000)
+                RichTextBox_Message.Clear();
         }
 
         private Socket _Server;
@@ -212,12 +166,5 @@ namespace Server
         public Socket Server { get => _Server; set => _Server = value; }
         internal List<ServerPort> ListServerPort { get => _ListServerPort; set => _ListServerPort = value; }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            TabPage tabpg = new TabPage("Tab");
-            tabControl1.TabPages.Add(tabpg);
-            RichTextBox RichTextBox_Chat = new RichTextBox();
-            tabpg.Controls.Add(RichTextBox_Chat);
-        }
     }
 }

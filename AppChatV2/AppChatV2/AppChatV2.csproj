@@ -133,6 +133,7 @@
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.9\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
     <Reference Include="SqlDataProvider, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SqlDataProvider.2.0.0\lib\netstandard2.0\SqlDataProvider.dll</HintPath>
     </Reference>
@@ -154,6 +155,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
     <Reference Include="XanderUI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\XanderUI.dll</HintPath>
@@ -163,6 +165,7 @@
     <Compile Include="Class\Account.cs" />
     <Compile Include="Class\DataProvider.cs" />
     <Compile Include="Class\Group.cs" />
+    <Compile Include="Class\InteractImage.cs" />
     <Compile Include="Class\Person.cs" />
     <Compile Include="Class\User.cs" />
     <Compile Include="Form_AddFriend.cs">
@@ -176,18 +179,6 @@
     </Compile>
     <Compile Include="Form_AddMember.Designer.cs">
       <DependentUpon>Form_AddMember.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CHAT_Receive.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CHAT_Receive.Designer.cs">
-      <DependentUpon>CHAT_Receive.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CHAT_Send.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CHAT_Send.Designer.cs">
-      <DependentUpon>CHAT_Send.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_CreateGroup.cs">
       <SubType>Form</SubType>
@@ -298,12 +289,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_AddMember.resx">
       <DependentUpon>Form_AddMember.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CHAT_Receive.resx">
-      <DependentUpon>CHAT_Receive.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CHAT_Send.resx">
-      <DependentUpon>CHAT_Send.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_CreateGroup.resx">
       <DependentUpon>Form_CreateGroup.cs</DependentUpon>

@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppChatV2.Class;
 
@@ -13,7 +8,7 @@ namespace AppChatV2
 {
     public partial class UC_Group : UserControl
     {
-        Form_Main Par;
+        public Form_Main Par;
         public UC_Group(Form_Main PAR)
         {
             InitializeComponent();
@@ -23,6 +18,25 @@ namespace AppChatV2
         private void UC_Group_Load(object sender, EventArgs e)
         {
             Label_Name.Text = Name1;
+            PictureBox_Avatar.Image = DataProvider.Instance.GetGroupImage(ID);
+        }
+
+        public void NoticeMessage(bool a)
+        {
+            Notice_Message.Visible = a;
+        }
+
+        private void UC_Group_Click(object sender, EventArgs e)
+        {
+            Par.ChangeColorGroup();
+            (sender as UC_Group).BackColor = Color.DimGray;
+            Par.SwitchTab(Index);
+            NoticeMessage(false);
+        }
+
+        public string ReturnBackColor()
+        {
+            return this.BackColor.ToString();
         }
 
         private string _Name;
