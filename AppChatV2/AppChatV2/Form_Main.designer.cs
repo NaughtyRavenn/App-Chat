@@ -665,7 +665,7 @@
             // 
             // Page_ChatBox
             // 
-            this.Page_ChatBox.Location = new System.Drawing.Point(613, 0);
+            this.Page_ChatBox.Location = new System.Drawing.Point(613, -22);
             this.Page_ChatBox.Name = "Page_ChatBox";
             this.Page_ChatBox.SelectedIndex = 0;
             this.Page_ChatBox.Size = new System.Drawing.Size(574, 594);
