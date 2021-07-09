@@ -21,6 +21,7 @@ namespace AppChatV2
         private void UC_Stranger_Load(object sender, EventArgs e)
         {
             Label_Name.Text = Name1;
+            PictureBox_Avatar.Image = DataProvider.Instance.GetSingleImage(ID);
         }
 
         private void Button_SendRequest_Click_1(object sender, EventArgs e)
@@ -37,15 +38,6 @@ namespace AppChatV2
                 MessageBox.Show("Friend request has been sent before");
                 return;
             }
-
-            /*string sqlQuery2 = "SELECT * FROM CONTACT WHERE ID1 = @id AND ID2 = @id1 ";
-            int count2 = DataProvider.Instance.ExcuteQuery(sqlQuery2, new object[] { ID, User.Instance.ID }).Rows.Count;
-            if (count2 > 0)
-            {
-                MessageBox.Show("Friend request has been sent before");
-                return;
-            }*/
-
             string sqlQuery3 = "INSERT INTO CONTACT (ID1, ID2, Type) VALUES ( @id , @id1 , 'Waiting')";
             DataProvider.Instance.ExcuteQuery(sqlQuery3, new object[] { User.Instance.ID, ID });
             MessageBox.Show("Sent friend request");

@@ -31,10 +31,10 @@
             this.Label_Name = new System.Windows.Forms.Label();
             this.Button_Status = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Button_Option = new Bunifu.Framework.UI.BunifuImageButton();
-            this.guna2CirclePictureBox11 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.PictureBox_Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Notice_Message = new Guna.UI2.WinForms.Guna2CircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.Button_Option)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // Label_Name
@@ -82,20 +82,20 @@
             this.Button_Option.Zoom = 10;
             this.Button_Option.Click += new System.EventHandler(this.Button_Option_Click);
             // 
-            // guna2CirclePictureBox11
+            // PictureBox_Avatar
             // 
-            this.guna2CirclePictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox11.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Vertical;
-            this.guna2CirclePictureBox11.ImageRotate = 0F;
-            this.guna2CirclePictureBox11.InitialImage = null;
-            this.guna2CirclePictureBox11.Location = new System.Drawing.Point(13, 16);
-            this.guna2CirclePictureBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2CirclePictureBox11.Name = "guna2CirclePictureBox11";
-            this.guna2CirclePictureBox11.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox11.ShadowDecoration.Parent = this.guna2CirclePictureBox11;
-            this.guna2CirclePictureBox11.Size = new System.Drawing.Size(70, 70);
-            this.guna2CirclePictureBox11.TabIndex = 21;
-            this.guna2CirclePictureBox11.TabStop = false;
+            this.PictureBox_Avatar.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox_Avatar.ImageRotate = 0F;
+            this.PictureBox_Avatar.InitialImage = null;
+            this.PictureBox_Avatar.Location = new System.Drawing.Point(13, 16);
+            this.PictureBox_Avatar.Margin = new System.Windows.Forms.Padding(2);
+            this.PictureBox_Avatar.Name = "PictureBox_Avatar";
+            this.PictureBox_Avatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.PictureBox_Avatar.ShadowDecoration.Parent = this.PictureBox_Avatar;
+            this.PictureBox_Avatar.Size = new System.Drawing.Size(70, 70);
+            this.PictureBox_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox_Avatar.TabIndex = 21;
+            this.PictureBox_Avatar.TabStop = false;
             // 
             // Notice_Message
             // 
@@ -129,15 +129,14 @@
             this.Controls.Add(this.Button_Status);
             this.Controls.Add(this.Button_Option);
             this.Controls.Add(this.Label_Name);
-            this.Controls.Add(this.guna2CirclePictureBox11);
+            this.Controls.Add(this.PictureBox_Avatar);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UC_Friend";
             this.Size = new System.Drawing.Size(328, 104);
             this.Load += new System.EventHandler(this.UC_Friend_Load);
-            this.Leave += new System.EventHandler(this.UC_Friend_Leave);
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.UC_Friend_MouseClick);
+            this.Click += new System.EventHandler(this.UC_Friend_Click);
             ((System.ComponentModel.ISupportInitialize)(this.Button_Option)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,7 +144,7 @@
 
         #endregion
         private System.Windows.Forms.Label Label_Name;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox11;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBox_Avatar;
         private Bunifu.Framework.UI.BunifuImageButton Button_Option;
         private Guna.UI2.WinForms.Guna2CircleButton Button_Status;
         private Guna.UI2.WinForms.Guna2CircleButton Notice_Message;

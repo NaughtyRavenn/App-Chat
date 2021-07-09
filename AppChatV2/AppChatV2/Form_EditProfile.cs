@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppChatV2.Class;
 
@@ -15,11 +11,13 @@ namespace AppChatV2
 {
     public partial class Form_EditProfile : Form
     {
-        public Form_EditProfile()
+        Form_Main Par;
+        public Form_EditProfile(Form_Main PAR)
         {
             InitializeComponent();
             Flag1 = 1;
             Flag2 = 1;
+            this.Par = PAR;
         }
 
         private void Form_EditProfile_Load(object sender, EventArgs e)
@@ -60,8 +58,7 @@ namespace AppChatV2
             Page_EditProfile.SetPage(TabPage_IP);
         }
 
-        Person p = DataProvider.Instance.LoadInfoByID(Account.Instance.id);
-
+        Person p = DataProvider.Instance.LoadInfoByID(Account.Instance.ID);
         private void CheckName()
         {
             p.Name = TextBox_Name.Text;
@@ -154,6 +151,8 @@ namespace AppChatV2
                 CheckEmail();
             if (RadioButton_Male.Checked == true || RadioButton_Female.Checked == true)
                 CheckSex();
+            if (PictureBox_Avatar.Image != null)
+                p.Avatar = Avatar;
         }
 
         private void DoEdit1()
@@ -162,9 +161,10 @@ namespace AppChatV2
             if (Flag1 == 1)
             {
                 string sqlQuery = "UPDATE ACCOUNT SET Name = @Name , Birthday = @Birthday ," +
-                    " Email = @Email , Phonenumber = @Phonenumber , Sex = @Sex WHERE ID = @id ";
-                DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { p.Name, p.Birthday, p.Email, p.Phonenumber, p.Sex, p.Id });
+                    " Email = @Email , Phonenumber = @Phonenumber , Sex = @Sex , Avatar = @Avatar WHERE ID = @id ";
+                DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { p.Name, p.Birthday, p.Email, p.Phonenumber, p.Sex,p.Avatar, p.Id });
                 MessageBox.Show("Successfully updated");
+                Par.Reload();
             }
             else
             {
@@ -299,11 +299,31 @@ namespace AppChatV2
             }
         }
 
+        private void Button_Browse_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Title = "Select avatar";
+            open.Filter = "All supported graphics|*.jpg;*.jpeg;*.png|" +
+                "JPEG (.jpg;.jpeg)|*.jpg;*.jpeg|" +
+                "Portable Network Graphic (.png)|.png";
+            try
+            {
+                string file = InteractImage.getLinkFromDialog();
+                PictureBox_Avatar.Image = InteractImage.BytesToImage(InteractImage.FromFile(file));
+                Avatar = File.ReadAllBytes(file);
+            }
+            catch
+            {
+                return;
+            }
+        }
+
         private int _Flag1;
         private int _Flag2;
+        private byte[] _Avatar;
 
         public int Flag1 { get => _Flag1; set => _Flag1 = value; }
         public int Flag2 { get => _Flag2; set => _Flag2 = value; }
-
+        public byte[] Avatar { get => _Avatar; set => _Avatar = value; }
     }
 }

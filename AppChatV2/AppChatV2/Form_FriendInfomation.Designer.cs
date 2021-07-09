@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PictureBox_Avatar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,7 +37,7 @@
             this.Label_Phonenumber = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Label_Email = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Label_Name = new Bunifu.Framework.UI.BunifuCustomLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // label5
@@ -53,18 +53,18 @@
             this.label5.TabIndex = 51;
             this.label5.Text = "Name";
             // 
-            // guna2PictureBox1
+            // PictureBox_Avatar
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(15, 18);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(130, 130);
-            this.guna2PictureBox1.TabIndex = 50;
-            this.guna2PictureBox1.TabStop = false;
+            this.PictureBox_Avatar.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox_Avatar.ImageRotate = 0F;
+            this.PictureBox_Avatar.Location = new System.Drawing.Point(15, 18);
+            this.PictureBox_Avatar.Margin = new System.Windows.Forms.Padding(2);
+            this.PictureBox_Avatar.Name = "PictureBox_Avatar";
+            this.PictureBox_Avatar.ShadowDecoration.Parent = this.PictureBox_Avatar;
+            this.PictureBox_Avatar.Size = new System.Drawing.Size(130, 130);
+            this.PictureBox_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox_Avatar.TabIndex = 50;
+            this.PictureBox_Avatar.TabStop = false;
             // 
             // label8
             // 
@@ -107,7 +107,7 @@
             // 
             // Label_Birthday
             // 
-            this.Label_Birthday.BackColor = System.Drawing.Color.White;
+            this.Label_Birthday.BackColor = System.Drawing.Color.Transparent;
             this.Label_Birthday.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Label_Birthday.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Birthday.Location = new System.Drawing.Point(210, 166);
@@ -117,7 +117,7 @@
             // 
             // Label_Phonenumber
             // 
-            this.Label_Phonenumber.BackColor = System.Drawing.Color.White;
+            this.Label_Phonenumber.BackColor = System.Drawing.Color.Transparent;
             this.Label_Phonenumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Label_Phonenumber.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Phonenumber.Location = new System.Drawing.Point(210, 226);
@@ -127,7 +127,7 @@
             // 
             // Label_Email
             // 
-            this.Label_Email.BackColor = System.Drawing.Color.White;
+            this.Label_Email.BackColor = System.Drawing.Color.Transparent;
             this.Label_Email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Label_Email.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Email.Location = new System.Drawing.Point(210, 286);
@@ -137,7 +137,7 @@
             // 
             // Label_Name
             // 
-            this.Label_Name.BackColor = System.Drawing.Color.White;
+            this.Label_Name.BackColor = System.Drawing.Color.Transparent;
             this.Label_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Label_Name.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Name.Location = new System.Drawing.Point(261, 17);
@@ -159,11 +159,12 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.PictureBox_Avatar);
             this.Name = "Form_FriendInfomation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form_PersonalInfomation";
             this.Load += new System.EventHandler(this.Form_FriendInfomation_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,7 +172,7 @@
 
         #endregion
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox PictureBox_Avatar;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;

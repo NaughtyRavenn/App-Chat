@@ -38,30 +38,31 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.Page_AddFriend = new Bunifu.UI.WinForms.BunifuPages();
             this.TabPage_Recent = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.FlowLayoutPanel_Stranger = new System.Windows.Forms.FlowLayoutPanel();
             this.Button_Search = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.TabPage_ListFriend = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.FlowLayoutPanel_ListRequest = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.Label_Count = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.FlowLayoutPanel_ListRequest = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.Notice1 = new System.Windows.Forms.PictureBox();
             this.Notice2 = new System.Windows.Forms.PictureBox();
-            this.Button_ListFriend = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.Button_Recent = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.Button_Request = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.Button_Stranger = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.Notice_Request = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Page_AddFriend.SuspendLayout();
             this.TabPage_Recent.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.TabPage_ListFriend.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Notice1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Notice2)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Page_AddFriend
@@ -111,6 +112,15 @@
             this.TabPage_Recent.Size = new System.Drawing.Size(483, 557);
             this.TabPage_Recent.TabIndex = 0;
             this.TabPage_Recent.Text = "tabPage3";
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.FlowLayoutPanel_Stranger);
+            this.panel3.Location = new System.Drawing.Point(6, 101);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(461, 450);
+            this.panel3.TabIndex = 35;
             // 
             // FlowLayoutPanel_Stranger
             // 
@@ -187,6 +197,23 @@
             this.TabPage_ListFriend.TabIndex = 1;
             this.TabPage_ListFriend.Text = "tabPage4";
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.FlowLayoutPanel_ListRequest);
+            this.panel2.Location = new System.Drawing.Point(11, 97);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(455, 454);
+            this.panel2.TabIndex = 35;
+            // 
+            // FlowLayoutPanel_ListRequest
+            // 
+            this.FlowLayoutPanel_ListRequest.AutoScroll = true;
+            this.FlowLayoutPanel_ListRequest.Location = new System.Drawing.Point(14, 12);
+            this.FlowLayoutPanel_ListRequest.Name = "FlowLayoutPanel_ListRequest";
+            this.FlowLayoutPanel_ListRequest.Size = new System.Drawing.Size(427, 437);
+            this.FlowLayoutPanel_ListRequest.TabIndex = 30;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -223,21 +250,14 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "Bạn có";
             // 
-            // FlowLayoutPanel_ListRequest
-            // 
-            this.FlowLayoutPanel_ListRequest.AutoScroll = true;
-            this.FlowLayoutPanel_ListRequest.Location = new System.Drawing.Point(14, 12);
-            this.FlowLayoutPanel_ListRequest.Name = "FlowLayoutPanel_ListRequest";
-            this.FlowLayoutPanel_ListRequest.Size = new System.Drawing.Size(427, 437);
-            this.FlowLayoutPanel_ListRequest.TabIndex = 30;
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Controls.Add(this.Notice_Request);
             this.guna2Panel1.Controls.Add(this.Notice1);
             this.guna2Panel1.Controls.Add(this.Notice2);
-            this.guna2Panel1.Controls.Add(this.Button_ListFriend);
-            this.guna2Panel1.Controls.Add(this.Button_Recent);
+            this.guna2Panel1.Controls.Add(this.Button_Request);
+            this.guna2Panel1.Controls.Add(this.Button_Stranger);
             this.guna2Panel1.Controls.Add(this.panel1);
             this.guna2Panel1.Location = new System.Drawing.Point(-6, -11);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -264,46 +284,46 @@
             this.Notice2.TabStop = false;
             this.Notice2.Visible = false;
             // 
-            // Button_ListFriend
+            // Button_Request
             // 
-            this.Button_ListFriend.AllowToggling = true;
-            this.Button_ListFriend.AnimationSpeed = 200;
-            this.Button_ListFriend.AutoGenerateColors = false;
-            this.Button_ListFriend.BackColor = System.Drawing.Color.Transparent;
-            this.Button_ListFriend.BackColor1 = System.Drawing.Color.White;
-            this.Button_ListFriend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button_ListFriend.BackgroundImage")));
-            this.Button_ListFriend.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Button_ListFriend.ButtonText = "Friend request";
-            this.Button_ListFriend.ButtonTextMarginLeft = 20;
-            this.Button_ListFriend.ColorContrastOnClick = 45;
-            this.Button_ListFriend.ColorContrastOnHover = 45;
-            this.Button_ListFriend.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_Request.AllowToggling = true;
+            this.Button_Request.AnimationSpeed = 200;
+            this.Button_Request.AutoGenerateColors = false;
+            this.Button_Request.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Request.BackColor1 = System.Drawing.Color.White;
+            this.Button_Request.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button_Request.BackgroundImage")));
+            this.Button_Request.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Button_Request.ButtonText = "Friend request";
+            this.Button_Request.ButtonTextMarginLeft = 20;
+            this.Button_Request.ColorContrastOnClick = 45;
+            this.Button_Request.ColorContrastOnHover = 45;
+            this.Button_Request.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges1.BottomLeft = true;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = true;
             borderEdges1.TopRight = true;
-            this.Button_ListFriend.CustomizableEdges = borderEdges1;
-            this.Button_ListFriend.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Button_ListFriend.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.Button_ListFriend.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.Button_ListFriend.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.Button_ListFriend.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Button_ListFriend.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.Button_ListFriend.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.Button_ListFriend.ForeColor = System.Drawing.Color.DimGray;
-            this.Button_ListFriend.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_ListFriend.IconMarginLeft = 20;
-            this.Button_ListFriend.IconPadding = 15;
-            this.Button_ListFriend.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_ListFriend.IdleBorderColor = System.Drawing.Color.White;
-            this.Button_ListFriend.IdleBorderRadius = 3;
-            this.Button_ListFriend.IdleBorderThickness = 1;
-            this.Button_ListFriend.IdleFillColor = System.Drawing.Color.White;
-            this.Button_ListFriend.IdleIconLeftImage = global::AppChatV2.Properties.Resources.outline_pending_actions_black_2;
-            this.Button_ListFriend.IdleIconRightImage = null;
-            this.Button_ListFriend.IndicateFocus = true;
-            this.Button_ListFriend.Location = new System.Drawing.Point(0, 201);
-            this.Button_ListFriend.Name = "Button_ListFriend";
+            this.Button_Request.CustomizableEdges = borderEdges1;
+            this.Button_Request.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Button_Request.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Button_Request.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Button_Request.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Button_Request.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Button_Request.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Button_Request.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.Button_Request.ForeColor = System.Drawing.Color.DimGray;
+            this.Button_Request.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_Request.IconMarginLeft = 20;
+            this.Button_Request.IconPadding = 15;
+            this.Button_Request.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_Request.IdleBorderColor = System.Drawing.Color.White;
+            this.Button_Request.IdleBorderRadius = 3;
+            this.Button_Request.IdleBorderThickness = 1;
+            this.Button_Request.IdleFillColor = System.Drawing.Color.White;
+            this.Button_Request.IdleIconLeftImage = global::AppChatV2.Properties.Resources.outline_pending_actions_black_2;
+            this.Button_Request.IdleIconRightImage = null;
+            this.Button_Request.IndicateFocus = true;
+            this.Button_Request.Location = new System.Drawing.Point(0, 201);
+            this.Button_Request.Name = "Button_Request";
             stateProperties1.BorderColor = System.Drawing.Color.White;
             stateProperties1.BorderRadius = 3;
             stateProperties1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -312,7 +332,7 @@
             stateProperties1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(50)))), ((int)(((byte)(207)))));
             stateProperties1.IconLeftImage = null;
             stateProperties1.IconRightImage = null;
-            this.Button_ListFriend.onHoverState = stateProperties1;
+            this.Button_Request.onHoverState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.White;
             stateProperties2.BorderRadius = 3;
             stateProperties2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -321,55 +341,55 @@
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(50)))), ((int)(((byte)(207)))));
             stateProperties2.IconLeftImage = null;
             stateProperties2.IconRightImage = null;
-            this.Button_ListFriend.OnPressedState = stateProperties2;
-            this.Button_ListFriend.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Button_ListFriend.Size = new System.Drawing.Size(222, 62);
-            this.Button_ListFriend.TabIndex = 3;
-            this.Button_ListFriend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Button_ListFriend.TextMarginLeft = 20;
-            this.Button_ListFriend.UseDefaultRadiusAndThickness = true;
-            this.Button_ListFriend.Click += new System.EventHandler(this.Button_ListFriend_Click);
+            this.Button_Request.OnPressedState = stateProperties2;
+            this.Button_Request.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Button_Request.Size = new System.Drawing.Size(222, 62);
+            this.Button_Request.TabIndex = 3;
+            this.Button_Request.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Button_Request.TextMarginLeft = 20;
+            this.Button_Request.UseDefaultRadiusAndThickness = true;
+            this.Button_Request.Click += new System.EventHandler(this.Button_Request_Click);
             // 
-            // Button_Recent
+            // Button_Stranger
             // 
-            this.Button_Recent.AllowToggling = true;
-            this.Button_Recent.AnimationSpeed = 200;
-            this.Button_Recent.AutoGenerateColors = false;
-            this.Button_Recent.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Recent.BackColor1 = System.Drawing.Color.White;
-            this.Button_Recent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button_Recent.BackgroundImage")));
-            this.Button_Recent.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.Button_Recent.ButtonText = "Add friend";
-            this.Button_Recent.ButtonTextMarginLeft = 8;
-            this.Button_Recent.ColorContrastOnClick = 45;
-            this.Button_Recent.ColorContrastOnHover = 45;
-            this.Button_Recent.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_Stranger.AllowToggling = true;
+            this.Button_Stranger.AnimationSpeed = 200;
+            this.Button_Stranger.AutoGenerateColors = false;
+            this.Button_Stranger.BackColor = System.Drawing.Color.Transparent;
+            this.Button_Stranger.BackColor1 = System.Drawing.Color.White;
+            this.Button_Stranger.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button_Stranger.BackgroundImage")));
+            this.Button_Stranger.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Button_Stranger.ButtonText = "Add friend";
+            this.Button_Stranger.ButtonTextMarginLeft = 8;
+            this.Button_Stranger.ColorContrastOnClick = 45;
+            this.Button_Stranger.ColorContrastOnHover = 45;
+            this.Button_Stranger.Cursor = System.Windows.Forms.Cursors.Hand;
             borderEdges2.BottomLeft = true;
             borderEdges2.BottomRight = true;
             borderEdges2.TopLeft = true;
             borderEdges2.TopRight = true;
-            this.Button_Recent.CustomizableEdges = borderEdges2;
-            this.Button_Recent.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Button_Recent.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.Button_Recent.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.Button_Recent.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.Button_Recent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Button_Recent.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.Button_Recent.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.Button_Recent.ForeColor = System.Drawing.Color.DimGray;
-            this.Button_Recent.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_Recent.IconMarginLeft = 20;
-            this.Button_Recent.IconPadding = 15;
-            this.Button_Recent.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_Recent.IdleBorderColor = System.Drawing.Color.White;
-            this.Button_Recent.IdleBorderRadius = 3;
-            this.Button_Recent.IdleBorderThickness = 1;
-            this.Button_Recent.IdleFillColor = System.Drawing.Color.White;
-            this.Button_Recent.IdleIconLeftImage = global::AppChatV2.Properties.Resources.outline_person_search_black_2;
-            this.Button_Recent.IdleIconRightImage = null;
-            this.Button_Recent.IndicateFocus = true;
-            this.Button_Recent.Location = new System.Drawing.Point(0, 139);
-            this.Button_Recent.Name = "Button_Recent";
+            this.Button_Stranger.CustomizableEdges = borderEdges2;
+            this.Button_Stranger.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Button_Stranger.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Button_Stranger.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Button_Stranger.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Button_Stranger.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Button_Stranger.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Button_Stranger.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.Button_Stranger.ForeColor = System.Drawing.Color.DimGray;
+            this.Button_Stranger.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_Stranger.IconMarginLeft = 20;
+            this.Button_Stranger.IconPadding = 15;
+            this.Button_Stranger.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_Stranger.IdleBorderColor = System.Drawing.Color.White;
+            this.Button_Stranger.IdleBorderRadius = 3;
+            this.Button_Stranger.IdleBorderThickness = 1;
+            this.Button_Stranger.IdleFillColor = System.Drawing.Color.White;
+            this.Button_Stranger.IdleIconLeftImage = global::AppChatV2.Properties.Resources.outline_person_search_black_2;
+            this.Button_Stranger.IdleIconRightImage = null;
+            this.Button_Stranger.IndicateFocus = true;
+            this.Button_Stranger.Location = new System.Drawing.Point(0, 139);
+            this.Button_Stranger.Name = "Button_Stranger";
             stateProperties3.BorderColor = System.Drawing.Color.White;
             stateProperties3.BorderRadius = 3;
             stateProperties3.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -378,7 +398,7 @@
             stateProperties3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(50)))), ((int)(((byte)(207)))));
             stateProperties3.IconLeftImage = null;
             stateProperties3.IconRightImage = null;
-            this.Button_Recent.onHoverState = stateProperties3;
+            this.Button_Stranger.onHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.White;
             stateProperties4.BorderRadius = 3;
             stateProperties4.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
@@ -387,13 +407,13 @@
             stateProperties4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(50)))), ((int)(((byte)(207)))));
             stateProperties4.IconLeftImage = null;
             stateProperties4.IconRightImage = null;
-            this.Button_Recent.OnPressedState = stateProperties4;
-            this.Button_Recent.Size = new System.Drawing.Size(222, 62);
-            this.Button_Recent.TabIndex = 1;
-            this.Button_Recent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Button_Recent.TextMarginLeft = 8;
-            this.Button_Recent.UseDefaultRadiusAndThickness = true;
-            this.Button_Recent.Click += new System.EventHandler(this.Button_Recent_Click);
+            this.Button_Stranger.OnPressedState = stateProperties4;
+            this.Button_Stranger.Size = new System.Drawing.Size(222, 62);
+            this.Button_Stranger.TabIndex = 1;
+            this.Button_Stranger.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Button_Stranger.TextMarginLeft = 8;
+            this.Button_Stranger.UseDefaultRadiusAndThickness = true;
+            this.Button_Stranger.Click += new System.EventHandler(this.Button_ListStranger_Click);
             // 
             // panel1
             // 
@@ -403,23 +423,28 @@
             this.panel1.Size = new System.Drawing.Size(222, 139);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // Notice_Request
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.FlowLayoutPanel_ListRequest);
-            this.panel2.Location = new System.Drawing.Point(11, 97);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(455, 454);
-            this.panel2.TabIndex = 35;
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.FlowLayoutPanel_Stranger);
-            this.panel3.Location = new System.Drawing.Point(6, 101);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(461, 450);
-            this.panel3.TabIndex = 35;
+            this.Notice_Request.BackColor = System.Drawing.Color.White;
+            this.Notice_Request.CheckedState.Parent = this.Notice_Request;
+            this.Notice_Request.CustomImages.Parent = this.Notice_Request;
+            this.Notice_Request.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Notice_Request.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Notice_Request.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Notice_Request.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Notice_Request.DisabledState.Parent = this.Notice_Request;
+            this.Notice_Request.FillColor = System.Drawing.Color.Red;
+            this.Notice_Request.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Notice_Request.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Notice_Request.ForeColor = System.Drawing.Color.White;
+            this.Notice_Request.HoverState.Parent = this.Notice_Request;
+            this.Notice_Request.Location = new System.Drawing.Point(198, 242);
+            this.Notice_Request.Name = "Notice_Request";
+            this.Notice_Request.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Notice_Request.ShadowDecoration.Parent = this.Notice_Request;
+            this.Notice_Request.Size = new System.Drawing.Size(15, 15);
+            this.Notice_Request.TabIndex = 28;
+            this.Notice_Request.Visible = false;
             // 
             // Form_AddFriend
             // 
@@ -436,13 +461,13 @@
             this.Load += new System.EventHandler(this.Form_AddFriend_Load);
             this.Page_AddFriend.ResumeLayout(false);
             this.TabPage_Recent.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.TabPage_ListFriend.ResumeLayout(false);
             this.TabPage_ListFriend.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Notice1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Notice2)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -456,8 +481,8 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.PictureBox Notice1;
         private System.Windows.Forms.PictureBox Notice2;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Button_ListFriend;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Button_Recent;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Button_Request;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Button_Stranger;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2GradientButton Button_Search;
         private System.Windows.Forms.FlowLayoutPanel FlowLayoutPanel_Stranger;
@@ -467,5 +492,6 @@
         private System.Windows.Forms.FlowLayoutPanel FlowLayoutPanel_ListRequest;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private Guna.UI2.WinForms.Guna2CircleButton Notice_Request;
     }
 }

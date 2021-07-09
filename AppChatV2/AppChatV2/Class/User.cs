@@ -33,6 +33,13 @@ namespace AppChatV2.Class
             Sex = Data.Rows[0]["Sex"].ToString();
         }
 
+        private string _Name;
+        private string _Phonenumber;
+        private string _Email;
+        private DateTime _Birthday;
+        private string _ID;
+        private string _Sex;
+
         public string Is_admin { get; set; }
         public string Is_active { get; set; }
         public string Phonenumber { get => _Phonenumber; set => _Phonenumber = value; }
@@ -41,12 +48,5 @@ namespace AppChatV2.Class
         public string Sex { get => _Sex; set => _Sex = value; }
         public string Name { get => _Name; set => _Name = value; }
         public DateTime Birthday { get => _Birthday; set => _Birthday = value; }
-
-        private string _Name;
-        private string _Phonenumber;
-        private string _Email;
-        private DateTime _Birthday;
-        private string _ID;
-        private string _Sex;
     }
 }

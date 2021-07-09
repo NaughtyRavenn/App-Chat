@@ -32,10 +32,10 @@
             this.Button_Confirm = new Guna.UI2.WinForms.Guna2GradientButton();
             this.Button_Browse = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.PictureBox_Avatar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Label_Name = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // TextBox_Name
@@ -122,6 +122,7 @@
             this.Button_Browse.Size = new System.Drawing.Size(113, 37);
             this.Button_Browse.TabIndex = 48;
             this.Button_Browse.Text = "Browse";
+            this.Button_Browse.Click += new System.EventHandler(this.Button_Browse_Click);
             // 
             // label2
             // 
@@ -135,15 +136,16 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "Avatar";
             // 
-            // pictureBox1
+            // PictureBox_Avatar
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.GhostWhite;
-            this.pictureBox1.Location = new System.Drawing.Point(141, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 154);
-            this.pictureBox1.TabIndex = 46;
-            this.pictureBox1.TabStop = false;
+            this.PictureBox_Avatar.BackColor = System.Drawing.Color.GhostWhite;
+            this.PictureBox_Avatar.Location = new System.Drawing.Point(141, 21);
+            this.PictureBox_Avatar.Margin = new System.Windows.Forms.Padding(2);
+            this.PictureBox_Avatar.Name = "PictureBox_Avatar";
+            this.PictureBox_Avatar.Size = new System.Drawing.Size(142, 154);
+            this.PictureBox_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox_Avatar.TabIndex = 46;
+            this.PictureBox_Avatar.TabStop = false;
             // 
             // label1
             // 
@@ -179,12 +181,12 @@
             this.Controls.Add(this.Button_Confirm);
             this.Controls.Add(this.Button_Browse);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PictureBox_Avatar);
             this.Controls.Add(this.label1);
             this.Name = "Form_CreateGroup";
             this.Text = "Form_CreateGroup";
             this.Load += new System.EventHandler(this.Form_CreateGroup_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,7 +198,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton Button_Confirm;
         private Guna.UI2.WinForms.Guna2GradientButton Button_Browse;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PictureBox_Avatar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Label_Name;
     }

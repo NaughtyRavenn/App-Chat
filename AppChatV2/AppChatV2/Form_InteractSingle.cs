@@ -1,16 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.Windows.Forms;
-using System.Net.Sockets;
-using System.IO;
-using System.Net;
-using System.Runtime.Serialization.Formatters.Binary;
 using AppChatV2.Class;
 
 namespace AppChatV2
@@ -22,7 +11,6 @@ namespace AppChatV2
             InitializeComponent();
             this.Par = PAR;
         }
-
 
         private void Button_Profile_Click(object sender, EventArgs e)
         {
@@ -45,16 +33,8 @@ namespace AppChatV2
         private void Unfriend()
         {
             string sqlQuery = "DELETE FROM CONTACT WHERE ( ID1 = @id1 AND ID2 = @id2 ) OR ( ID1 = @id3 AND ID2 = @id4 )";
-            DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.id, Par.ID, Par.ID, Account.Instance.id });
+            DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.ID, Par.ID, Par.ID, Account.Instance.ID });
         }
-
-        private void Button_AddGroup_Click(object sender, EventArgs e)
-        {
-            /*Form_GroupInfomation frm = new Form_GroupInfomation(this, 1);
-            frm.ShowDialog();*/
-        }
-
-        //--------------------------------------------
         
         private UC_Friend _Par;
         

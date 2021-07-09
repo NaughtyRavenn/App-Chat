@@ -36,18 +36,20 @@
             this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.RichTextBox_Message = new System.Windows.Forms.RichTextBox();
             this.Button_Send = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PictureBox_Avatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.LabelBox_Name = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.guna2GradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).BeginInit();
             this.SuspendLayout();
             // 
             // RichTextBox_Display
             // 
-            this.RichTextBox_Display.Dock = System.Windows.Forms.DockStyle.Top;
+            this.RichTextBox_Display.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.RichTextBox_Display.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RichTextBox_Display.Location = new System.Drawing.Point(0, 0);
+            this.RichTextBox_Display.Location = new System.Drawing.Point(0, 48);
             this.RichTextBox_Display.Name = "RichTextBox_Display";
             this.RichTextBox_Display.ReadOnly = true;
-            this.RichTextBox_Display.Size = new System.Drawing.Size(563, 421);
+            this.RichTextBox_Display.Size = new System.Drawing.Size(563, 461);
             this.RichTextBox_Display.TabIndex = 88;
             this.RichTextBox_Display.Text = "";
             // 
@@ -60,7 +62,7 @@
             this.guna2GradientPanel2.Controls.Add(this.RichTextBox_Message);
             this.guna2GradientPanel2.Controls.Add(this.Button_Send);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 460);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 509);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
             this.guna2GradientPanel2.Size = new System.Drawing.Size(563, 52);
@@ -134,7 +136,7 @@
             this.RichTextBox_Message.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RichTextBox_Message.Location = new System.Drawing.Point(112, 9);
             this.RichTextBox_Message.Name = "RichTextBox_Message";
-            this.RichTextBox_Message.Size = new System.Drawing.Size(336, 37);
+            this.RichTextBox_Message.Size = new System.Drawing.Size(355, 37);
             this.RichTextBox_Message.TabIndex = 86;
             this.RichTextBox_Message.Text = "";
             this.RichTextBox_Message.TextChanged += new System.EventHandler(this.RichTextBox_Message_TextChanged);
@@ -158,7 +160,7 @@
             this.Button_Send.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Button_Send.ForeColor = System.Drawing.Color.White;
             this.Button_Send.HoverState.Parent = this.Button_Send;
-            this.Button_Send.Location = new System.Drawing.Point(453, 9);
+            this.Button_Send.Location = new System.Drawing.Point(472, 9);
             this.Button_Send.Margin = new System.Windows.Forms.Padding(2);
             this.Button_Send.Name = "Button_Send";
             this.Button_Send.ShadowDecoration.Parent = this.Button_Send;
@@ -167,12 +169,31 @@
             this.Button_Send.Text = "Send";
             this.Button_Send.Click += new System.EventHandler(this.Button_Send_Click);
             // 
-            // textBox1
+            // PictureBox_Avatar
             // 
-            this.textBox1.Location = new System.Drawing.Point(240, 434);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 90;
+            this.PictureBox_Avatar.FillColor = System.Drawing.Color.Transparent;
+            this.PictureBox_Avatar.ImageLocation = "10,10";
+            this.PictureBox_Avatar.ImageRotate = 0F;
+            this.PictureBox_Avatar.InitialImage = null;
+            this.PictureBox_Avatar.Location = new System.Drawing.Point(193, 5);
+            this.PictureBox_Avatar.Name = "PictureBox_Avatar";
+            this.PictureBox_Avatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.PictureBox_Avatar.ShadowDecoration.Parent = this.PictureBox_Avatar;
+            this.PictureBox_Avatar.Size = new System.Drawing.Size(39, 39);
+            this.PictureBox_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox_Avatar.TabIndex = 90;
+            this.PictureBox_Avatar.TabStop = false;
+            // 
+            // LabelBox_Name
+            // 
+            this.LabelBox_Name.AutoSize = true;
+            this.LabelBox_Name.BackColor = System.Drawing.Color.Transparent;
+            this.LabelBox_Name.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelBox_Name.Location = new System.Drawing.Point(238, 12);
+            this.LabelBox_Name.Name = "LabelBox_Name";
+            this.LabelBox_Name.Size = new System.Drawing.Size(64, 25);
+            this.LabelBox_Name.TabIndex = 91;
+            this.LabelBox_Name.Text = "Name";
             // 
             // UC_SingleChat
             // 
@@ -180,13 +201,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AppChatV2.Properties.Resources._18ef4fc0d30f69f601411fdf251e82f5;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.LabelBox_Name);
+            this.Controls.Add(this.PictureBox_Avatar);
             this.Controls.Add(this.RichTextBox_Display);
             this.Controls.Add(this.guna2GradientPanel2);
             this.Name = "UC_SingleChat";
-            this.Size = new System.Drawing.Size(563, 512);
+            this.Size = new System.Drawing.Size(563, 561);
             this.Load += new System.EventHandler(this.UC_SingleChat_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,6 +223,7 @@
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.RichTextBox RichTextBox_Message;
         private Guna.UI2.WinForms.Guna2GradientButton Button_Send;
-        private System.Windows.Forms.TextBox textBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBox_Avatar;
+        private Bunifu.Framework.UI.BunifuCustomLabel LabelBox_Name;
     }
 }

@@ -13,6 +13,7 @@ namespace AppChatV2.Class
         private string _Sex;
         private string _Username;
         private string _Is_active;
+        private byte[] _Avatar;
 
         public string Id { get => _id; set => _id = value; }
         public string Name { get => _Name; set => _Name = value; }
@@ -23,6 +24,6 @@ namespace AppChatV2.Class
         public DateTime Birthday { get => _Birthday; set => _Birthday = value; }
         public string Username { get => _Username; set => _Username = value; }
         public string Is_active { get => _Is_active; set => _Is_active = value; }
-
+        public byte[] Avatar { get => _Avatar; set => _Avatar = value; }
     }
 }

@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using AppChatV2.Class;
 
 namespace AppChatV2
 {
@@ -20,6 +14,7 @@ namespace AppChatV2
 
         private void Form_FriendInfomation_Load(object sender, EventArgs e)
         {
+            PictureBox_Avatar.Image = DataProvider.Instance.GetSingleImage(Par.Par.ID);
             Label_Name.Text = Par.Par.Name1;
             Label_Birthday.Text = Par.Par.Birthday.ToString();
             Label_Email.Text = Par.Par.Email;

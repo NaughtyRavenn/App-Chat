@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppChatV2.Class;
 
@@ -13,33 +7,38 @@ namespace AppChatV2
 {
     public partial class Form_AddFriend : Form
     {
-        public Form_AddFriend()
+        Form_Main Par;
+        public Form_AddFriend(Form_Main PAR)
         {
             InitializeComponent();
+            this.Par = PAR;
             Count = 0;
         }
 
         private void Form_AddFriend_Load(object sender, EventArgs e)
         {
+            Button_Stranger.ForeColor = Color.FromArgb(218, 50, 207);
             LoadStranger();
             LoadFriendRequest();
+            NoticeRequest();
         }
 
-        private void Button_Recent_Click(object sender, EventArgs e)
+        private void Button_ListStranger_Click(object sender, EventArgs e)
         {
             Notice1.Visible = true;
-            Button_Recent.ForeColor = Color.FromArgb(218, 50, 207);
+            Button_Stranger.ForeColor = Color.FromArgb(218, 50, 207);
             Notice2.Visible = false;
-            Button_ListFriend.ForeColor = Color.DimGray;
+            Button_Request.ForeColor = Color.DimGray;
             Page_AddFriend.SetPage(TabPage_Recent);
         }
 
-        private void Button_ListFriend_Click(object sender, EventArgs e)
+
+        private void Button_Request_Click(object sender, EventArgs e)
         {
             Notice2.Visible = true;
-            Button_ListFriend.ForeColor = Color.FromArgb(218, 50, 207);
+            Button_Request.ForeColor = Color.FromArgb(218, 50, 207);
             Notice1.Visible = false;
-            Button_Recent.ForeColor = Color.DimGray;
+            Button_Stranger.ForeColor = Color.DimGray;
             Page_AddFriend.SetPage(TabPage_ListFriend);
         }
 
@@ -71,6 +70,19 @@ namespace AppChatV2
                 Count++;
             }
             Label_Count.Text = Count.ToString();
+        }
+
+        private void NoticeRequest()
+        {
+            Invoke(new Action(() =>
+            {
+                if (Count != 0)
+                {
+                    Notice_Request.Visible = true;
+                }
+                else
+                    Notice_Request.Visible = false;
+            }));
         }
 
         private int _count;

@@ -44,6 +44,7 @@
             this.Button_LoginInfo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Button_PersonalInfo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Notice3 = new System.Windows.Forms.PictureBox();
             this.Button_IP = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.TabPage_LoginInfo = new System.Windows.Forms.TabPage();
@@ -76,25 +77,24 @@
             this.label3 = new System.Windows.Forms.Label();
             this.TextBox_Name = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PictureBox_Avatar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Page_EditProfile = new Bunifu.UI.WinForms.BunifuPages();
             this.TabPage_IP = new System.Windows.Forms.TabPage();
             this.Label_IP = new System.Windows.Forms.Label();
             this.Button_Confirm3 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label13 = new System.Windows.Forms.Label();
-            this.Notice3 = new System.Windows.Forms.PictureBox();
             this.TextBox_IP = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Notice1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Notice2)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Notice3)).BeginInit();
             this.TabPage_LoginInfo.SuspendLayout();
             this.TabPage_PersonalInfo.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).BeginInit();
             this.Page_EditProfile.SuspendLayout();
             this.TabPage_IP.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Notice3)).BeginInit();
             this.SuspendLayout();
             // 
             // Notice1
@@ -262,6 +262,16 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(222, 583);
             this.guna2Panel1.TabIndex = 34;
+            // 
+            // Notice3
+            // 
+            this.Notice3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(50)))), ((int)(((byte)(207)))));
+            this.Notice3.Location = new System.Drawing.Point(1, 265);
+            this.Notice3.Name = "Notice3";
+            this.Notice3.Size = new System.Drawing.Size(10, 62);
+            this.Notice3.TabIndex = 6;
+            this.Notice3.TabStop = false;
+            this.Notice3.Visible = false;
             // 
             // Button_IP
             // 
@@ -556,7 +566,7 @@
             this.TabPage_PersonalInfo.Controls.Add(this.label3);
             this.TabPage_PersonalInfo.Controls.Add(this.TextBox_Name);
             this.TabPage_PersonalInfo.Controls.Add(this.label5);
-            this.TabPage_PersonalInfo.Controls.Add(this.guna2PictureBox1);
+            this.TabPage_PersonalInfo.Controls.Add(this.PictureBox_Avatar);
             this.TabPage_PersonalInfo.Controls.Add(this.guna2HtmlLabel1);
             this.TabPage_PersonalInfo.Location = new System.Drawing.Point(4, 4);
             this.TabPage_PersonalInfo.Name = "TabPage_PersonalInfo";
@@ -1017,6 +1027,7 @@
             this.Button_Browse.Size = new System.Drawing.Size(113, 37);
             this.Button_Browse.TabIndex = 40;
             this.Button_Browse.Text = "Browse";
+            this.Button_Browse.Click += new System.EventHandler(this.Button_Browse_Click);
             // 
             // label3
             // 
@@ -1071,18 +1082,19 @@
             this.label5.TabIndex = 30;
             this.label5.Text = "Name";
             // 
-            // guna2PictureBox1
+            // PictureBox_Avatar
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(161, 45);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(130, 130);
-            this.guna2PictureBox1.TabIndex = 29;
-            this.guna2PictureBox1.TabStop = false;
+            this.PictureBox_Avatar.BackColor = System.Drawing.Color.Transparent;
+            this.PictureBox_Avatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PictureBox_Avatar.ImageRotate = 0F;
+            this.PictureBox_Avatar.Location = new System.Drawing.Point(161, 45);
+            this.PictureBox_Avatar.Margin = new System.Windows.Forms.Padding(2);
+            this.PictureBox_Avatar.Name = "PictureBox_Avatar";
+            this.PictureBox_Avatar.ShadowDecoration.Parent = this.PictureBox_Avatar;
+            this.PictureBox_Avatar.Size = new System.Drawing.Size(130, 130);
+            this.PictureBox_Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox_Avatar.TabIndex = 29;
+            this.PictureBox_Avatar.TabStop = false;
             // 
             // guna2HtmlLabel1
             // 
@@ -1106,10 +1118,10 @@
             this.Page_EditProfile.Location = new System.Drawing.Point(218, -11);
             this.Page_EditProfile.Multiline = true;
             this.Page_EditProfile.Name = "Page_EditProfile";
-            this.Page_EditProfile.Page = this.TabPage_IP;
-            this.Page_EditProfile.PageIndex = 2;
-            this.Page_EditProfile.PageName = "TabPage_IP";
-            this.Page_EditProfile.PageTitle = "tabPage1";
+            this.Page_EditProfile.Page = this.TabPage_PersonalInfo;
+            this.Page_EditProfile.PageIndex = 0;
+            this.Page_EditProfile.PageName = "TabPage_PersonalInfo";
+            this.Page_EditProfile.PageTitle = "tabPage3";
             this.Page_EditProfile.SelectedIndex = 0;
             this.Page_EditProfile.Size = new System.Drawing.Size(554, 583);
             this.Page_EditProfile.TabIndex = 33;
@@ -1183,29 +1195,6 @@
             this.Button_Confirm3.Text = "Xác nhận";
             this.Button_Confirm3.Click += new System.EventHandler(this.Button_Confirm3_Click);
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.DimGray;
-            this.label13.Location = new System.Drawing.Point(86, 221);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(124, 30);
-            this.label13.TabIndex = 55;
-            this.label13.Text = "IP Address";
-            // 
-            // Notice3
-            // 
-            this.Notice3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(50)))), ((int)(((byte)(207)))));
-            this.Notice3.Location = new System.Drawing.Point(1, 265);
-            this.Notice3.Name = "Notice3";
-            this.Notice3.Size = new System.Drawing.Size(10, 62);
-            this.Notice3.TabIndex = 6;
-            this.Notice3.TabStop = false;
-            this.Notice3.Visible = false;
-            // 
             // TextBox_IP
             // 
             this.TextBox_IP.BackColor = System.Drawing.Color.Transparent;
@@ -1233,6 +1222,19 @@
             this.TextBox_IP.Size = new System.Drawing.Size(250, 35);
             this.TextBox_IP.TabIndex = 56;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.Color.DimGray;
+            this.label13.Location = new System.Drawing.Point(86, 221);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(124, 30);
+            this.label13.TabIndex = 55;
+            this.label13.Text = "IP Address";
+            // 
             // Form_EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1249,17 +1251,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.Notice1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Notice2)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Notice3)).EndInit();
             this.TabPage_LoginInfo.ResumeLayout(false);
             this.TabPage_LoginInfo.PerformLayout();
             this.TabPage_PersonalInfo.ResumeLayout(false);
             this.TabPage_PersonalInfo.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Avatar)).EndInit();
             this.Page_EditProfile.ResumeLayout(false);
             this.TabPage_IP.ResumeLayout(false);
             this.TabPage_IP.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Notice3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1280,7 +1282,7 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_Name;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox PictureBox_Avatar;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_Phonenumber;
         private Guna.UI2.WinForms.Guna2TextBox TextBox_Email;

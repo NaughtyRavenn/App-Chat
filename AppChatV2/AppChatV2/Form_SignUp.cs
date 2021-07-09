@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using AppChatV2.Class;
 
@@ -208,10 +203,11 @@ namespace AppChatV2
         {
             if (CheckAll())
             {
-                string sqlQuery = "INSERT INTO ACCOUNT (Username,Password,Name,Is_active,Is_admin,Birthday,Email,Phonenumber,Sex) " +
-                    "VALUES ( @username , @password , @name , @is_active , @is_admin , @birthday , @email , @phonenumber , @sex )";
+                string sqlQuery = "INSERT INTO ACCOUNT (Username,Password,Name,Is_active,Is_admin,Birthday,Email,Phonenumber,Sex,Avatar) " +
+                    "VALUES ( @username , @password , @name , @is_active , @is_admin , @birthday , @email , @phonenumber , @sex , @avatar )";
+                Avatar = InteractImage.FromFile(InteractImage.getLinkFromDialog());
                 DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Username,Password,Name1,"false","false",Birthday,Email
-            ,Phonenumber,Sex});
+            ,Phonenumber,Sex,Avatar});
                 MessageBox.Show("Account successfully created");
                 this.Hide();
             }
@@ -228,6 +224,8 @@ namespace AppChatV2
         private string _Email;
         private string _Sex;
         private int _Flag;
+        private byte[] _Avatar;
+
         public string Username { get => _Username; set => _Username = value; }
         public string Password { get => _Password; set => _Password = value; }
         public string ConfirmPassword1 { get => _ConfirmPassword; set => _ConfirmPassword = value; }
@@ -237,5 +235,6 @@ namespace AppChatV2
         public string Email { get => _Email; set => _Email = value; }
         public string Sex { get => _Sex; set => _Sex = value; }
         public int Flag { get => _Flag; set => _Flag = value; }
+        public byte[] Avatar { get => _Avatar; set => _Avatar = value; }
     }
 }
