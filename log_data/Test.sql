@@ -1,0 +1,83 @@
+CREATE DATABASE ChatApp
+
+USE ChatApp
+SET DATEFORMAT dmy 
+
+CREATE TABLE ACCOUNT(
+	ID INT IDENTITY(1,1),
+	Username varchar(50),
+	Password varchar(50),
+	Name varchar(50),
+	Is_active varchar(10),
+	Is_admin varchar(10),
+	Birthday DATETIME,
+	Phonenumber varchar(20),
+	Sex varchar(10),
+	Email varchar(50),
+	Avatar Image,
+)
+
+ALTER TABLE ACCOUNT 
+ADD CONSTRAINT PK_ACCOUNT
+PRIMARY KEY (ID)
+
+CREATE TABLE CONTACT(
+	ID INT IDENTITY(1,1),
+	ID1 INT,
+	ID2 INT,
+	Type varchar(20) NOT NULL,
+	Port INT,
+)
+
+ALTER TABLE CONTACT
+ADD CONSTRAINT PK_CONTACT
+PRIMARY KEY (ID)
+
+CREATE TABLE GROUPCHAT(
+	ID INT IDENTITY(1,1),
+	Name varchar(50),
+	Port INT,
+	Avatar Image,
+)
+
+ALTER TABLE GROUPCHAT 
+ADD CONSTRAINT PK_GROUPCHAT
+PRIMARY KEY (ID)
+
+CREATE TABLE GROUPINFO(
+	GROUP_ID INT NOT NULL,
+	ACCOUNT_ID INT NOT NULL,
+)
+
+ALTER TABLE GROUPINFO 
+ADD CONSTRAINT PK_GROUPINFO
+PRIMARY KEY (GROUP_ID,ACCOUNT_ID)
+
+ALTER TABLE GROUPINFO
+ADD CONSTRAINT FK_GROUPINFO_ACCOUNT
+FOREIGN KEY (ACCOUNT_ID) REFERENCES ACCOUNT(ID)
+
+ALTER TABLE GROUPINFO
+ADD CONSTRAINT FK_GROUPINFO_GROUPCHAT
+FOREIGN KEY (GROUP_ID) REFERENCES GROUPCHAT(ID)
+
+INSERT INTO ACCOUNT (Username,Password,Name,Is_active,Is_admin,Birthday,Phonenumber,Sex,Email) 
+VALUES ('admin','1','ADMIN','false','true','1/1/2001','0','Male','admin@gm.com'),
+		('guest','1','GUEST','false','false','1/1/2001','0','Female','guest@gm.com'),
+		('minh','1','MINH','false','false','1/1/2001','0','Male','minh@gm.com')
+		
+INSERT INTO CONTACT (ID1,ID2,Type,Port)
+VALUES (1,2,'Added',8000),
+		(1,3,'Added',8001),
+		(2,3,'Added',8002)
+
+INSERT INTO GROUPCHAT (Name,Port)
+VALUES ('Group demo 1',9999),
+		('Group demo 2',9998)
+
+INSERT INTO GROUPINFO (GROUP_ID,ACCOUNT_ID)
+VALUES (1,1),
+		(1,2),
+		(1,3),
+		(2,1),
+		(2,2)
