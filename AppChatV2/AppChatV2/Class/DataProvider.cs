@@ -197,11 +197,11 @@ namespace AppChatV2.Class
 
         public int ProvideSinglePort()
         {
-            string sqlQuery = "SELECT MAX(Port) AS Port FROM CONTACT";
+            string sqlQuery = "SELECT MAX(Port) AS PORT FROM CONTACT";
             var Data = DataProvider.Instance.ExcuteQuery(sqlQuery);
-            if (Data.Rows.Count == 0)
+            if (Data.Rows.Count==0)
                 return 8000;
-            return int.Parse(Data.Rows[0]["Port"].ToString()) + 1;
+            return int.Parse(Data.Rows[0]["PORT"].ToString()) + 1;
         }
 
         public Dictionary<string,int> LoadListGroupIDAndPort()

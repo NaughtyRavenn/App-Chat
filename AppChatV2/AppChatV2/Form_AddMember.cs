@@ -55,6 +55,7 @@ namespace AppChatV2
                 UC_AddMember Friend = new UC_AddMember(this)
                 {
                     Name1 = data.Name,
+                    FriendID=data.Id,
                 };
                 Friend.VisibleButton();
                 FlowLayoutPanel_ListMember.Controls.Add(Friend);

@@ -12,12 +12,12 @@ namespace AppChatV2
         {
             InitializeComponent();
             this.Par = PAR;
-            Count = 0;
         }
 
         private void Form_AddFriend_Load(object sender, EventArgs e)
         {
             Button_Stranger.ForeColor = Color.FromArgb(218, 50, 207);
+            Count = 0;
             LoadStranger();
             LoadFriendRequest();
             NoticeRequest();
@@ -40,6 +40,7 @@ namespace AppChatV2
             Notice1.Visible = false;
             Button_Stranger.ForeColor = Color.DimGray;
             Page_AddFriend.SetPage(TabPage_ListFriend);
+            Notice_Request.Visible=false;
         }
 
         private void LoadStranger()
@@ -62,7 +63,7 @@ namespace AppChatV2
             var ListFriendRequest = DataProvider.Instance.LoadListFriendRequest();
             foreach (var v in ListFriendRequest)
             {
-                FlowLayoutPanel_ListRequest.Controls.Add(new UC_FriendRequest()
+                FlowLayoutPanel_ListRequest.Controls.Add(new UC_FriendRequest(this)
                 {
                     Name1 = DataProvider.Instance.LoadInfoByID(v).Name,
                     ID = v
@@ -83,6 +84,11 @@ namespace AppChatV2
                 else
                     Notice_Request.Visible = false;
             }));
+        }
+
+        public void Reload()
+        {
+            Form_AddFriend_Load(null, EventArgs.Empty);
         }
 
         private int _count;

@@ -16,6 +16,7 @@ namespace AppChatV2
         private void UC_AddMember_Load(object sender, EventArgs e)
         {
             Label_Name.Text = Name1;
+            PictureBox_Avatar.Image = DataProvider.Instance.GetSingleImage(FriendID);
         }
 
         private void Button_Add_Click(object sender, EventArgs e)

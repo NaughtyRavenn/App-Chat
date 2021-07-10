@@ -18,7 +18,7 @@ namespace AppChatV2
 
         private void Form_Main_Load(object sender, EventArgs e)
         {
-            Label_Name.Text = User.Instance.Name;
+            Label_Name.Text = DataProvider.Instance.LoadInfoByID(User.Instance.ID).Name;
             LoadFriendsAndGroups();
             PictureBox_Avatar.Image = DataProvider.Instance.GetSingleImage(User.Instance.ID);
             Button_ListFriend.ForeColor = Color.FromArgb(218, 50, 207);
@@ -27,6 +27,7 @@ namespace AppChatV2
         private void Form_Main_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+            Account.Instance.Logout();
         }
 
         #endregion

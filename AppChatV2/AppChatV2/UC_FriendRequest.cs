@@ -6,9 +6,11 @@ namespace AppChatV2
 {
     public partial class UC_FriendRequest : UserControl
     {
-        public UC_FriendRequest()
+        Form_AddFriend Par;
+        public UC_FriendRequest(Form_AddFriend PAR)
         {
             InitializeComponent();
+            this.Par = PAR;
         }
 
         private void UC_FriendRequest_Load(object sender, EventArgs e)
@@ -21,6 +23,11 @@ namespace AppChatV2
         {
             Form_ResponeOption frm = new Form_ResponeOption(this);
             frm.ShowDialog();
+        }
+
+        public void Reload()
+        {
+            Par.Reload();
         }
 
         private string _Name;

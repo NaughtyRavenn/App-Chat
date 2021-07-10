@@ -10,19 +10,20 @@ namespace AppChatV2
 {
     public partial class Form_ResponeOption : Form
     {
-        UC_FriendRequest par;
+        UC_FriendRequest Par;
         public Form_ResponeOption(UC_FriendRequest PAR)
         {
             InitializeComponent();
-            this.par = PAR;
+            this.Par = PAR;
         }
 
         private void Button_Accept_Click(object sender, EventArgs e)
         {
             int Port = DataProvider.Instance.ProvideSinglePort();
             string sqlQuery = "UPDATE CONTACT SET Type = 'Added',Port = @port WHERE ID1 = @id1 AND ID2 = @id2 ";
-            DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Port,par.ID, User.Instance.ID});
+            DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Port,Par.ID, User.Instance.ID});
             ChangeData();
+            Par.Reload();
             this.Hide();
         }
 
@@ -62,7 +63,7 @@ namespace AppChatV2
         private void Button_Decline_Click(object sender, EventArgs e)
         {
             string sqlQuery = "DELETE FROM CONTACT WHERE ID1 = @id1 AND ID2 = @id2 ";
-            DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { par.ID, User.Instance.ID });
+            DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Par.ID, User.Instance.ID });
             this.Hide();
         }
 

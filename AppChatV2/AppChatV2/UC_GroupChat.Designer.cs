@@ -237,6 +237,7 @@
             // 
             // PictureBox_Avatar
             // 
+            this.PictureBox_Avatar.BackColor = System.Drawing.Color.Transparent;
             this.PictureBox_Avatar.FillColor = System.Drawing.Color.Transparent;
             this.PictureBox_Avatar.ImageLocation = "10,10";
             this.PictureBox_Avatar.ImageRotate = 0F;
