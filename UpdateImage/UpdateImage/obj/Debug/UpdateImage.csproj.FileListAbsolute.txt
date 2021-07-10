@@ -1,9 +1,0 @@
-C:\Users\Admin\Desktop\UpdateImage\UpdateImage\bin\Debug\UpdateImage.exe.config
-C:\Users\Admin\Desktop\UpdateImage\UpdateImage\bin\Debug\UpdateImage.exe
-C:\Users\Admin\Desktop\UpdateImage\UpdateImage\bin\Debug\UpdateImage.pdb
-C:\Users\Admin\Desktop\UpdateImage\UpdateImage\obj\Debug\UpdateImage.csprojAssemblyReference.cache
-C:\Users\Admin\Desktop\UpdateImage\UpdateImage\obj\Debug\UpdateImage.Form1.resources
-C:\Users\Admin\Desktop\UpdateImage\UpdateImage\obj\Debug\UpdateImage.Properties.Resources.resources
-C:\Users\Admin\Desktop\UpdateImage\UpdateImage\obj\Debug\UpdateImage.csproj.GenerateResource.cache
-C:\Users\Admin\Desktop\UpdateImage\UpdateImage\obj\Debug\UpdateImage.exe
-C:\Users\Admin\Desktop\UpdateImage\UpdateImage\obj\Debug\UpdateImage.pdb

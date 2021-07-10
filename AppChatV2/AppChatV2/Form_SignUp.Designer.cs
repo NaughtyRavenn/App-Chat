@@ -269,15 +269,109 @@
             this.ComboBox_Year.BorderColor = System.Drawing.Color.DimGray;
             this.ComboBox_Year.BorderRadius = 17;
             this.ComboBox_Year.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBox_Year.DropDownHeight = 200;
             this.ComboBox_Year.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBox_Year.DropDownWidth = 110;
             this.ComboBox_Year.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBox_Year.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBox_Year.FocusedState.Parent = this.ComboBox_Year;
             this.ComboBox_Year.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.ComboBox_Year.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.ComboBox_Year.HoverState.Parent = this.ComboBox_Year;
+            this.ComboBox_Year.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.ComboBox_Year.IntegralHeight = false;
             this.ComboBox_Year.ItemHeight = 28;
             this.ComboBox_Year.Items.AddRange(new object[] {
+            "1900",
+            "1901",
+            "1902",
+            "1903",
+            "1904",
+            "1905",
+            "1906",
+            "1907",
+            "1908",
+            "1909",
+            "1910",
+            "1911",
+            "1912",
+            "1913",
+            "1914",
+            "1915",
+            "1916",
+            "1917",
+            "1918",
+            "1919",
+            "1920",
+            "1921",
+            "1922",
+            "1923",
+            "1924",
+            "1925",
+            "1926",
+            "1927",
+            "1928",
+            "1929",
+            "1930",
+            "1931",
+            "1932",
+            "1933",
+            "1934",
+            "1935",
+            "1936",
+            "1937",
+            "1938",
+            "1939",
+            "1940",
+            "1941",
+            "1942",
+            "1943",
+            "1944",
+            "1945",
+            "1946",
+            "1947",
+            "1948",
+            "1949",
+            "1950",
+            "1951",
+            "1952",
+            "1953",
+            "1954",
+            "1955",
+            "1956",
+            "1957",
+            "1958",
+            "1959",
+            "1960",
+            "1961",
+            "1962",
+            "1963",
+            "1964",
+            "1965",
+            "1966",
+            "1967",
+            "1968",
+            "1969",
+            "1970",
+            "1971",
+            "1972",
+            "1973",
+            "1974",
+            "1975",
+            "1976",
+            "1977",
+            "1978",
+            "1979",
+            "1980",
+            "1981",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1986",
+            "1987",
+            "1988",
+            "1989",
             "1990",
             "1991",
             "1992",
@@ -293,7 +387,23 @@
             "2002",
             "2003",
             "2004",
-            "2005"});
+            "2005",
+            "2006",
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021"});
             this.ComboBox_Year.ItemsAppearance.Parent = this.ComboBox_Year;
             this.ComboBox_Year.Location = new System.Drawing.Point(458, 291);
             this.ComboBox_Year.Name = "ComboBox_Year";
@@ -307,6 +417,7 @@
             this.ComboBox_Month.BorderColor = System.Drawing.Color.DimGray;
             this.ComboBox_Month.BorderRadius = 17;
             this.ComboBox_Month.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBox_Month.DropDownHeight = 200;
             this.ComboBox_Month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Month.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBox_Month.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -314,6 +425,8 @@
             this.ComboBox_Month.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.ComboBox_Month.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.ComboBox_Month.HoverState.Parent = this.ComboBox_Month;
+            this.ComboBox_Month.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.ComboBox_Month.IntegralHeight = false;
             this.ComboBox_Month.ItemHeight = 28;
             this.ComboBox_Month.Items.AddRange(new object[] {
             "01",
@@ -373,13 +486,17 @@
             this.ComboBox_Day.BorderColor = System.Drawing.Color.DimGray;
             this.ComboBox_Day.BorderRadius = 17;
             this.ComboBox_Day.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBox_Day.DropDownHeight = 200;
             this.ComboBox_Day.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBox_Day.DropDownWidth = 70;
             this.ComboBox_Day.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBox_Day.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBox_Day.FocusedState.Parent = this.ComboBox_Day;
             this.ComboBox_Day.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.ComboBox_Day.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.ComboBox_Day.HoverState.Parent = this.ComboBox_Day;
+            this.ComboBox_Day.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.ComboBox_Day.IntegralHeight = false;
             this.ComboBox_Day.ItemHeight = 28;
             this.ComboBox_Day.Items.AddRange(new object[] {
             "01",

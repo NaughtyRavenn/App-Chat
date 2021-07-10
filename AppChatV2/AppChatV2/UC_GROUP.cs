@@ -39,6 +39,12 @@ namespace AppChatV2
             return this.BackColor.ToString();
         }
 
+        public void Reload()
+        {
+            Par.Reload();
+        }
+
+
         private string _Name;
         private int _Port;
         private string _ID;
@@ -50,5 +56,10 @@ namespace AppChatV2
         public string ID { get => _ID; set => _ID = value; }
         public int Index { get => _Index; set => _Index = value; }
         public List<User> ListMember { get => _ListMember; set => _ListMember = value; }
+
+        private void Button_Option_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

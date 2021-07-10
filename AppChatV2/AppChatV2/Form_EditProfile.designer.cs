@@ -581,7 +581,7 @@
             this.ComboBox_Year.BorderColor = System.Drawing.Color.DimGray;
             this.ComboBox_Year.BorderRadius = 17;
             this.ComboBox_Year.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBox_Year.DropDownHeight = 100;
+            this.ComboBox_Year.DropDownHeight = 200;
             this.ComboBox_Year.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Year.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBox_Year.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -728,7 +728,7 @@
             this.ComboBox_Day.BorderColor = System.Drawing.Color.DimGray;
             this.ComboBox_Day.BorderRadius = 17;
             this.ComboBox_Day.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBox_Day.DropDownHeight = 100;
+            this.ComboBox_Day.DropDownHeight = 200;
             this.ComboBox_Day.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Day.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBox_Day.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -784,7 +784,7 @@
             this.ComboBox_Month.BorderColor = System.Drawing.Color.DimGray;
             this.ComboBox_Month.BorderRadius = 17;
             this.ComboBox_Month.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBox_Month.DropDownHeight = 100;
+            this.ComboBox_Month.DropDownHeight = 200;
             this.ComboBox_Month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_Month.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBox_Month.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));

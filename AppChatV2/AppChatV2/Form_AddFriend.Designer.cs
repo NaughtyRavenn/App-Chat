@@ -49,12 +49,12 @@
             this.Label_Count = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Notice_Request = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Notice1 = new System.Windows.Forms.PictureBox();
             this.Notice2 = new System.Windows.Forms.PictureBox();
             this.Button_Request = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.Button_Stranger = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Notice_Request = new Guna.UI2.WinForms.Guna2CircleButton();
             this.Page_AddFriend.SuspendLayout();
             this.TabPage_Recent.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -74,6 +74,7 @@
             this.Page_AddFriend.Location = new System.Drawing.Point(218, -11);
             this.Page_AddFriend.Multiline = true;
             this.Page_AddFriend.Name = "Page_AddFriend";
+            this.Page_AddFriend.Padding = new System.Drawing.Point(7, 3);
             this.Page_AddFriend.Page = this.TabPage_ListFriend;
             this.Page_AddFriend.PageIndex = 1;
             this.Page_AddFriend.PageName = "TabPage_ListFriend";
@@ -119,15 +120,15 @@
             this.panel3.Controls.Add(this.FlowLayoutPanel_Stranger);
             this.panel3.Location = new System.Drawing.Point(6, 101);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(461, 450);
+            this.panel3.Size = new System.Drawing.Size(406, 450);
             this.panel3.TabIndex = 35;
             // 
             // FlowLayoutPanel_Stranger
             // 
             this.FlowLayoutPanel_Stranger.AutoScroll = true;
-            this.FlowLayoutPanel_Stranger.Location = new System.Drawing.Point(15, 16);
+            this.FlowLayoutPanel_Stranger.Location = new System.Drawing.Point(7, 3);
             this.FlowLayoutPanel_Stranger.Name = "FlowLayoutPanel_Stranger";
-            this.FlowLayoutPanel_Stranger.Size = new System.Drawing.Size(430, 429);
+            this.FlowLayoutPanel_Stranger.Size = new System.Drawing.Size(388, 442);
             this.FlowLayoutPanel_Stranger.TabIndex = 29;
             // 
             // Button_Search
@@ -149,7 +150,7 @@
             this.Button_Search.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.Button_Search.ForeColor = System.Drawing.Color.White;
             this.Button_Search.HoverState.Parent = this.Button_Search;
-            this.Button_Search.Location = new System.Drawing.Point(369, 19);
+            this.Button_Search.Location = new System.Drawing.Point(314, 19);
             this.Button_Search.Margin = new System.Windows.Forms.Padding(2);
             this.Button_Search.Name = "Button_Search";
             this.Button_Search.ShadowDecoration.Parent = this.Button_Search;
@@ -178,7 +179,7 @@
             this.guna2ComboBox1.Location = new System.Drawing.Point(6, 19);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(358, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(303, 36);
             this.guna2ComboBox1.TabIndex = 0;
             this.guna2ComboBox1.Visible = false;
             // 
@@ -201,17 +202,17 @@
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.FlowLayoutPanel_ListRequest);
-            this.panel2.Location = new System.Drawing.Point(11, 97);
+            this.panel2.Location = new System.Drawing.Point(6, 101);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(455, 454);
+            this.panel2.Size = new System.Drawing.Size(406, 450);
             this.panel2.TabIndex = 35;
             // 
             // FlowLayoutPanel_ListRequest
             // 
             this.FlowLayoutPanel_ListRequest.AutoScroll = true;
-            this.FlowLayoutPanel_ListRequest.Location = new System.Drawing.Point(14, 12);
+            this.FlowLayoutPanel_ListRequest.Location = new System.Drawing.Point(7, 3);
             this.FlowLayoutPanel_ListRequest.Name = "FlowLayoutPanel_ListRequest";
-            this.FlowLayoutPanel_ListRequest.Size = new System.Drawing.Size(427, 437);
+            this.FlowLayoutPanel_ListRequest.Size = new System.Drawing.Size(388, 442);
             this.FlowLayoutPanel_ListRequest.TabIndex = 30;
             // 
             // label4
@@ -264,6 +265,29 @@
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(222, 583);
             this.guna2Panel1.TabIndex = 32;
+            // 
+            // Notice_Request
+            // 
+            this.Notice_Request.BackColor = System.Drawing.Color.White;
+            this.Notice_Request.CheckedState.Parent = this.Notice_Request;
+            this.Notice_Request.CustomImages.Parent = this.Notice_Request;
+            this.Notice_Request.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Notice_Request.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Notice_Request.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Notice_Request.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Notice_Request.DisabledState.Parent = this.Notice_Request;
+            this.Notice_Request.FillColor = System.Drawing.Color.Red;
+            this.Notice_Request.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Notice_Request.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Notice_Request.ForeColor = System.Drawing.Color.White;
+            this.Notice_Request.HoverState.Parent = this.Notice_Request;
+            this.Notice_Request.Location = new System.Drawing.Point(198, 242);
+            this.Notice_Request.Name = "Notice_Request";
+            this.Notice_Request.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Notice_Request.ShadowDecoration.Parent = this.Notice_Request;
+            this.Notice_Request.Size = new System.Drawing.Size(15, 15);
+            this.Notice_Request.TabIndex = 28;
+            this.Notice_Request.Visible = false;
             // 
             // Notice1
             // 
@@ -423,36 +447,13 @@
             this.panel1.Size = new System.Drawing.Size(222, 139);
             this.panel1.TabIndex = 0;
             // 
-            // Notice_Request
-            // 
-            this.Notice_Request.BackColor = System.Drawing.Color.White;
-            this.Notice_Request.CheckedState.Parent = this.Notice_Request;
-            this.Notice_Request.CustomImages.Parent = this.Notice_Request;
-            this.Notice_Request.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Notice_Request.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Notice_Request.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Notice_Request.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Notice_Request.DisabledState.Parent = this.Notice_Request;
-            this.Notice_Request.FillColor = System.Drawing.Color.Red;
-            this.Notice_Request.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Notice_Request.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Notice_Request.ForeColor = System.Drawing.Color.White;
-            this.Notice_Request.HoverState.Parent = this.Notice_Request;
-            this.Notice_Request.Location = new System.Drawing.Point(198, 242);
-            this.Notice_Request.Name = "Notice_Request";
-            this.Notice_Request.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.Notice_Request.ShadowDecoration.Parent = this.Notice_Request;
-            this.Notice_Request.Size = new System.Drawing.Size(15, 15);
-            this.Notice_Request.TabIndex = 28;
-            this.Notice_Request.Visible = false;
-            // 
             // Form_AddFriend
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AppChatV2.Properties.Resources._40cee2e941086f4a5f251317699ddd85;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(700, 561);
+            this.ClientSize = new System.Drawing.Size(641, 561);
             this.Controls.Add(this.Page_AddFriend);
             this.Controls.Add(this.guna2Panel1);
             this.Margin = new System.Windows.Forms.Padding(2);

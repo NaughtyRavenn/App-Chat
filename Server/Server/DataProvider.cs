@@ -98,7 +98,7 @@ namespace Server
         public List<int> LoadPortFromDB()
         {
             var v1 = new List<int>();
-            string sqlQuery = "SELECT Port AS PORT FROM CONTACT " +
+            string sqlQuery = "SELECT Port AS PORT FROM CONTACT WHERE Type='Added'" +
                 "UNION " +
                 "SELECT Port AS PORT FROM GROUPCHAT";
             var Data = DataProvider.Instance.ExcuteQuery(sqlQuery);

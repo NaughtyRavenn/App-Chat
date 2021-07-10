@@ -51,12 +51,12 @@
             // Label_Name
             // 
             this.Label_Name.AutoSize = true;
-            this.Label_Name.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold);
+            this.Label_Name.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Name.ForeColor = System.Drawing.Color.Black;
             this.Label_Name.Location = new System.Drawing.Point(109, 37);
             this.Label_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label_Name.Name = "Label_Name";
-            this.Label_Name.Size = new System.Drawing.Size(149, 32);
+            this.Label_Name.Size = new System.Drawing.Size(101, 25);
             this.Label_Name.TabIndex = 29;
             this.Label_Name.Text = "Username";
             // 

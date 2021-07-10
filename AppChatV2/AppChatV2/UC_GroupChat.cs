@@ -33,6 +33,7 @@ namespace AppChatV2
         {
             string sqlQuery = "DELETE FROM GROUPINFO WHERE ACCOUNT_ID = @id AND GROUP_ID = @id2 ";
             DataProvider.Instance.ExcuteQuery(sqlQuery, new object[] { Account.Instance.ID, ID });
+            Par.Reload();
         }
 
         private void UC_GroupChat_Load(object sender, EventArgs e)
